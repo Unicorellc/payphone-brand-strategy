@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payphone -- Brand Book 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --naranja: #FF6400;
+  --violeta: #5A00B4;
+  --amarillo: #FFA000;
+  --dark: #222222;
+  --dark-surface: #1a1a1a;
+  --dark-card: #2a2a2a;
+  --dark-border: #333333;
+  --white: #ffffff;
+  --gray-100: #f5f5f5;
+  --gray-200: #e8e8e8;
+  --gray-300: #d0d0d0;
+  --gray-400: #999999;
+  --gray-500: #666666;
+  --gradient-sunset: linear-gradient(135deg, #FF6400 0%, #FFA000 100%);
+  --gradient-deep: linear-gradient(135deg, #FF6400 0%, #5A00B4 100%);
+  --gradient-warm: linear-gradient(135deg, #FFA000 0%, #FF6400 50%, #5A00B4 100%);
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--dark-surface);
+  border-right: 1px solid var(--dark-border);
+  padding: 2rem 0;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+nav .nav-logo {
+  padding: 0 1.5rem 2rem;
+  border-bottom: 1px solid var(--dark-border);
+  margin-bottom: 1rem;
+}
+
+nav .nav-logo span {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--naranja);
+  letter-spacing: -0.02em;
+}
+
+nav .nav-logo small {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0.25rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.55rem 1.5rem;
+  color: var(--gray-400);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+  color: var(--white);
+  background: rgba(255, 100, 0, 0.08);
+  border-left-color: var(--naranja);
+}
+
+nav a .num {
+  color: var(--naranja);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+/* MAIN */
+main {
+  margin-left: 280px;
+  min-height: 100vh;
+}
+
+/* SECTIONS */
+section {
+  padding: 6rem 4rem;
+  border-bottom: 1px solid var(--dark-border);
+  max-width: 1100px;
+}
+
+section:last-child { border-bottom: none; }
+
+/* COVER */
+.cover {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem;
+  background: var(--dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(255,100,0,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cover h1 {
+  font-family: var(--font-display);
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cover .subtitle {
+  font-size: 1.3rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.cover .meta {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.cover .meta-item {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-500);
+}
+
+.cover .meta-item span {
+  display: block;
+  color: var(--gray-300);
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0.25rem;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--naranja);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+h5 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--naranja);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--gray-300);
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  max-width: 680px;
+}
+
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--gray-200);
+}
+
+/* COMPONENTS */
+.card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-accent {
+  border-left: 3px solid var(--naranja);
+}
+
+.card-violet {
+  border-left: 3px solid var(--violeta);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.badge-orange { background: rgba(255,100,0,0.15); color: var(--naranja); }
+.badge-violet { background: rgba(90,0,180,0.15); color: #9B59B6; }
+.badge-green { background: rgba(39,174,96,0.15); color: #27ae60; }
+.badge-red { background: rgba(231,76,60,0.15); color: #e74c3c; }
+.badge-yellow { background: rgba(255,160,0,0.15); color: var(--amarillo); }
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-sunset);
+  border-radius: 2px;
+  margin: 3rem 0;
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--white);
+  border-left: 3px solid var(--naranja);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+  max-width: 700px;
+}
+
+.quote cite {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  font-style: normal;
+  margin-top: 0.75rem;
+  font-family: var(--font-body);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--dark-border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--gray-300);
+  margin: 0.25rem;
+}
+
+.tag-yes {
+  border-color: rgba(39,174,96,0.3);
+  background: rgba(39,174,96,0.08);
+  color: #27ae60;
+}
+
+.tag-no {
+  border-color: rgba(231,76,60,0.3);
+  background: rgba(231,76,60,0.08);
+  color: #e74c3c;
+  text-decoration: line-through;
+}
+
+.example-box {
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.example-box .label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.example-box .label.si { color: #27ae60; }
+.example-box .label.no { color: #e74c3c; }
+
+.color-swatch {
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.color-swatch .swatch-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.color-swatch .swatch-hex {
+  font-family: monospace;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--dark-surface);
+  border-bottom: 2px solid var(--naranja);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--naranja);
+}
+
+table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--dark-border);
+  color: var(--gray-300);
+  vertical-align: top;
+}
+
+table tr:hover td { background: rgba(255,100,0,0.03); }
+
+.persona-header {
+  background: var(--gradient-sunset);
+  border-radius: 12px 12px 0 0;
+  padding: 2rem;
+  color: var(--white);
+}
+
+.persona-body {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 2rem;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.axis-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+
+.axis-bar .label-left, .axis-bar .label-right {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.axis-bar .label-right { text-align: right; }
+
+.axis-bar .bar {
+  flex: 1;
+  height: 6px;
+  background: var(--dark-border);
+  border-radius: 3px;
+  position: relative;
+}
+
+.axis-bar .bar .fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--gradient-sunset);
+  border-radius: 3px;
+}
+
+.axis-bar .bar .marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: var(--naranja);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.touchpoint-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.touchpoint-card .tp-header {
+  background: var(--gradient-sunset);
+  padding: 1rem 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.touchpoint-card .tp-body {
+  padding: 1.5rem;
+}
+
+.never-list {
+  counter-reset: never;
+  list-style: none;
+}
+
+.never-list li {
+  counter-increment: never;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.never-list li::before {
+  content: counter(never, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--naranja);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.never-list li .rule-text {
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+.never-list li .rule-why {
+  color: var(--gray-500);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* MOBILE TOGGLE */
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  color: var(--naranja);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  section { padding: 4rem 2.5rem; }
+  h3 { font-size: 2.2rem; }
+  .cover h1 { font-size: 3.5rem; }
+  .cover { padding: 4rem; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  nav { transform: translateX(-100%); }
+  nav.open { transform: translateX(0); }
+  .nav-toggle { display: flex; }
+  main { margin-left: 0; }
+  section { padding: 3rem 1.5rem; }
+  h3 { font-size: 1.8rem; }
+  .cover { padding: 3rem 1.5rem; }
+  .cover h1 { font-size: 2.5rem; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .cover .meta { flex-direction: column; gap: 1.5rem; }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark-surface); }
+::-webkit-scrollbar-thumb { background: var(--dark-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gray-500); }
+
+/* AUDIT SECTION */
+.audit-grade {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.audit-grade.grade-b {
+  background: linear-gradient(135deg, var(--amarillo), var(--naranja));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.audit-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.audit-item:last-child { border-bottom: none; }
+
+.audit-item .audit-label {
+  font-weight: 600;
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.audit-item .audit-detail {
+  color: var(--gray-400);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+
+<nav>
+  <div class="nav-logo">
+    <span>payphone</span>
+    <small>Brand Book 2026</small>
+  </div>
+  <a href="#cover"><span class="num">00</span> Portada</a>
+  <a href="#audit"><span class="num">--</span> Auditoria</a>
+  <a href="#s01"><span class="num">01</span> Alma de Marca</a>
+  <a href="#s02"><span class="num">02</span> Posicionamiento</a>
+  <a href="#s03"><span class="num">03</span> Personas</a>
+  <a href="#s04"><span class="num">04</span> Personalidad</a>
+  <a href="#s05"><span class="num">05</span> Identidad Verbal</a>
+  <a href="#s06"><span class="num">06</span> Showcase de Copy</a>
+  <a href="#s07"><span class="num">07</span> Identidad Visual</a>
+  <a href="#s08"><span class="num">08</span> Marca en Accion</a>
+  <a href="#s09"><span class="num">09</span> Lo Que Nunca Hacemos</a>
+  <a href="#s10"><span class="num">10</span> Evolucion de Marca</a>
+</nav>
+
+<main>
+
+<!-- ============================================ -->
+<!-- COVER -->
+<!-- ============================================ -->
+<section class="cover" id="cover">
+  <h1>payphone</h1>
+  <p class="subtitle">El libro de marca definitivo para la plataforma que esta redefiniendo la autonomia financiera en America Latina.</p>
+  <div class="meta">
+    <div class="meta-item">Version<span>2026.1</span></div>
+    <div class="meta-item">Clasificacion<span>Confidencial</span></div>
+    <div class="meta-item">Preparado para<span>Unicore LLC</span></div>
+    <div class="meta-item">Fecha<span>Marzo 2026</span></div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- AUDITORIA -->
+<!-- ============================================ -->
+<section id="audit">
+  <h2>Paso 1</h2>
+  <h3>Auditoria de Marca</h3>
+  <p class="lead">Una revision brutal y honesta de los materiales existentes. Sin diplomacia, con respeto. El objetivo no es destruir lo construido, sino identificar que merece sobrevivir a la siguiente etapa de Payphone.</p>
+
+  <div class="divider"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="audit-grade grade-b">B-</div>
+      <p style="font-size:0.85rem; color: var(--gray-400);">Calificacion general de los materiales de marca existentes</p>
+    </div>
+    <div class="card">
+      <p style="color: var(--gray-200); font-size: 0.9rem; margin-bottom: 0;">Payphone tiene una base estrategica solida -- el concepto de LIBERTAD = AUTONOMIA es genuino y diferenciador. La personalidad del "surfer digital" es memorable. Pero la ejecucion se queda en presentacion de agencia: demasiados frameworks, poca aplicacion real. Los materiales actuales son un buen brief estrategico, no un brand book operativo.</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Que funciona (mantener y fortalecer)</h4>
+  <div class="card card-accent">
+    <div class="audit-item">
+      <div class="audit-label">Concepto LIBERTAD = AUTONOMIA</div>
+      <div class="audit-detail">Genuino, diferenciado, con profundidad filosofica real. "Payphone no es la libertad, el libre eres tu" es una de las mejores lineas estrategicas que he visto en una fintech latinoamericana. Mantener intacto.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Isotipo de cola de ballena</div>
+      <div class="audit-detail">62% Libertad, 19% Exploracion, 11% Solidez, 9% Flow -- los numeros validan que el simbolo comunica exactamente lo que debe. Unico en la categoria. Ningun competidor tiene un asset visual tan distinto.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Arquetipo El Explorador + "Surfer digital"</div>
+      <div class="audit-detail">La personificacion de marca como un hombre de 40 anos, viajado, culto, geek, relajado, con tabla de surf es vivida y operativa. El equipo puede preguntarse "que haria el surfer?" y obtener una respuesta clara.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Target emocional: La ansiedad / Trabajar sobre la calma</div>
+      <div class="audit-detail">Brillante inversion del insight. No perseguir la ambicion (como hacen todos), sino resolver la ansiedad financiera. Contra-intuitivo y poderoso.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Pilares de voz: Simple, Confiable, Valiente, Humana</div>
+      <div class="audit-detail">Bien elegidos, bien explicados, con justificaciones claras. La distincion entre voz (constante) y tono (adaptativo) esta correctamente implementada.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Paleta de color naranja como diferenciador</div>
+      <div class="audit-detail">En un mar de fintechs azules y verdes, el naranja es un acto de posicionamiento en si mismo. La triada naranja-violeta-amarillo tiene personalidad.</div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">Que es generico o debil (cortar o reconstruir)</h4>
+  <div class="card" style="border-left: 3px solid #e74c3c;">
+    <div class="audit-item">
+      <div class="audit-label">Slogan "Existe un mundo mas simple"</div>
+      <div class="audit-detail">Generico. Podria ser de IKEA, de un banco sueco, de una app de meditacion. No tiene la energia del surfer ni la ambicion de la marca. Necesita ser reescrito con la misma calidad que "Payphone no es la libertad, el libre eres tu."</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Mision "Simplificar la relacion con el dinero"</div>
+      <div class="audit-detail">Funcional pero sin personalidad. Mercado Pago, Nequi o cualquier neobank podrian adoptar esta misma frase. Falta el componente de autonomia y desafio que hace unica a Payphone.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Golden Circle literal de Sinek</div>
+      <div class="audit-detail">Usar el framework de Simon Sinek de forma tan literal en 2026 se siente anticuado. El pensamiento detras es correcto, pero la presentacion lo debilita. Integrar, no exhibir el framework.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Propuesta de valor "Cambia tu relacion con el dinero"</div>
+      <div class="audit-detail">Demasiado abstracta. Un usuario no puede visualizar que significa esto en su vida diaria. Necesita anclarse a una accion concreta.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Las "Pasiones" como pilar de contenido</div>
+      <div class="audit-detail">Educacion tecnologica, Emprendimientos e Intercambiar dinero por felicidad son categorias, no pasiones. La tercera es ademas problematica -- suena a que el dinero compra felicidad. Reformular.</div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">Que falta por completo</h4>
+  <div class="card" style="border-left: 3px solid var(--amarillo);">
+    <div class="audit-item">
+      <div class="audit-label">Posicionamiento para inversionistas</div>
+      <div class="audit-detail">Cero mencion de narrativa de fundraising. Payphone tiene 2M+ usuarios y esta en fase de expansion, pero los materiales de marca no hablan el idioma de VCs, family offices ni inversionistas. Vacio critico.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Piezas de copy reales y terminadas</div>
+      <div class="audit-detail">Los documentos estan llenos de frameworks, canvas y diagramas, pero falta copy final ejecutable. No hay un headline hero, no hay un email de onboarding, no hay copy de notificacion push. Solo teoria.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Reglas de uso incorrecto (lo que Payphone NUNCA hace)</div>
+      <div class="audit-detail">No hay una seccion de anti-patrones de marca. Sin esta seccion, cada nuevo disenador o community manager reinventa lo que "se ve bien" y la marca se diluye.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Especificaciones de identidad visual para produccion</div>
+      <div class="audit-detail">Hay mockups bonitos (gorras, camisetas, senaletica) pero faltan especificaciones tecnicas: tamanos minimos de logo, zonas de proteccion, escala tipografica, reglas de grilla.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Evolucion de marca por etapa de crecimiento</div>
+      <div class="audit-detail">Payphone es una empresa que va a crecer de Ecuador a LATAM. No hay plan de como la marca escala sin romperse. Que cambia y que se mantiene sagrado.</div>
+    </div>
+    <div class="audit-item">
+      <div class="audit-label">Vocabulario propio (palabras que Payphone posee)</div>
+      <div class="audit-detail">No hay un lexico propietario. Las grandes marcas inventan o se apropian de palabras. Payphone necesita su vocabulario.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 01 ALMA DE MARCA -->
+<!-- ============================================ -->
+<section id="s01">
+  <h2>Seccion 01</h2>
+  <h3>Alma de Marca</h3>
+
+  <div class="divider"></div>
+
+  <h4>Declaracion</h4>
+  <div class="quote">
+    El dinero es energia. Nosotros lo destrabamos.
+  </div>
+  <p>No somos un banco. No somos una billetera. No somos una pasarela de pagos. Somos la herramienta que elimina las fricciones entre las personas y su dinero. Cada friccion que eliminamos es un acto de liberacion.</p>
+
+  <div class="grid-2" style="margin-top: 3rem;">
+    <div class="card card-accent">
+      <h5>Esencia de marca</h5>
+      <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--white); margin: 1rem 0;">Fluidez</div>
+      <p style="font-size: 0.85rem;">Una sola palabra que contiene todo lo que Payphone es: la facilidad del agua que encuentra su camino, la naturalidad de un pago que sucede sin pensarlo, la calma de saber que tu dinero fluye cuando y donde lo necesitas. La fluidez es lo opuesto a la burocracia, al papel, a la fila, al tramite. Es el estado natural del dinero cuando nadie lo obstruye.</p>
+    </div>
+    <div class="card card-violet">
+      <h5>Tension fundacional</h5>
+      <div style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--white); margin: 1rem 0;">Simplicidad radical en un sistema disenado para ser complejo</div>
+      <p style="font-size: 0.85rem;">La banca tradicional se beneficia de la complejidad: comisiones ocultas, procesos burocraticos, lenguaje intencionalmente confuso. Payphone existe en tension permanente con ese modelo. Cada producto que construimos es un acto de simplificacion -- y por lo tanto, un acto de desafio al sistema establecido. Somos simples, pero no inofensivos.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 2rem; background: linear-gradient(135deg, rgba(255,100,0,0.1) 0%, rgba(90,0,180,0.05) 100%);">
+    <h5>Momento cultural: por que ahora</h5>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">America Latina tiene 200 millones de personas sub-bancarizadas. No porque no quieran acceder al sistema financiero, sino porque el sistema financiero no quiere acceder a ellas. Mientras tanto, el 85% tiene un smartphone en el bolsillo. Ahi es donde entra Payphone: en la brecha entre la infraestructura bancaria del siglo XX y el comportamiento digital del siglo XXI. No estamos esperando a que los bancos se modernicen. Estamos construyendo el bypass.</p>
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-bottom: 0;">La pandemia acelero la digitalizacion de pagos. Pero la verdadera ola no fue la pandemia -- es la generacion de micro-emprendedores que crearon negocios desde WhatsApp, Instagram y TikTok y descubrieron que el sistema bancario no fue disenado para ellos. Payphone si.</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 02 POSICIONAMIENTO -->
+<!-- ============================================ -->
+<section id="s02">
+  <h2>Seccion 02</h2>
+  <h3>Posicionamiento y Estrategia</h3>
+
+  <div class="divider"></div>
+
+  <h4>Declaracion de posicionamiento</h4>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <span class="badge badge-orange">Para inversionistas</span>
+      <p style="margin-top: 1rem; color: var(--gray-200); font-size: 0.9rem;">Payphone es la plataforma de pagos y servicios financieros que convierte cualquier smartphone en un terminal de comercio, capturando al mercado de 200M de latinoamericanos sub-bancarizados con un modelo de cero costo al usuario, monetizando a traves de servicios premium al comercio y procesamiento transaccional. Con 2M+ de usuarios y presencia en Ecuador, Guatemala y El Salvador, Payphone esta posicionada para ser el sistema operativo financiero del micro-emprendedor latinoamericano.</p>
+    </div>
+    <div class="card card-violet">
+      <span class="badge badge-violet">Para operadores y usuarios</span>
+      <p style="margin-top: 1rem; color: var(--gray-200); font-size: 0.9rem;">Payphone es la forma mas simple de cobrar, pagar y mover tu dinero desde tu celular. Sin banco. Sin terminal. Sin complicaciones. Ya seas una emprendedora con un salon de belleza en Quito, un estudiante que atiende la tienda de su mama en Guatemala, o un freelancer construyendo su negocio online -- Payphone te da las mismas herramientas financieras que tienen las grandes empresas. Gratis.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <h4>Categoria que estamos creando</h4>
+    <div class="card">
+      <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--naranja); margin-bottom: 1rem;">Autonomia financiera movil</div>
+      <p style="font-size: 0.9rem;">No somos un banco digital (demasiado regulatorio, demasiado lento). No somos una billetera digital (demasiado limitado). No somos una pasarela de pagos (demasiado B2B). Somos una plataforma de autonomia financiera -- el conjunto completo de herramientas que una persona necesita para ser financieramente independiente usando solo su celular. Cobrar con TAP, pagar con QR, enviar con link, recibir con transferencia, gastar con tarjeta. Todo en una app. Cero tramites.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h4>El competidor que estamos disenados para hacer obsoleto</h4>
+    <div class="card">
+      <p style="font-size: 0.9rem; color: var(--gray-200);">No es Mercado Pago. No es Yape. Es <strong style="color: var(--white);">el efectivo</strong>. El verdadero competidor de Payphone es el billete fisico, la moneda, el "no tengo cambio", el "solo efectivo". Cada transaccion que pasa de efectivo a digital a traves de Payphone es una victoria. Los bancos son nuestro enemigo estructural, el efectivo es nuestro enemigo cotidiano. Los neobanks son companeros de viaje, no rivales -- cuantos mas jueguen, mas rapido muere el efectivo.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <h4>Declaracion "unico"</h4>
+    <div class="quote">
+      Payphone es la unica plataforma financiera en America Latina que convierte cualquier celular en un terminal de cobro profesional -- con TAP, QR, link y boton de pago -- sin costo para el usuario y sin necesidad de cuenta bancaria.
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <h4>Mapa competitivo</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Competidor</th>
+          <th>Posicionamiento</th>
+          <th>Debilidad clave</th>
+          <th>Nivel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Mercado Pago</td>
+          <td>Ecosistema financiero de Mercado Libre</td>
+          <td>Depende de marketplace. No es mobile-first para merchant.</td>
+          <td><span class="badge badge-yellow">Medio</span></td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Yape</td>
+          <td>P2P masivo en Peru/LATAM</td>
+          <td>Limitado a P2P. Sin herramientas merchant robustas.</td>
+          <td><span class="badge badge-yellow">Medio</span></td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Bancos tradicionales</td>
+          <td>Seguridad y confianza institucional</td>
+          <td>UX del siglo pasado. Comisiones abusivas. Burocracia.</td>
+          <td><span class="badge badge-red">Alto</span></td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Efectivo</td>
+          <td>"Aceptado en todas partes"</td>
+          <td>Inseguro, sin trazabilidad, sin escala digital.</td>
+          <td><span class="badge badge-red">Alto</span></td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">PayPal</td>
+          <td>Pagos online globales</td>
+          <td>No entiende LATAM. Sin presencia fisica. Comisiones altas.</td>
+          <td><span class="badge badge-green">Bajo</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 03 PERSONAS -->
+<!-- ============================================ -->
+<section id="s03">
+  <h2>Seccion 03</h2>
+  <h3>Personas de Audiencia</h3>
+  <p class="lead">Tres personas reales, construidas desde la ansiedad financiera -- no desde la demografia. Cada una representa un momento de vida, no un segmento de mercado.</p>
+
+  <div class="divider"></div>
+
+  <!-- PERSONA 1 -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 1rem;">Persona 01</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Camila Reyes</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">La micro-emprendedora que ya no pide permiso</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 32 anos. <strong style="color: var(--white);">Ciudad:</strong> Quito, Ecuador.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Salon de belleza con 1 ayudante + venta de productos por Instagram.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> $250-$800 USD/mes.<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> La Constructora Silenciosa -- no busca reflectores, busca resultados.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Camila siente que el sistema financiero no fue disenado para ella. Los bancos le cobran por existir. El datafono cuesta demasiado. Cuando un cliente le dice "solo tengo tarjeta" y ella no puede cobrar, siente que pierde mas que una venta -- pierde credibilidad profesional. Su ansiedad: parecer informal, no ser tomada en serio como negocio.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Pierde 3-4 ventas por semana porque no puede cobrar con tarjeta. El datafono que cotizo cuesta $15/mes + comision. Su contador le dice que sin registro digital de ventas no puede crecer. Se siente atrapada entre lo artesanal y lo profesional.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Efectivo + transferencias bancarias manuales + capturas de pantalla de WhatsApp como "comprobante". Un desastre operativo que funciona solo porque su negocio es pequeno.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Una clienta recurrente le dice: "Cami, si pudieras cobrar con tarjeta, te traigo a mis amigas." Esa noche busca "cobrar con tarjeta sin datafono" en Google.</p>
+
+          <h5 style="margin-top: 1.5rem;">Necesidad emocional</h5>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">Sentirse profesional. Que su negocio se vea tan serio como el de las grandes.</p>
+
+          <div class="example-box">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Yo no necesito un banco, necesito que me dejen trabajar en paz."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 2 -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header" style="background: var(--gradient-deep);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 1rem;">Persona 02</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Santiago Morales</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">El empleado que ya empezo a construir su salida</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 38 anos. <strong style="color: var(--white);">Ciudad:</strong> Guayaquil, Ecuador.<br>
+          <strong style="color: var(--white);">Ocupacion:</strong> Consultor de marketing en una empresa + tienda online de gadgets por Instagram.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> $600-$1,200 USD/mes (empleo) + $200-$500 (side business).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> El Estratega Inquieto -- planifica su libertad mientras cumple con el sistema.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Santiago ve en Instagram a emprendedores digitales que viven de sus proyectos propios y siente que el tambien podria. Pero tiene miedo. Tiene hipoteca, tiene un hijo. No puede saltar sin red. Su side business es su laboratorio de libertad -- si logra que facture lo suficiente, deja la oficina. La ansiedad: que su proyecto no sea "de verdad" porque no tiene herramientas profesionales.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Cobra por transferencia bancaria y pierde ventas cuando el cliente quiere pagar con tarjeta. No sabe programar, asi que necesita soluciones no-code. Quiere una pagina de pago profesional pero no tiene $500 para un desarrollador.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">WhatsApp Business + Canva + transferencias manuales. Una infraestructura de cinta adhesiva digital.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Un amigo emprendedor le muestra como cobra con un link de Payphone directamente desde WhatsApp. Santiago lo descarga esa misma noche.</p>
+
+          <h5 style="margin-top: 1.5rem;">Necesidad emocional</h5>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">Validar que su proyecto es viable. Que no es solo un hobby, sino un negocio real.</p>
+
+          <div class="example-box">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Si tuviera las herramientas correctas, ya habria renunciado hace un ano."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 3 -->
+  <div style="margin-bottom: 2rem;">
+    <div class="persona-header" style="background: linear-gradient(135deg, #5A00B4, #FF6400);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 1rem;">Persona 03</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Luis Hernandez</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">El migrante que mantiene dos mundos conectados</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 32 anos. <strong style="color: var(--white);">Origen:</strong> Guatemala.<br>
+          <strong style="color: var(--white);">Ocupacion:</strong> Jardinero y lavacarros freelance en Estados Unidos.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> $1,200-$2,400 USD/mes.<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> El Puente Silencioso -- sostiene a su familia desde lejos sin pedir nada a cambio.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Luis envia dinero a Guatemala cada quincena. Western Union le cobra $12 por envio. Su mama no tiene cuenta bancaria. El no tiene documentos completos en EE.UU. Se siente "fuera del sistema" en ambos paises. Su ansiedad: que le roben, que le cobren de mas, que su mama no reciba el dinero a tiempo. Cada transaccion es un acto de fe.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Comisiones de remesas altisimas. Le pagan en cheque y no puede cambiarlos facilmente. No tiene cuenta bancaria en EE.UU. Usa Zelle prestado (con la cuenta de un amigo). Vive en un limbo financiero.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Western Union + efectivo + la cuenta de Zelle de un companero. Un sistema basado en confianza personal, no en infraestructura.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Un amigo ecuatoriano le muestra que con Payphone puede cobrar a sus clientes directamente al celular con TAP, sin necesidad de cuenta bancaria. "Y tu mama puede recibir la plata en su telefono."</p>
+
+          <h5 style="margin-top: 1.5rem;">Necesidad emocional</h5>
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">Dignidad. Sentir que puede participar del sistema sin tener que pedir favores ni sentirse ilegal.</p>
+
+          <div class="example-box">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Solo quiero una forma de cobrar mi trabajo y mandarle a mi mama sin que me quiten la mitad."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 04 PERSONALIDAD -->
+<!-- ============================================ -->
+<section id="s04">
+  <h2>Seccion 04</h2>
+  <h3>Personalidad de Marca y Arquetipos</h3>
+
+  <div class="divider"></div>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <span class="badge badge-orange">Arquetipo primario</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); margin: 1rem 0;">El Explorador</div>
+      <p style="font-size: 0.85rem;">Busca la libertad a traves del descubrimiento. No acepta limites impuestos. Prefiere encontrar su propio camino antes que seguir el establecido. Marcas referentes: Jeep, Patagonia, Virgin.</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">En Payphone:</strong> Se manifiesta en la obsesion por eliminar barreras. Cada feature es un nuevo territorio conquistado. Cada mercado nuevo es una expedicion. La marca no pide permiso para innovar.</p>
+    </div>
+    <div class="card card-violet">
+      <span class="badge badge-violet">Arquetipo secundario</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--white); margin: 1rem 0;">El Mago</div>
+      <p style="font-size: 0.85rem;">Transforma realidades. Hace que lo imposible se sienta natural. Convierte lo complejo en algo que "simplemente funciona". Marcas referentes: Apple, Tesla, Disney.</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">En Payphone:</strong> Se manifiesta en la experiencia del producto. El momento en que un micro-emprendedor cobra por primera vez con TAP y dice "en serio, asi de facil?" -- eso es magia. La tecnologia desaparece; el resultado se queda.</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Personalidad en 6 ejes</h4>
+  <p>Cada eje tiene un rango. El marcador indica donde se posiciona Payphone.</p>
+
+  <div style="margin: 2rem 0;">
+    <div class="axis-bar">
+      <div class="label-left">Seria</div>
+      <div class="bar"><div class="marker" style="left: 65%;"></div></div>
+      <div class="label-right">Juguetona</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 1.5rem;">Payphone tiene humor, pero nunca a costa de la confianza. El surfer digital sonrie, no hace payasadas. El tono es fresco sin ser infantil. 65% hacia juguetona.</p>
+
+    <div class="axis-bar">
+      <div class="label-left">Corporativa</div>
+      <div class="bar"><div class="marker" style="left: 80%;"></div></div>
+      <div class="label-right">Rebelde</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 1.5rem;">Desafiamos lo establecido, pero con datos, no con gritos. Nuestro acto rebelde no es la provocacion -- es construir una alternativa mejor y dejar que los resultados hablen. 80% hacia rebelde.</p>
+
+    <div class="axis-bar">
+      <div class="label-left">Exclusiva</div>
+      <div class="bar"><div class="marker" style="left: 85%;"></div></div>
+      <div class="label-right">Accesible</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 1.5rem;">Payphone es para todos. Desde la emprendedora en Quito hasta el migrante en Guatemala. No hay velvet rope, no hay plan minimo, no hay discriminacion por monto. 85% hacia accesible.</p>
+
+    <div class="axis-bar">
+      <div class="label-left">Tradicional</div>
+      <div class="bar"><div class="marker" style="left: 75%;"></div></div>
+      <div class="label-right">Innovadora</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 1.5rem;">TAP to Phone, cobro por link, QR sin app -- cada producto es una apuesta por el futuro. Pero respetamos las bases: seguridad, cumplimiento, confiabilidad. 75% hacia innovadora.</p>
+
+    <div class="axis-bar">
+      <div class="label-left">Distante</div>
+      <div class="bar"><div class="marker" style="left: 82%;"></div></div>
+      <div class="label-right">Cercana</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 1.5rem;">Hablamos en primera persona del plural. "Nosotros" inclusivo, no corporativo. Cuando un usuario tiene un problema, no le respondemos con un ticket -- le respondemos con nombre. 82% hacia cercana.</p>
+
+    <div class="axis-bar">
+      <div class="label-left">Racional</div>
+      <div class="bar"><div class="marker" style="left: 55%;"></div></div>
+      <div class="label-right">Emocional</div>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin: 0.25rem 0 0;">Empezamos desde la emocion (calma, libertad, autonomia) pero siempre aterrizamos en lo funcional (cobra, paga, envia). Ni todo corazon ni todo calculadora. 55% hacia emocional -- ligeramente mas emocion que razon.</p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">3 referencias culturales</h4>
+  <div class="grid-3">
+    <div class="card">
+      <h5>Patagonia</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Como Patagonia, Payphone cree que construir un gran producto y tener valores no son cosas opuestas. La marca tiene una mision que va mas alla de la transaccion: democratizar el acceso financiero.</p>
+    </div>
+    <div class="card">
+      <h5>Spotify en 2012</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Cuando Spotify llego a LATAM, la gente pagaba por CDs o pirateaba musica. Spotify no peleo contra la pirateria -- ofrecia algo tan facil que piratear dejaba de tener sentido. Payphone hace lo mismo con el efectivo.</p>
+    </div>
+    <div class="card">
+      <h5>La cultura surfer</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">El surf no es un deporte, es una filosofia: leer el oceano, adaptarse al momento, buscar el flow. Payphone hereda esa mentalidad -- cada mercado es una ola diferente, y la marca se adapta sin perder su centro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 05 IDENTIDAD VERBAL -->
+<!-- ============================================ -->
+<section id="s05">
+  <h2>Seccion 05</h2>
+  <h3>Identidad Verbal</h3>
+
+  <div class="divider"></div>
+
+  <h4>Mitologia del nombre</h4>
+  <p style="color: var(--gray-200);">Payphone nace de una paradoja deliberada. Un payphone -- un telefono publico -- es un objeto del siglo XX, una cabina metalica en una esquina olvidada. Pero es tambien el simbolo mas democratico de la comunicacion: cualquier persona, con unas monedas, podia conectarse con el mundo. No habia contrato, no habia credito, no habia discriminacion. El payphone original era acceso puro.</p>
+  <p style="color: var(--gray-200);">La marca recupera ese espiritu y lo proyecta al futuro. Donde antes era una cabina en la esquina, ahora es una app en tu bolsillo. Donde antes necesitabas monedas, ahora solo necesitas un celular. La promesa es la misma: acceso universal, sin barreras, sin intermediarios. Pero la escala es otra. Ya no conectas una llamada -- conectas tu economia entera.</p>
+  <p style="color: var(--gray-200);">El nombre funciona en tres niveles simultaneos. Fonicamente, es ritmico y memorable: dos silabas + dos silabas, golpe-golpe. Semanticamente, contiene su funcion (pay) y su medio (phone) en cuatro silabas. Y culturalmente, evoca nostalgia y futuro al mismo tiempo -- lo que lo hace raro, unico, imposible de confundir con otro fintech generico llamado "Neo-algo" o "Fin-algo".</p>
+
+  <h4 style="margin-top: 3rem;">4 principios de voz</h4>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <h5>01 -- Simple</h5>
+      <p style="font-size: 0.85rem;">El lenguaje simple elimina barreras. Si una persona necesita leer algo dos veces para entenderlo, fallamos.</p>
+      <div class="example-box">
+        <div class="label si">Correcto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Cobra con tarjeta desde tu celular. Sin datafono, sin tramites."</p>
+      </div>
+      <div class="example-box">
+        <div class="label no">Incorrecto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Nuestra solucion de adquirencia movil permite la aceptacion de pagos con tarjeta a traves de tecnologia NFC embebida."</p>
+      </div>
+    </div>
+    <div class="card card-accent">
+      <h5>02 -- Confiable</h5>
+      <p style="font-size: 0.85rem;">Manejamos el dinero de la gente. Eso exige precision, transparencia y cero ambiguedad. Hablamos firme, sin arrogancia.</p>
+      <div class="example-box">
+        <div class="label si">Correcto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Tu dinero esta protegido con encriptacion bancaria. Siempre."</p>
+      </div>
+      <div class="example-box">
+        <div class="label no">Incorrecto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Confia en nosotros, somos super seguros y tu plata esta en buenas manos jeje."</p>
+      </div>
+    </div>
+    <div class="card card-accent">
+      <h5>03 -- Valiente</h5>
+      <p style="font-size: 0.85rem;">Decimos lo que otros fintechs no se atreven a decir. Desafiamos lo establecido con hechos, no con bravatas.</p>
+      <div class="example-box">
+        <div class="label si">Correcto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Los bancos cobran $15/mes por un datafono. Nosotros, $0. Elige."</p>
+      </div>
+      <div class="example-box">
+        <div class="label no">Incorrecto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Somos los mejores, los mas innovadores y los que van a cambiar el mundo!!!!"</p>
+      </div>
+    </div>
+    <div class="card card-accent">
+      <h5>04 -- Humana</h5>
+      <p style="font-size: 0.85rem;">Detras de cada transaccion hay una persona con una historia. La empatia no es un accesorio -- es la estructura de nuestra comunicacion.</p>
+      <div class="example-box">
+        <div class="label si">Correcto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Sabemos que ese pago era importante para ti. Estamos trabajando para resolverlo y te avisamos apenas este listo."</p>
+      </div>
+      <div class="example-box">
+        <div class="label no">Incorrecto</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">"Su transaccion ha sido rechazada. Codigo de error: TX-4012. Contacte a soporte."</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Tono por contexto</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Contexto</th>
+        <th>Tono</th>
+        <th>Ejemplo 1</th>
+        <th>Ejemplo 2</th>
+        <th>Ejemplo 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Pitch a inversionistas</td>
+        <td>Seguro + Directo</td>
+        <td style="font-size:0.8rem">"2M de usuarios. 3 paises. Cero costo de adquisicion pagado."</td>
+        <td style="font-size:0.8rem">"El 70% del comercio en Ecuador sigue en efectivo. Nosotros estamos capturando esa migracion."</td>
+        <td style="font-size:0.8rem">"No vendemos tecnologia. Vendemos la infraestructura financiera que LATAM todavia no tiene."</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">In-product (UX)</td>
+        <td>Directo + Simple</td>
+        <td style="font-size:0.8rem">"Listo. Tu pago fue enviado."</td>
+        <td style="font-size:0.8rem">"Activa TAP para cobrar con tarjeta desde tu celular."</td>
+        <td style="font-size:0.8rem">"Tu link de cobro esta listo. Compartelo por WhatsApp."</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Redes sociales</td>
+        <td>Motivador + Cool</td>
+        <td style="font-size:0.8rem">"Antes necesitabas un datafono. Ahora necesitas esto." [video de TAP]</td>
+        <td style="font-size:0.8rem">"El efectivo tiene los dias contados. Y no somos nosotros, es el futuro."</td>
+        <td style="font-size:0.8rem">"Tu negocio merece cobrar como los grandes. Descarga y empieza hoy."</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Errores / Fallas</td>
+        <td>Empatico + Seguro</td>
+        <td style="font-size:0.8rem">"Tuvimos un problema tecnico. Tu dinero esta seguro, lo resolvemos en breve."</td>
+        <td style="font-size:0.8rem">"Sabemos que esto no deberia pasar. Ya estamos trabajando en ello."</td>
+        <td style="font-size:0.8rem">"El servicio ya esta de vuelta. Gracias por la paciencia."</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Crisis publica</td>
+        <td>Empatico + Transparente</td>
+        <td style="font-size:0.8rem">"Esto es lo que paso, esto es lo que hicimos, esto es lo que cambiamos para que no pase de nuevo."</td>
+        <td style="font-size:0.8rem">"No vamos a dar excusas. Vamos a dar soluciones."</td>
+        <td style="font-size:0.8rem">"Tu confianza es nuestro activo mas valioso. Esto es como la protegemos."</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top: 3rem;">20 palabras que Payphone posee</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;">
+    <span class="tag tag-yes">fluidez</span>
+    <span class="tag tag-yes">autonomia</span>
+    <span class="tag tag-yes">destrabar</span>
+    <span class="tag tag-yes">surfear</span>
+    <span class="tag tag-yes">flow</span>
+    <span class="tag tag-yes">sin friccion</span>
+    <span class="tag tag-yes">cero tramites</span>
+    <span class="tag tag-yes">cobrar libre</span>
+    <span class="tag tag-yes">desde tu celular</span>
+    <span class="tag tag-yes">sin datafono</span>
+    <span class="tag tag-yes">energia financiera</span>
+    <span class="tag tag-yes">calma</span>
+    <span class="tag tag-yes">simple de verdad</span>
+    <span class="tag tag-yes">sin letras pequenas</span>
+    <span class="tag tag-yes">tu dinero, tu ritmo</span>
+    <span class="tag tag-yes">cero costo</span>
+    <span class="tag tag-yes">tap y listo</span>
+    <span class="tag tag-yes">cobrar como los grandes</span>
+    <span class="tag tag-yes">bypass financiero</span>
+    <span class="tag tag-yes">libertad financiera real</span>
+  </div>
+
+  <h4 style="margin-top: 2rem;">10 palabras que Payphone prohibe</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;">
+    <span class="tag tag-no">solucion integral</span>
+    <span class="tag tag-no">lider del mercado</span>
+    <span class="tag tag-no">de vanguardia</span>
+    <span class="tag tag-no">ecosistema sinergico</span>
+    <span class="tag tag-no">transformacion digital</span>
+    <span class="tag tag-no">innovacion disruptiva</span>
+    <span class="tag tag-no">apalancamiento</span>
+    <span class="tag tag-no">empoderamiento</span>
+    <span class="tag tag-no">best in class</span>
+    <span class="tag tag-no">paradigma</span>
+  </div>
+
+  <h4 style="margin-top: 3rem;">5 frases genericas reescritas</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Frase generica</th>
+        <th>Version Payphone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-decoration: line-through; color: var(--gray-500);">"Somos una solucion de pagos digitales innovadora"</td>
+        <td style="color: var(--white);">"Tu celular ya es tu terminal de cobro. Solo faltaba Payphone."</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: line-through; color: var(--gray-500);">"Ofrecemos una experiencia de usuario sin igual"</td>
+        <td style="color: var(--white);">"Tres toques. Eso es lo que toma cobrar con Payphone."</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: line-through; color: var(--gray-500);">"Estamos comprometidos con la inclusion financiera"</td>
+        <td style="color: var(--white);">"Si tienes un celular, ya puedes cobrar con tarjeta. Sin banco, sin datafono, sin tramites."</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: line-through; color: var(--gray-500);">"Nuestra plataforma fintech de ultima generacion"</td>
+        <td style="color: var(--white);">"Mientras los bancos te piden 14 documentos, tu ya estas cobrando."</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: line-through; color: var(--gray-500);">"Estamos transformando la manera en que las personas manejan su dinero"</td>
+        <td style="color: var(--white);">"El dinero es tuyo. Nosotros solo lo destrabamos."</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================ -->
+<!-- 06 SHOWCASE DE COPY -->
+<!-- ============================================ -->
+<section id="s06">
+  <h2>Seccion 06</h2>
+  <h3>Showcase de Copy</h3>
+  <p class="lead">Ocho piezas de copy final. No son borradores ni sugerencias -- son la marca hablando. Listas para usar.</p>
+
+  <div class="divider"></div>
+
+  <!-- PIEZA 1 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange">Pieza 01</span>
+    <h4 style="margin-top: 1rem;">Headline hero + subheadline para el sitio web</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 3rem; margin-top: 1rem; text-align: center;">
+      <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; background: var(--gradient-sunset); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Tu celular ya es tu terminal de cobro.</div>
+      <p style="font-size: 1.1rem; color: var(--gray-300); max-width: 550px; margin: 0 auto;">Cobra con tarjeta, envia pagos, recibe dinero y controla tu negocio. Todo desde una app. Cero costo. Cero tramites.</p>
+    </div>
+  </div>
+
+  <!-- PIEZA 2 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange">Pieza 02</span>
+    <h4 style="margin-top: 1rem;">Primer parrafo de la pagina "Nosotros"</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 2.5rem; margin-top: 1rem;">
+      <p style="font-size: 1rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">Nacimos con una pregunta simple: por que cobrar con tarjeta tiene que ser tan dificil? En 2016, dos fundadores ecuatorianos decidieron que un celular deberia ser suficiente para montar un negocio. Sin datafono. Sin banco. Sin pedir permiso. Hoy, mas de 2 millones de personas en Ecuador, Guatemala y El Salvador usan Payphone para cobrar, pagar y mover su dinero con la misma facilidad con la que envian un mensaje de WhatsApp. No somos un banco que intenta ser cool. Somos una herramienta construida por gente que entiende lo que significa emprender sin red de seguridad.</p>
+    </div>
+  </div>
+
+  <!-- PIEZA 3 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange">Pieza 03</span>
+    <h4 style="margin-top: 1rem;">Post de LinkedIn de lanzamiento (voz de Juan Diego, fundador)</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 2.5rem; margin-top: 1rem;">
+      <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">
+        En 2016 nos dijeron que nadie iba a cobrar con el celular en Ecuador.<br><br>
+        En 2020 nos dijeron que el mercado era demasiado pequeno.<br><br>
+        En 2023 nos dijeron que no podiamos competir sin levantar capital de Silicon Valley.<br><br>
+        Hoy tenemos 2 millones de usuarios en 3 paises.<br><br>
+        Cada emprendedora que cobra su primer pago con TAP desde su celular nos confirma lo mismo: las herramientas financieras no deberian ser un privilegio.<br><br>
+        Payphone no nacio para ser un unicornio. Nacio para que una senora con una tienda de barrio en Quito tenga las mismas herramientas de cobro que una cadena de retail.<br><br>
+        Estamos contratando, estamos creciendo y estamos buscando aliados que entiendan que la inclusion financiera no es un slide de pitch deck -- es un producto que funciona.<br><br>
+        Si te resuena, hablemos.<br><br>
+        #Payphone #FinTech #LATAM
+      </p>
+    </div>
+  </div>
+
+  <!-- PIEZA 4 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-violet">Pieza 04</span>
+    <h4 style="margin-top: 1rem;">Email de prospeccion a inversionistas</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 2.5rem; margin-top: 1rem;">
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.5rem;">Asunto: 2M de usuarios, 3 paises, $0 en paid acquisition -- Payphone</p>
+      <div style="border-top: 1px solid var(--dark-border); padding-top: 1.5rem; margin-top: 1rem;">
+        <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">
+          Hola [Nombre],<br><br>
+          Payphone convierte cualquier celular en un terminal de cobro profesional -- TAP con tarjeta, QR, link de pago y boton de e-commerce -- sin costo para el usuario y sin necesidad de cuenta bancaria. Hoy tenemos mas de 2 millones de usuarios activos en Ecuador, Guatemala y El Salvador, creciendo 100% organico sin un dolar en paid acquisition. El 70% del comercio en nuestros mercados sigue operando en efectivo, y cada transaccion que migramos a digital es ingreso recurrente para la plataforma. Estamos abriendo nuestra ronda para acelerar la expansion a Colombia, Peru y Mexico, y me gustaria compartirte los numeros en una llamada de 20 minutos. Te funciona esta semana?<br><br>
+          Juan Diego<br>
+          Fundador, Payphone (Unicore LLC)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIEZA 5 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange">Pieza 05</span>
+    <h4 style="margin-top: 1rem;">Pantalla de bienvenida de onboarding (primer login)</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 3rem; margin-top: 1rem; text-align: center; max-width: 400px;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127754;</div>
+      <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--white); margin-bottom: 0.75rem;">Bienvenido a tu libertad financiera.</div>
+      <p style="font-size: 0.9rem; color: var(--gray-300); margin-bottom: 1.5rem;">A partir de ahora, tu celular es tu herramienta de cobro, tu billetera y tu terminal de pago. Todo en un solo lugar.</p>
+      <div style="background: var(--gradient-sunset); color: white; padding: 0.85rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; display: inline-block;">Empezar a cobrar</div>
+    </div>
+  </div>
+
+  <!-- PIEZA 6 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange">Pieza 06</span>
+    <h4 style="margin-top: 1rem;">Notificacion push</h4>
+    <div class="grid-3" style="margin-top: 1rem;">
+      <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+        <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">MOMENTO POSITIVO</p>
+        <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu TAP esta activo</p>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Ya puedes cobrar con tarjeta acercando el celular. Asi de simple.</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+        <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">MOMENTO NEUTRAL</p>
+        <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tienes un paso pendiente</p>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Tu cuenta necesita un ultimo dato para estar completa. Toma 30 segundos.</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+        <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">MOMENTO NEGATIVO</p>
+        <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tuvimos un problema con TAP</p>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Tu dinero esta seguro. Estamos resolviendolo y te avisamos en breve.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIEZA 7 -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <span class="badge badge-violet">Pieza 07</span>
+    <h4 style="margin-top: 1rem;">One-liner de fundraising para pitch decks</h4>
+    <div style="background: linear-gradient(135deg, rgba(255,100,0,0.15), rgba(90,0,180,0.1)); border-radius: 12px; padding: 3rem; margin-top: 1rem; text-align: center;">
+      <div style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; color: var(--white); line-height: 1.4;">Payphone convierte cualquier smartphone en la infraestructura financiera completa de un negocio -- cobro, pago, transferencia y e-commerce -- capturando la migracion de efectivo a digital en una region con 200M de personas sub-bancarizadas.</div>
+    </div>
+  </div>
+
+  <!-- PIEZA 8 -->
+  <div class="card" style="margin-bottom: 0;">
+    <span class="badge badge-orange">Pieza 08</span>
+    <h4 style="margin-top: 1rem;">Pagina 404</h4>
+    <div style="background: var(--dark-surface); border-radius: 12px; padding: 3rem; margin-top: 1rem; text-align: center;">
+      <div style="font-family: var(--font-display); font-size: 5rem; font-weight: 700; background: var(--gradient-sunset); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1;">404</div>
+      <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin: 1rem 0;">Esta ola ya paso.</div>
+      <p style="font-size: 0.9rem; color: var(--gray-400);">La pagina que buscas no existe o cambio de direccion. Pero tranqui, hay buenas olas en la pagina principal.</p>
+      <div style="margin-top: 1.5rem;">
+        <span style="background: var(--gradient-sunset); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem; display: inline-block;">Volver al inicio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 07 IDENTIDAD VISUAL -->
+<!-- ============================================ -->
+<section id="s07">
+  <h2>Seccion 07</h2>
+  <h3>Direccion de Identidad Visual</h3>
+  <p class="lead">Brief ejecutable para el equipo de diseno. Cada especificacion esta escrita para producir, no para interpretar.</p>
+
+  <div class="divider"></div>
+
+  <h4>Sistema de color</h4>
+  <p>Dos colores primarios. Tres secundarios. Dos gradientes. Un modo oscuro. Nada mas.</p>
+
+  <div class="grid-4" style="margin-top: 1.5rem;">
+    <div class="color-swatch" style="background: #FF6400;">
+      <div class="swatch-name">Naranja Payphone</div>
+      <div class="swatch-hex">#FF6400 -- Primario</div>
+    </div>
+    <div class="color-swatch" style="background: #222222; border: 1px solid var(--dark-border);">
+      <div class="swatch-name">Obsidiana</div>
+      <div class="swatch-hex">#222222 -- Primario</div>
+    </div>
+    <div class="color-swatch" style="background: #5A00B4;">
+      <div class="swatch-name">Violeta Profundo</div>
+      <div class="swatch-hex">#5A00B4 -- Secundario</div>
+    </div>
+    <div class="color-swatch" style="background: #FFA000;">
+      <div class="swatch-name">Ambar</div>
+      <div class="swatch-hex">#FFA000 -- Secundario</div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top: 1rem;">
+    <div class="color-swatch" style="background: linear-gradient(135deg, #FF6400, #FFA000); min-height: 100px;">
+      <div class="swatch-name">Gradiente Atardecer</div>
+      <div class="swatch-hex">Naranja a Ambar -- 135 grados</div>
+    </div>
+    <div class="color-swatch" style="background: linear-gradient(135deg, #FF6400, #5A00B4); min-height: 100px;">
+      <div class="swatch-name">Gradiente Profundo</div>
+      <div class="swatch-hex">Naranja a Violeta -- 135 grados</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1.5rem;">
+    <h5>Reglas de uso de color</h5>
+    <ul style="list-style: none; padding: 0;">
+      <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-300); font-size: 0.85rem;">El Naranja Payphone NUNCA se mezcla con rojo ni rosa. Si se ve rojo, esta mal.</li>
+      <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-300); font-size: 0.85rem;">El Violeta Profundo es acento, no protagonista. Maximo 15% de la superficie visual.</li>
+      <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-300); font-size: 0.85rem;">Los gradientes solo van en una direccion: 135 grados (superior izquierda a inferior derecha).</li>
+      <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-300); font-size: 0.85rem;">En fondos oscuros, el naranja se usa para texto destacado y CTAs. Nunca para parrafos largos.</li>
+      <li style="padding: 0.5rem 0; color: var(--gray-300); font-size: 0.85rem;">El blanco (#FFFFFF) solo se usa sobre fondos oscuros o como fondo en materiales impresos.</li>
+    </ul>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Tipografia</h4>
+  <div class="grid-2">
+    <div class="card">
+      <h5>Primaria: Aeonik</h5>
+      <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--white); margin: 1rem 0;">Aeonik Pro</div>
+      <p style="font-size: 0.85rem;">Para headlines, titulos, navegacion y elementos hero. Geometrica, limpia, con personalidad sin ser extravagante.</p>
+    </div>
+    <div class="card">
+      <h5>Secundaria: Inter</h5>
+      <div style="font-family: var(--font-body); font-size: 2.5rem; font-weight: 400; color: var(--white); margin: 1rem 0;">Inter</div>
+      <p style="font-size: 0.85rem;">Para cuerpo de texto, UI, documentos y comunicaciones largas. Optimizada para pantalla, excelente legibilidad en tamanos pequenos.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1rem;">
+    <h5>Escala tipografica</h5>
+    <table>
+      <thead>
+        <tr><th>Nivel</th><th>Tamano</th><th>Peso</th><th>Uso</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Display</td><td>48-72px</td><td>Bold (700)</td><td>Headlines hero, portadas</td></tr>
+        <tr><td>H1</td><td>36-48px</td><td>Bold (700)</td><td>Titulos de seccion principales</td></tr>
+        <tr><td>H2</td><td>24-32px</td><td>Semi-bold (600)</td><td>Subtitulos</td></tr>
+        <tr><td>H3</td><td>18-24px</td><td>Semi-bold (600)</td><td>Titulos de tarjeta, modulos</td></tr>
+        <tr><td>Body</td><td>15-16px</td><td>Regular (400)</td><td>Texto de cuerpo</td></tr>
+        <tr><td>Small</td><td>13-14px</td><td>Regular/Medium</td><td>Captions, etiquetas, metadata</td></tr>
+        <tr><td>Micro</td><td>11-12px</td><td>Medium (500)</td><td>Legal, footnotes, badges</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top: 1rem;">
+    <h5>3 reglas tipograficas innegociables</h5>
+    <ul style="list-style: none; padding: 0;">
+      <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">01.</strong> Nunca mas de 2 pesos tipograficos en una misma pieza. Regular + Bold o Medium + Bold. Nunca tres.</li>
+      <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">02.</strong> Los headlines nunca van en mayusculas completas. El unico texto en ALL CAPS son labels, badges y secciones de navegacion de menos de 3 palabras.</li>
+      <li style="padding: 0.75rem 0; color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">03.</strong> Interlineado minimo: 1.5x para cuerpo de texto, 1.15x para headlines. Nunca texto apretado. La marca respira.</li>
+    </ul>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Direccion de logo</h4>
+  <div class="grid-2">
+    <div class="card">
+      <h5>Wordmark</h5>
+      <p style="font-size: 0.85rem;">El nombre "payphone" siempre va en minusculas. Sin camelCase, sin mayusculas, sin punto. El wordmark usa una tipografia geometrica custom basada en Aeonik con ajustes opticos en las letras 'p', 'y' y 'h' para mantener la fluidez visual.</p>
+    </div>
+    <div class="card">
+      <h5>Icono (Isotipo)</h5>
+      <p style="font-size: 0.85rem;">La cola de ballena es el activo mas reconocible de la marca. Funciona aislado como icono de app, favicon y avatar. Transmite libertad, oceano, movimiento, vida. Es organico en un mundo de iconos geometricos.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1rem;">
+    <h5>6 reglas de mal uso del logo</h5>
+    <div class="grid-3">
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca rotar ni inclinar el logo</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca cambiar los colores del logo</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca agregar sombras ni efectos</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca poner sobre fondos ruidosos</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca separar isotipo y wordmark en formato incorrecto</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem; text-align: center;">
+        <div style="color: #e74c3c; font-size: 1.5rem; margin-bottom: 0.5rem;">&#10007;</div>
+        <p style="font-size: 0.8rem; color: var(--gray-400); margin: 0;">Nunca usar debajo de 24px de altura en digital</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Imagen y fotografia</h4>
+  <div class="card">
+    <h5>Filtro de 3 palabras</h5>
+    <p style="font-size: 1.2rem; color: var(--white); font-family: var(--font-display); font-weight: 600;">Real. Calida. En movimiento.</p>
+    <p style="font-size: 0.85rem;">Toda imagen de marca debe pasar este filtro. Si parece stock, se descarta. Si es fria, se descarta. Si es estatica y posada, se descarta.</p>
+
+    <h5 style="margin-top: 2rem;">Sujetos</h5>
+    <p style="font-size: 0.85rem;">Personas reales en su contexto: la emprendedora en su local, el estudiante en la tienda, el freelancer en su laptop. Prioridad a pieles latinas, espacios latinoamericanos, escenarios reconocibles.</p>
+
+    <h5 style="margin-top: 2rem;">Tratamiento de color</h5>
+    <p style="font-size: 0.85rem;">Temperaturas calidas. Tonos ambar, dorados, naranja natural. Evitar tonos frios. El naranja Payphone puede usarse como overlay sutil (10-15% opacidad) para unificar la paleta fotografica.</p>
+
+    <h5 style="margin-top: 2rem;">Fotos stock prohibidas</h5>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0;">
+      <span class="tag tag-no">Ejecutivos en traje dandose la mano</span>
+      <span class="tag tag-no">Personas senalando pantallas vacias</span>
+      <span class="tag tag-no">Modelos riendo con ensalada</span>
+      <span class="tag tag-no">Manos con celular de pantalla generica</span>
+      <span class="tag tag-no">Skylines de ciudades al atardecer</span>
+      <span class="tag tag-no">Graficos 3D flotando</span>
+    </div>
+
+    <h5 style="margin-top: 2rem;">3 descripciones de referencia visual</h5>
+    <div class="grid-3">
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem;">
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin: 0;"><strong style="color: var(--white);">Ref 1:</strong> Una mujer joven atiende su salon de belleza, su celular esta apoyado en el mostrador con la app abierta. Luz natural de ventana, tono calido. El espacio es real y vivido, no perfecto.</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem;">
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin: 0;"><strong style="color: var(--white);">Ref 2:</strong> Un chico de 17 anos en una tienda de barrio pasa una tarjeta por el celular usando TAP. Estantes con productos tipicos. Modernidad en contexto cotidiano.</p>
+      </div>
+      <div style="background: var(--dark-surface); border-radius: 8px; padding: 1.25rem;">
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin: 0;"><strong style="color: var(--white);">Ref 3:</strong> Dos jardineros terminando un trabajo, uno le muestra al otro la pantalla del celular donde recibio el pago. Luz de atardecer, sudor real, sonrisa genuina.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Iconografia y data viz</h4>
+  <div class="card">
+    <div class="grid-2">
+      <div>
+        <h5>Especificaciones de iconos</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Grosor de trazo:</strong> 1.5px a 24px / 2px a 48px</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Radio de esquinas:</strong> 2px</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Estilo:</strong> Outline por defecto, fill para estados activos</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Grilla:</strong> 24x24px base, alineado a pixel</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Familias:</strong> Lucide o Phosphor. Nunca Font Awesome.</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Data visualization</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Graficos de linea sobre de barras (la marca fluye)</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Color primario: Naranja. Secundario: Ambar. Contexto: Gris 20%</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Esquinas redondeadas en barras (radio: 4px)</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Labels siempre legibles, nunca rotados</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Sin gradientes en graficos -- colores solidos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 08 MARCA EN ACCION -->
+<!-- ============================================ -->
+<section id="s08">
+  <h2>Seccion 08</h2>
+  <h3>Marca en Accion</h3>
+  <p class="lead">Ocho touchpoints detallados. Cada uno describe como se ve, que dice y que principios de marca aplica.</p>
+
+  <div class="divider"></div>
+
+  <div class="grid-2">
+    <div class="touchpoint-card">
+      <div class="tp-header">01 -- Banner de perfil LinkedIn</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Fondo Obsidiana (#222222). Logo horizontal en blanco, alineado a la izquierda, tercio inferior. Linea sutil de gradiente Atardecer en el borde inferior (3px).</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy:</strong> Ninguno en banner. Bio: "La forma mas simple de cobrar desde tu celular. Ecuador | Guatemala | El Salvador"</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Simplicidad radical. El banner mas limpio de todo el feed de LinkedIn es el nuestro.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">02 -- Portada de pitch deck + divisor</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Fondo Obsidiana. Centro: logo horizontal grande en blanco. Abajo: "Unicore LLC | Confidencial | [Fecha]" en gris, Inter 12px. Los slides divisores llevan numero de seccion en Naranja a 120px y titulo en blanco a 36px.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy:</strong> Solo el logo. La confianza se comunica con espacio negativo.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Si un inversionista ve 10 pitch decks al dia, el nuestro es el unico que respira.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">03 -- Pantalla de onboarding movil</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Fondo blanco. Ilustracion minimalista centrada (linea naranja). Boton CTA con gradiente Atardecer, esquinas 12px. Indicador de progreso: 3 puntos, activo en naranja.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy (3 pantallas):</strong><br>
+        1. "Cobra con tarjeta desde tu celular" / "Acerca la tarjeta y listo."<br>
+        2. "Envia links de cobro por WhatsApp" / "Tu cliente paga, tu recibes."<br>
+        3. "Tu dinero, en tu control" / "Revisa tus ventas, retira cuando quieras."</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Cada pantalla resuelve una ansiedad. No vendemos features, resolvemos miedos.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">04 -- Header de email a inversionistas</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Ancho completo, fondo Obsidiana. Logo horizontal en blanco, centrado. Linea de gradiente Atardecer como separador. Sin banner gigante -- se siente como carta personal.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy (subject):</strong> "[Numero clave] + [hecho]" -- "Q1 2026: 2.3M usuarios, nuevo pais, unit economics positivos"</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Un inversionista serio abre emails que parecen de un founder, no de un equipo de marketing.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">05 -- Tarjeta de presentacion</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Frente: fondo blanco, logo horizontal naranja, centrado. Reverso: fondo Obsidiana, nombre en blanco, cargo en gris, contacto en naranja. QR en esquina inferior derecha.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy:</strong> Solo nombre, cargo, contacto. Sin slogan. Limpio.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> La tarjeta mas memorable es la que tiene menos informacion.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">06 -- Estado vacio del dashboard</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Ilustracion de linea (naranja, trazo 1.5px) mostrando una ola calma con el isotipo emergiendo. Texto centrado debajo.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy:</strong> "Todavia no tienes transacciones. Cuando recibas tu primer pago, aqui veras todo el detalle. Comparte tu link de cobro para empezar." + Boton: "Crear link de cobro"</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Un estado vacio es una invitacion, no un error.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">07 -- Template de post redes sociales</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Formato 1:1. Fondo gradiente Atardecer o Obsidiana. Texto blanco, Aeonik Bold, alineado izquierda, tercio superior. Logo pequeno en esquina inferior derecha.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Copy:</strong> Copy in: max 8 palabras en imagen. Copy out: Gancho + Complemento + CTA + 3 hashtags.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Si alguien hace scroll, debe saber que es Payphone antes de leer. El color es la firma.</p>
+      </div>
+    </div>
+    <div class="touchpoint-card">
+      <div class="tp-header">08 -- Press kit / pagina de medios</div>
+      <div class="tp-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Visual:</strong> Web minimalista, fondo blanco. Secciones: Logo (SVG/PNG), Colores, Fotos aprobadas, Datos clave, Contacto prensa.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Boilerplate:</strong> "Payphone es una plataforma de autonomia financiera que convierte cualquier smartphone en herramienta de cobro, pago y gestion. Fundada en 2016 en Ecuador, sirve a 2M+ usuarios en 3 paises. Unicore LLC."</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Principio:</strong> Un periodista tiene 4 minutos. Dale todo listo para copiar y pegar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 09 LO QUE NUNCA HACEMOS -->
+<!-- ============================================ -->
+<section id="s09">
+  <h2>Seccion 09</h2>
+  <h3>Lo Que Payphone Nunca Hace</h3>
+  <p class="lead">15 reglas con opinion. No son sugerencias -- son limites que protegen la marca.</p>
+
+  <div class="divider"></div>
+
+  <ul class="never-list">
+    <li><div><div class="rule-text">Nunca hablamos en tercera persona.</div><div class="rule-why">"Payphone informa que..." suena a comunicado bancario. Somos "nosotros". Siempre.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos jerga financiera para impresionar.</div><div class="rule-why">Si un usuario necesita un glosario para entendernos, le fallamos. "Adquirencia" es palabra interna, no publica.</div></div></li>
+    <li><div><div class="rule-text">Nunca prometemos lo que el producto no puede hacer hoy.</div><div class="rule-why">El roadmap no es marketing. Solo comunicamos funcionalidades que estan live y probadas.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos urgencia falsa.</div><div class="rule-why">"Ultimas horas!" es tactica de tienda de colchones. Payphone construye confianza, no presion.</div></div></li>
+    <li><div><div class="rule-text">Nunca ridiculizamos al competidor por nombre.</div><div class="rule-why">Comparamos modelos, no marcas. "Los bancos cobran $15/mes" esta bien. Nombrar al competidor no.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos stock de personas no-latinas en comunicaciones LATAM.</div><div class="rule-why">Nuestros usuarios son latinoamericanos. Si la foto muestra un oficinista rubio en Manhattan, no nos representa.</div></div></li>
+    <li><div><div class="rule-text">Nunca empezamos un copy con "En Payphone..."</div><div class="rule-why">Es el inicio mas aburrido posible. Empezamos con beneficio, pregunta o gancho. Nunca con nosotros.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos mas de 3 emojis en un copy.</div><div class="rule-why">Los emojis son sal: una pizca realza, una cucharada arruina. Max 2-3, siempre con funcion.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos el color azul en ningun material de marca.</div><div class="rule-why">El azul es el color de los bancos. Nuestra paleta existe en oposicion consciente al sistema bancario.</div></div></li>
+    <li><div><div class="rule-text">Nunca respondemos un reclamo con template sin personalizar.</div><div class="rule-why">Cada usuario que reclama merece respuesta humana. Al menos reconocemos la situacion especifica.</div></div></li>
+    <li><div><div class="rule-text">Nunca publicamos contenido que solo habla de features sin beneficio humano.</div><div class="rule-why">"Nuevo: QR dinamico v2.1" no importa. "Tus clientes pagan escaneando sin descargar nada" si importa.</div></div></li>
+    <li><div><div class="rule-text">Nunca usamos la palabra "usuario" en comunicaciones externas.</div><div class="rule-why">Externamente son "personas", "emprendedores", "negocios" o "tu". "Usuario" es frio y tecnico.</div></div></li>
+    <li><div><div class="rule-text">Nunca publicamos un diseno donde el logo tenga menos espacio que su propia altura.</div><div class="rule-why">El logo respira. Si esta apretado contra un borde, la pieza no se publica.</div></div></li>
+    <li><div><div class="rule-text">Nunca hacemos rebajas de precio como herramienta de adquisicion.</div><div class="rule-why">Payphone ya es gratis. Nuestro valor esta en el producto, no en promociones.</div></div></li>
+    <li><div><div class="rule-text">Nunca publicamos sin aprobacion de voz y tono por alguien de marca.</div><div class="rule-why">Un post con el tono equivocado dura 24 horas en el feed pero semanas en la memoria.</div></div></li>
+  </ul>
+</section>
+
+<!-- ============================================ -->
+<!-- 10 EVOLUCION DE MARCA -->
+<!-- ============================================ -->
+<section id="s10">
+  <h2>Seccion 10</h2>
+  <h3>Reglas de Evolucion de Marca</h3>
+  <p class="lead">Payphone va a crecer. La marca necesita crecer con ella sin romperse.</p>
+
+  <div class="divider"></div>
+
+  <h4>Evolucion por etapa</h4>
+
+  <div class="grid-3">
+    <div class="card card-accent">
+      <span class="badge badge-orange">Etapa actual</span>
+      <h5 style="margin-top: 1rem;">Seed / Pre-Serie A</h5>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Foco:</strong> Construir reconocimiento. Definir la voz. Establecer el naranja como firma visual.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Tono:</strong> Valiente + Motivador. La marca es insurgente, retadora, hambrienta.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Organico. Founder-led content. PR local.</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Riesgo:</strong> Parecer una startup mas. Contrapeso: consistencia visual obsesiva y copy con opinion.</p>
+    </div>
+    <div class="card card-violet">
+      <span class="badge badge-violet">Siguiente</span>
+      <h5 style="margin-top: 1rem;">Serie A</h5>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Foco:</strong> Escalar reconocimiento. Nuevos paises sin perder identidad. Profesionalizar produccion.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Tono:</strong> Confiable + Directo. Ya no gritamos -- los numeros hablan.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Paid (Meta, Google). Partnerships. PR regional.</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Riesgo:</strong> Diluir personalidad. Contrapeso: el "surfer digital" como filtro de cada decision.</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-yellow">Vision</span>
+      <h5 style="margin-top: 1rem;">Serie B+</h5>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Foco:</strong> Posicionamiento de categoria. "Autonomia financiera movil" se convierte en categoria reconocida.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Tono:</strong> Seguro + Humano. Lider calmado, no insurgente nervioso.</p>
+      <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Above the line (OOH, TV). Eventos propios. Producto como canal.</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Riesgo:</strong> Volverse corporativa. Contrapeso: las 15 reglas de "Lo que nunca hacemos".</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Elementos sagrados (nunca cambian)</h4>
+  <div class="card card-accent">
+    <ul style="list-style: none; padding: 0;">
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Isotipo.</strong> La cola de ballena no se redisena. Solo se refina con ajustes opticos menores.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Naranja Payphone (#FF6400).</strong> Este color no cambia. Es la firma visual. Inalterable.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Nombre en minusculas.</strong> "payphone" siempre en minusculas. Nunca "PayPhone" ni "PAYPHONE".</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Concepto LIBERTAD = AUTONOMIA.</strong> Puede evolucionar en expresion, no en esencia.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Perspectiva narrativa.</strong> Primera persona del plural para la marca. Nunca tercera persona.</li>
+      <li style="padding: 0.6rem 0; color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">Cero costo para el usuario.</strong> El acceso gratuito es pilar de marca, no solo de negocio.</li>
+    </ul>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">Elementos adaptativos</h4>
+  <div class="card">
+    <ul style="list-style: none; padding: 0;">
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--white);">Paleta secundaria.</strong> Pueden agregarse colores por mercado si el naranja sigue siendo primario (70%+).</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--white);">Tono por mercado.</strong> Se ajusta al contexto cultural. La voz es constante; el tono se adapta.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--white);">Fotografia.</strong> Sujetos y escenarios cambian por mercado. La autenticidad local es prioritaria.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--white);">Tipografia secundaria.</strong> Puede evolucionar si el producto lo requiere. Headlines se mantienen.</li>
+      <li style="padding: 0.6rem 0; color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--white);">Personas de audiencia.</strong> Se agregan por mercado, se actualizan anualmente con data real.</li>
+    </ul>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">Test de 3 preguntas: "Esto es on-brand?"</h4>
+  <div class="card" style="background: linear-gradient(135deg, rgba(255,100,0,0.1), rgba(90,0,180,0.05));">
+    <p style="font-size: 0.9rem; color: var(--gray-200);">Antes de publicar cualquier pieza, el equipo responde estas tres preguntas. Si alguna es "no", la pieza no sale.</p>
+    <div style="margin-top: 1.5rem;">
+      <div style="padding: 1.25rem; background: var(--dark-card); border-radius: 8px; margin-bottom: 1rem;">
+        <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--naranja);">01</div>
+        <p style="font-size: 1rem; color: var(--white); font-weight: 500; margin-bottom: 0.5rem;">El surfer lo diria asi?</p>
+        <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">El surfer digital -- 40 anos, culto, relajado, geek. Se reconoce? Le suena natural? O le parece corporativo?</p>
+      </div>
+      <div style="padding: 1.25rem; background: var(--dark-card); border-radius: 8px; margin-bottom: 1rem;">
+        <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--naranja);">02</div>
+        <p style="font-size: 1rem; color: var(--white); font-weight: 500; margin-bottom: 0.5rem;">Resuelve la ansiedad o la aumenta?</p>
+        <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">Todo deberia mover de la ansiedad a la calma. Si genera confusion o urgencia falsa, no es nuestra.</p>
+      </div>
+      <div style="padding: 1.25rem; background: var(--dark-card); border-radius: 8px;">
+        <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--naranja);">03</div>
+        <p style="font-size: 1rem; color: var(--white); font-weight: 500; margin-bottom: 0.5rem;">Un banco haria esto?</p>
+        <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">Si la respuesta es si, no deberiamos hacerlo. Payphone existe en oposicion al modelo bancario.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div style="text-align: center; padding: 3rem 0;">
+    <p style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 500; color: var(--gray-400); max-width: 600px; margin: 0 auto; line-height: 1.6;">"Mientras mas relajado, voy mas rapido y mas profundo."</p>
+    <p style="font-size: 0.8rem; color: var(--gray-500); margin-top: 0.75rem;">-- Mantra de marca, Payphone</p>
+    <div style="margin-top: 3rem;">
+      <span style="font-family: var(--font-display); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-500);">Payphone Brand Book 2026 | Unicore LLC | Confidencial</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+// Smooth scroll & active nav
+document.querySelectorAll('nav a').forEach(a => {
+  a.addEventListener('click', e => {
+    document.querySelector('nav').classList.remove('open');
+  });
+});
+
+// Intersection Observer for active nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + entry.target.id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>

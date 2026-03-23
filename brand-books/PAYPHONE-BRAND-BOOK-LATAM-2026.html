@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payphone -- Brand Book LATAM 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --naranja: #FF6400;
+  --violeta: #5A00B4;
+  --amarillo: #FFA000;
+  --dark: #222222;
+  --dark-surface: #1a1a1a;
+  --dark-card: #2a2a2a;
+  --dark-border: #333333;
+  --white: #ffffff;
+  --gray-100: #f5f5f5;
+  --gray-200: #e8e8e8;
+  --gray-300: #d0d0d0;
+  --gray-400: #999999;
+  --gray-500: #666666;
+  --gradient-sunset: linear-gradient(135deg, #FF6400 0%, #FFA000 100%);
+  --gradient-deep: linear-gradient(135deg, #FF6400 0%, #5A00B4 100%);
+  --gradient-warm: linear-gradient(135deg, #FFA000 0%, #FF6400 50%, #5A00B4 100%);
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--dark-surface);
+  border-right: 1px solid var(--dark-border);
+  padding: 2rem 0;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+nav .nav-logo {
+  padding: 0 1.5rem 2rem;
+  border-bottom: 1px solid var(--dark-border);
+  margin-bottom: 1rem;
+}
+
+nav .nav-logo span {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--naranja);
+  letter-spacing: -0.02em;
+}
+
+nav .nav-logo small {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 0.25rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.55rem 1.5rem;
+  color: var(--gray-400);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+  color: var(--white);
+  background: rgba(255, 100, 0, 0.08);
+  border-left-color: var(--naranja);
+}
+
+nav a .num {
+  color: var(--naranja);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+/* MAIN */
+main {
+  margin-left: 280px;
+  min-height: 100vh;
+}
+
+/* SECTIONS */
+section {
+  padding: 6rem 4rem;
+  border-bottom: 1px solid var(--dark-border);
+  max-width: 1100px;
+}
+
+section:last-child { border-bottom: none; }
+
+/* COVER */
+.cover {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem;
+  background: var(--dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 80%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(255,100,0,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: -40%;
+  left: -20%;
+  width: 60%;
+  height: 120%;
+  background: radial-gradient(ellipse, rgba(90,0,180,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cover h1 {
+  font-family: var(--font-display);
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cover .edition {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.cover .subtitle {
+  font-size: 1.15rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+.cover .meta {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.cover .meta-item {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-500);
+}
+
+.cover .meta-item span {
+  display: block;
+  color: var(--gray-300);
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0.25rem;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--naranja);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+h5 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--naranja);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--gray-300);
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  max-width: 680px;
+}
+
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--gray-200);
+}
+
+/* COMPONENTS */
+.card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-accent {
+  border-left: 3px solid var(--naranja);
+}
+
+.card-violet {
+  border-left: 3px solid var(--violeta);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.badge-orange { background: rgba(255,100,0,0.15); color: var(--naranja); }
+.badge-violet { background: rgba(90,0,180,0.15); color: #9B59B6; }
+.badge-green { background: rgba(39,174,96,0.15); color: #27ae60; }
+.badge-red { background: rgba(231,76,60,0.15); color: #e74c3c; }
+.badge-yellow { background: rgba(255,160,0,0.15); color: var(--amarillo); }
+.badge-blue { background: rgba(52,152,219,0.15); color: #3498db; }
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-sunset);
+  border-radius: 2px;
+  margin: 3rem 0;
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--white);
+  border-left: 3px solid var(--naranja);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+  max-width: 700px;
+}
+
+.quote cite {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  font-style: normal;
+  margin-top: 0.75rem;
+  font-family: var(--font-body);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--dark-border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--gray-300);
+  margin: 0.25rem;
+}
+
+.tag-yes {
+  border-color: rgba(39,174,96,0.3);
+  background: rgba(39,174,96,0.08);
+  color: #27ae60;
+}
+
+.tag-no {
+  border-color: rgba(231,76,60,0.3);
+  background: rgba(231,76,60,0.08);
+  color: #e74c3c;
+  text-decoration: line-through;
+}
+
+.example-box {
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.example-box .label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.example-box .label.si { color: #27ae60; }
+.example-box .label.no { color: #e74c3c; }
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--dark-surface);
+  border-bottom: 2px solid var(--naranja);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--naranja);
+}
+
+table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--dark-border);
+  color: var(--gray-300);
+  vertical-align: top;
+}
+
+table tr:hover td { background: rgba(255,100,0,0.03); }
+
+.persona-header {
+  background: var(--gradient-sunset);
+  border-radius: 12px 12px 0 0;
+  padding: 2rem;
+  color: var(--white);
+}
+
+.persona-body {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 2rem;
+}
+
+.country-flag {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.market-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.market-card:hover {
+  border-color: var(--naranja);
+}
+
+.market-card .mc-header {
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.market-card .mc-body {
+  padding: 1.5rem;
+}
+
+.touchpoint-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.touchpoint-card .tp-header {
+  background: var(--gradient-sunset);
+  padding: 1rem 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.touchpoint-card .tp-body {
+  padding: 1.5rem;
+}
+
+.never-list {
+  counter-reset: never;
+  list-style: none;
+}
+
+.never-list li {
+  counter-increment: never;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.never-list li::before {
+  content: counter(never, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--naranja);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.never-list li .rule-text {
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+.never-list li .rule-why {
+  color: var(--gray-500);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.phase-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.phase-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.phase-card.phase-1::before { background: var(--gradient-sunset); }
+.phase-card.phase-2::before { background: var(--gradient-deep); }
+.phase-card.phase-3::before { background: linear-gradient(135deg, var(--violeta), var(--amarillo)); }
+
+/* MOBILE TOGGLE */
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  color: var(--naranja);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  section { padding: 4rem 2.5rem; }
+  h3 { font-size: 2.2rem; }
+  .cover h1 { font-size: 3.5rem; }
+  .cover { padding: 4rem; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  nav { transform: translateX(-100%); }
+  nav.open { transform: translateX(0); }
+  .nav-toggle { display: flex; }
+  main { margin-left: 0; }
+  section { padding: 3rem 1.5rem; }
+  h3 { font-size: 1.8rem; }
+  .cover { padding: 3rem 1.5rem; }
+  .cover h1 { font-size: 2.5rem; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .cover .meta { flex-direction: column; gap: 1.5rem; }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark-surface); }
+::-webkit-scrollbar-thumb { background: var(--dark-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gray-500); }
+
+/* MAP VISUALIZATION */
+.latam-map-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.map-stat {
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.map-stat .ms-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+
+.map-stat .ms-label {
+  font-size: 0.72rem;
+  color: var(--gray-400);
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* COPY SHOWCASE */
+.copy-piece {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.copy-piece .cp-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copy-piece .cp-body {
+  padding: 2rem;
+}
+
+.copy-piece .cp-context {
+  background: var(--dark-surface);
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--dark-border);
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+</style>
+</head>
+<body>
+
+<button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+
+<nav>
+  <div class="nav-logo">
+    <span>payphone</span>
+    <small>Brand Book LATAM 2026</small>
+  </div>
+  <a href="#cover"><span class="num">00</span> Portada</a>
+  <a href="#s01"><span class="num">01</span> La Oportunidad LATAM</a>
+  <a href="#s02"><span class="num">02</span> Posicionamiento LATAM</a>
+  <a href="#s03"><span class="num">03</span> Personas por Mercado</a>
+  <a href="#s04"><span class="num">04</span> Voz por Pais</a>
+  <a href="#s05"><span class="num">05</span> Adaptaciones Visuales</a>
+  <a href="#s06"><span class="num">06</span> Go-to-Market Regional</a>
+  <a href="#s07"><span class="num">07</span> Narrativa Inversionistas</a>
+  <a href="#s08"><span class="num">08</span> Showcase de Copy</a>
+  <a href="#s09"><span class="num">09</span> Reglas LATAM</a>
+  <a href="#s10"><span class="num">10</span> Fases de Rollout</a>
+</nav>
+
+<main>
+
+<!-- ============================================ -->
+<!-- COVER -->
+<!-- ============================================ -->
+<section class="cover" id="cover">
+  <h1>payphone</h1>
+  <div class="edition">Edicion LATAM</div>
+  <p class="subtitle">La guia definitiva de marca para llevar la plataforma de autonomia financiera de Ecuador a cada rincon de America Latina. Nacimos aqui. Crecemos alla. La mision es la misma.</p>
+  <div class="meta">
+    <div class="meta-item">Version<span>LATAM 2026.1</span></div>
+    <div class="meta-item">Clasificacion<span>Confidencial</span></div>
+    <div class="meta-item">Preparado para<span>Unicore LLC</span></div>
+    <div class="meta-item">Fecha<span>Marzo 2026</span></div>
+    <div class="meta-item">CRO<span>Val Infante</span></div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 01 LA OPORTUNIDAD LATAM -->
+<!-- ============================================ -->
+<section id="s01">
+  <h2>Seccion 01</h2>
+  <h3>La Oportunidad LATAM</h3>
+  <p class="lead">America Latina no es un mercado emergente. Es un mercado que ya emergio -- pero cuya infraestructura financiera se quedo atras. Ahi esta la oportunidad.</p>
+
+  <div class="divider"></div>
+
+  <div class="latam-map-stats">
+    <div class="map-stat">
+      <div class="ms-number">660M</div>
+      <div class="ms-label">Personas en LATAM</div>
+    </div>
+    <div class="map-stat">
+      <div class="ms-number">78%</div>
+      <div class="ms-label">Penetracion smartphone</div>
+    </div>
+    <div class="map-stat">
+      <div class="ms-number">200M</div>
+      <div class="ms-label">Sub-bancarizados</div>
+    </div>
+    <div class="map-stat">
+      <div class="ms-number">$85B</div>
+      <div class="ms-label">Remesas anuales</div>
+    </div>
+    <div class="map-stat">
+      <div class="ms-number">50M</div>
+      <div class="ms-label">Micro-negocios</div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">La paradoja latinoamericana</h4>
+  <div class="card card-accent">
+    <p style="font-size: 0.95rem; color: var(--gray-200);">America Latina tiene mas smartphones que cuentas bancarias activas. Tiene mas emprendedores informales que empleados corporativos con beneficios. Tiene mas transferencias por WhatsApp que por plataformas financieras formales. La region no sufre de falta de ambicion -- sufre de falta de infraestructura accesible.</p>
+    <p style="font-size: 0.95rem; color: var(--gray-200); margin-bottom: 0;">Hay 200 millones de personas que tienen un celular en el bolsillo con capacidad NFC, camara para QR y conexion a internet, pero que siguen operando en efectivo porque ninguna solucion financiera les ha dicho: "esto es para ti, es gratis, y funciona desde ya." Payphone es esa solucion.</p>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">5 macro-tendencias que abren la puerta</h4>
+  <div class="grid-2">
+    <div class="card">
+      <h5>01 -- La economia informal se digitaliza</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">50 millones de micro-negocios en LATAM venden por Instagram, WhatsApp y TikTok, pero siguen cobrando en efectivo o por transferencia manual. No necesitan un banco -- necesitan una herramienta de cobro que viva donde ellos venden: en el celular.</p>
+    </div>
+    <div class="card">
+      <h5>02 -- Las remesas buscan una ruta mejor</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">$85 mil millones anuales fluyen hacia America Latina en remesas. El costo promedio de envio es 6.2%. Western Union cobra hasta $12 por transaccion. Cada punto porcentual que se elimina en comisiones son miles de millones que llegan a familias en lugar de intermediarios.</p>
+    </div>
+    <div class="card">
+      <h5>03 -- Los gobiernos empujan la digitalizacion</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Colombia, Mexico, Peru, Chile y Brasil han implementado o estan implementando marcos regulatorios para fintech, pagos instantaneos (CoDi, Yape, PIX) y open banking. Los gobiernos quieren menos efectivo -- eso crea viento a favor para plataformas como Payphone.</p>
+    </div>
+    <div class="card">
+      <h5>04 -- La Gen Z no entra al banco</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">El 45% de la poblacion de LATAM tiene menos de 30 anos. Esta generacion no abrio una cuenta bancaria -- abrio una billetera digital. Su expectativa de experiencia financiera esta formada por Instagram y Uber, no por una sucursal bancaria. El producto que les resuelva cobra + paga + envia desde el celular gana su lealtad de por vida.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1.5rem;">
+    <h5>05 -- La migracion intra-LATAM: la ventaja invisible</h5>
+    <p style="font-size: 0.85rem; margin-bottom: 0;">La migracion dentro de America Latina ha crecido un 60% en la ultima decada. Venezolanos en Colombia, ecuatorianos en Chile, guatemaltecos en Mexico. Cada migrante es un nodo financiero que conecta dos economias. Necesitan cobrar en un pais y enviar a otro. Necesitan una cuenta que funcione sin importar las fronteras. Payphone nacio para ese mundo: sin contrato local, sin burocracia bancaria, sin discriminacion por nacionalidad.</p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Por que "nacido en Ecuador" es credibilidad</h4>
+  <div class="card" style="background: linear-gradient(135deg, rgba(255,100,0,0.1) 0%, rgba(90,0,180,0.05) 100%);">
+    <div class="quote" style="font-size: 1.5rem;">
+      Si funciona en Ecuador, funciona en cualquier parte de LATAM.
+    </div>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">Ecuador es uno de los mercados mas complejos de la region. Economia dolarizada, regulacion bancaria estricta, alta dependencia del efectivo, infraestructura de pagos limitada y un mercado dominado por actores tradicionales con decadas de inercia. Si Payphone logro 2 millones de usuarios en este entorno -- sin inversion de capital de riesgo de Silicon Valley, sin presupuesto de marketing masivo, creciendo 100% organico -- es la mejor prueba de que el modelo funciona.</p>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">Ecuador como mercado de lanzamiento no fue un accidente -- fue un stress test. Las condiciones regulatorias, la bancarizacion limitada y la predominancia del efectivo representan un entorno mas dificil que Colombia, Peru o Mexico. Haber sobrevivido y crecido ahi convierte cada nuevo mercado en una expansion desde fortaleza, no desde suposicion.</p>
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-bottom: 0;">Para el inversionista, esto significa riesgo reducido. Para el usuario nuevo en Colombia o Peru, esto significa un producto probado, no un prototipo. Para la competencia, esto significa que no entramos a aprender -- entramos sabiendo.</p>
+  </div>
+
+  <h4 style="margin-top: 2.5rem;">El TAM que importa</h4>
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h5>TAM</h5>
+      <div class="stat-number">$125B</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Volumen total de pagos digitales en LATAM (excluyendo Brasil). Todo pago que hoy es efectivo y podria ser digital.</p>
+    </div>
+    <div class="card card-accent">
+      <h5>SAM</h5>
+      <div class="stat-number">$28B</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Mercados de entrada (Colombia, Peru, Mexico, Centroamerica, Chile, Argentina): pagos moviles de micro y pequenos negocios.</p>
+    </div>
+    <div class="card card-accent">
+      <h5>SOM</h5>
+      <div class="stat-number">$1.2B</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Captura realista en 36 meses: 5M+ de usuarios procesando un promedio de $20/mes en transacciones. Basado en la trayectoria de Ecuador.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 02 POSICIONAMIENTO LATAM -->
+<!-- ============================================ -->
+<section id="s02">
+  <h2>Seccion 02</h2>
+  <h3>Posicionamiento Regional</h3>
+  <p class="lead">Payphone no entra a LATAM como un recien llegado. Entra como un producto probado que ya resolvio el problema mas dificil en el mercado mas dificil.</p>
+
+  <div class="divider"></div>
+
+  <h4>Declaracion de posicionamiento LATAM</h4>
+  <div class="card card-accent">
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 1.8;">Payphone es la <strong style="color: var(--white);">plataforma de autonomia financiera movil</strong> que permite a cualquier persona en America Latina <strong style="color: var(--white);">cobrar, pagar y mover dinero desde su celular</strong> -- sin banco, sin terminal, sin comisiones -- a diferencia de los bancos tradicionales y las billeteras limitadas, porque <strong style="color: var(--white);">convierte cualquier smartphone en infraestructura financiera completa</strong> con TAP, QR, links de pago, e-commerce y tarjeta, probado con 2M+ de usuarios en el mercado mas exigente de la region.</p>
+  </div>
+
+  <h4 style="margin-top: 2rem;">Declaracion "unico" regional</h4>
+  <div class="quote">
+    Payphone es la unica plataforma en LATAM que ofrece cobro con TAP + links de pago + QR + e-commerce + tarjeta Mastercard en una sola app, con cero costo para el usuario y sin necesidad de cuenta bancaria. Nadie mas combina todo esto. Nadie.
+  </div>
+
+  <h4 style="margin-top: 3rem;">Mapa competitivo pais por pais</h4>
+
+  <!-- COLOMBIA -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(255,100,0,0.08);">
+      <span style="font-size: 1.5rem;">&#127464;&#127476;</span>
+      Colombia
+      <span class="badge badge-red" style="margin-left: auto;">Prioridad Fase 1</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 52M | <strong style="color: var(--white);">Smartphones:</strong> 78% | <strong style="color: var(--white);">Bancarizacion:</strong> 92% formal, pero solo 55% activa</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion fintech:</strong> Decreto 1357/2018, sandbox regulatorio activo. Marco pro-innovacion.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> 6.5M de micro-negocios que venden por redes sociales sin herramientas formales de cobro. Alto uso de WhatsApp Business como canal de venta.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">Nequi</td><td>12M+ usuarios, marca fuerte millennial</td><td>P2P centrico, sin TAP ni merchant tools robustas</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Daviplata</td><td>17M+ usuarios, respaldo Davivienda</td><td>UX bancaria, sin innovacion merchant</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Bold</td><td>Datafono movil popular</td><td>Modelo hardware + comision, no gratis</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Mercado Pago</td><td>Ecosistema MeLi</td><td>Dependiente del marketplace</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERU -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(255,100,0,0.08);">
+      <span style="font-size: 1.5rem;">&#127477;&#127466;</span>
+      Peru
+      <span class="badge badge-red" style="margin-left: auto;">Prioridad Fase 1</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 34M | <strong style="color: var(--white);">Smartphones:</strong> 75% | <strong style="color: var(--white);">Bancarizacion:</strong> 57% formal</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion fintech:</strong> Decreto de Urgencia 007-2025, apertura regulatoria para pagos digitales.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> 80% del comercio minorista opera en efectivo. Yape domina P2P pero deja vacio enorme en merchant solutions. Los bodegueros y ambulantes no tienen solucion de cobro profesional.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">Yape</td><td>15M+ usuarios, omnipresente en P2P</td><td>Limitado a P2P/QR, sin TAP, sin e-commerce</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Plin</td><td>Interbancaridad, multiples bancos</td><td>No es app propia, experiencia fragmentada</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Izipay</td><td>Fuerte en POS fisico</td><td>Modelo legacy, hardware dependiente</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Mercado Pago</td><td>Ecosistema e-commerce</td><td>Sin penetracion en micro-comercio presencial</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEXICO -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(90,0,180,0.08);">
+      <span style="font-size: 1.5rem;">&#127474;&#127485;</span>
+      Mexico
+      <span class="badge badge-yellow" style="margin-left: auto;">Prioridad Fase 2</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 130M | <strong style="color: var(--white);">Smartphones:</strong> 82% | <strong style="color: var(--white);">Bancarizacion:</strong> 68% formal</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion fintech:</strong> Ley Fintech 2018 (pionera en LATAM). Regulacion madura pero compleja.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> Mercado mas grande de LATAM hispanohablante. 4.1M de tienditas de barrio sin solucion de cobro digital. CoDi fracaso en adopcion -- el mercado sigue buscando.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">Mercado Pago</td><td>Lider en e-commerce, maquinitas QR</td><td>Percepcion de "solo para MeLi"</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Clip</td><td>40K+ comercios con lector de tarjetas</td><td>Modelo hardware + comision, no cero costo</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Nu Mexico</td><td>15M+ clientes, marca fuerte</td><td>Banco digital puro, no merchant solutions</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">BBVA Wallet</td><td>Base bancaria masiva</td><td>UX bancaria legacy, sin innovacion real</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENTROAMERICA -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(90,0,180,0.08);">
+      <span style="font-size: 1.5rem;">&#127468;&#127481;</span>
+      Centroamerica
+      <span class="badge badge-yellow" style="margin-left: auto;">Prioridad Fase 2</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 50M (Guatemala 18M, Honduras 10M, El Salvador 6.5M, Costa Rica 5M, Panama 4.4M, Nicaragua 6.9M) | <strong style="color: var(--white);">Bancarizacion:</strong> 35-55%</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion:</strong> Variada. El Salvador con Bitcoin como moneda legal. Guatemala y Honduras con marcos emergentes.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> Ya tenemos presencia en Guatemala y El Salvador. El corredor de remesas EE.UU.-Centroamerica es de $35B anuales. Alta informalidad, baja competencia fintech.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">Tigo Money</td><td>Red telco existente, Guatemala/Honduras/ES</td><td>Experiencia USSD legacy, UX terrible</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Chivo Wallet</td><td>Wallet oficial El Salvador</td><td>Asociacion politica, baja confianza</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">BAM Movil</td><td>Respaldo bancario Guatemala</td><td>Solo clientes del banco, cerrado</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">dLocal/PayRetailers</td><td>Procesamiento cross-border</td><td>B2B only, sin interfaz consumer</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHILE -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(255,160,0,0.08);">
+      <span style="font-size: 1.5rem;">&#127464;&#127473;</span>
+      Chile
+      <span class="badge badge-blue" style="margin-left: auto;">Prioridad Fase 3</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 19.5M | <strong style="color: var(--white);">Smartphones:</strong> 87% | <strong style="color: var(--white);">Bancarizacion:</strong> 87% formal</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion fintech:</strong> Ley Fintech 2023. Open banking en implementacion. Marco pro-competencia.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> Mercado maduro pero con gap en micro-merchant solutions. Alto PIB per capita = mayor ticket promedio. Fuerte comunidad de emprendedores digitales.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">MACH</td><td>Prepago digital popular, Bci</td><td>Limitado a tarjeta prepago, sin merchant</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Tenpo</td><td>Fintech independiente, buena UX</td><td>Enfocado en consumer, no merchant</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Mercado Pago</td><td>Ecosistema MeLi fuerte en Chile</td><td>Dependiente del marketplace</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Transbank</td><td>Monopolio historico de POS</td><td>Modelo legacy, comisiones altas, lento</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARGENTINA -->
+  <div class="market-card" style="margin-bottom: 1.5rem;">
+    <div class="mc-header" style="background: rgba(255,160,0,0.08);">
+      <span style="font-size: 1.5rem;">&#127462;&#127479;</span>
+      Argentina
+      <span class="badge badge-blue" style="margin-left: auto;">Prioridad Fase 3</span>
+    </div>
+    <div class="mc-body">
+      <div class="grid-2" style="margin: 0;">
+        <div>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Poblacion:</strong> 46M | <strong style="color: var(--white);">Smartphones:</strong> 83% | <strong style="color: var(--white);">Bancarizacion:</strong> 82% formal</p>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion:</strong> Compleja por inflacion, controles cambiarios y regulacion de fintech. Mercado de alta sofisticacion digital pero inestabilidad macro.</p>
+          <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Oportunidad Payphone:</strong> 45M+ usuarios de pagos digitales. Poblacion extremadamente tech-savvy. La inflacion empuja la adopcion de herramientas digitales. Gran comunidad freelancer que necesita cobrar cross-border.</p>
+        </div>
+        <div>
+          <table style="margin: 0; font-size: 0.8rem;">
+            <thead><tr><th>Competidor</th><th>Fortaleza</th><th>Debilidad</th></tr></thead>
+            <tbody>
+              <tr><td style="color: var(--white); font-weight: 600;">Mercado Pago</td><td>Dominante, 20M+ usuarios activos</td><td>Comisiones merchant altas (3-5%)</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Ualala</td><td>6M+ usuarios, prepago + cripto</td><td>Sin solucion merchant robusta</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Modo</td><td>Billetera interoperable, bancos</td><td>UX fragmentada, experiencia inconsistente</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Naranja X</td><td>Ecosistema financiero completo</td><td>Heritage de tarjeta de credito, no digital-first</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 2rem;">Posicionamiento diferencial: por que Payphone gana</h4>
+  <div class="card" style="background: linear-gradient(135deg, rgba(255,100,0,0.1) 0%, rgba(90,0,180,0.05) 100%);">
+    <table>
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Payphone</th>
+          <th>Neobanks (Nequi, Nu)</th>
+          <th>Billeteras (Yape, MP)</th>
+          <th>POS (Clip, Bold)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Cobro TAP con celular</td>
+          <td style="color: #27ae60; font-weight: 600;">Si</td>
+          <td style="color: #e74c3c;">No</td>
+          <td style="color: #e74c3c;">No</td>
+          <td style="color: var(--amarillo);">Requiere hardware</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Links de pago</td>
+          <td style="color: #27ae60; font-weight: 600;">Si, ilimitados</td>
+          <td style="color: #e74c3c;">No</td>
+          <td style="color: var(--amarillo);">Limitado</td>
+          <td style="color: var(--amarillo);">Basico</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">E-commerce integrado</td>
+          <td style="color: #27ae60; font-weight: 600;">Si, boton + API</td>
+          <td style="color: #e74c3c;">No</td>
+          <td style="color: var(--amarillo);">Solo marketplace</td>
+          <td style="color: #e74c3c;">No</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Tarjeta</td>
+          <td style="color: #27ae60; font-weight: 600;">Mastercard</td>
+          <td style="color: #27ae60;">Si</td>
+          <td style="color: var(--amarillo);">Algunos</td>
+          <td style="color: #e74c3c;">No</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Cero costo usuario</td>
+          <td style="color: #27ae60; font-weight: 600;">Si</td>
+          <td style="color: var(--amarillo);">Parcial</td>
+          <td style="color: var(--amarillo);">Parcial</td>
+          <td style="color: #e74c3c;">No (hardware + %)</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Sin cuenta bancaria</td>
+          <td style="color: #27ae60; font-weight: 600;">Si</td>
+          <td style="color: #e74c3c;">Requiere cuenta</td>
+          <td style="color: var(--amarillo);">Algunos</td>
+          <td style="color: #e74c3c;">Requiere cuenta</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">API para developers</td>
+          <td style="color: #27ae60; font-weight: 600;">Si</td>
+          <td style="color: var(--amarillo);">Limitado</td>
+          <td style="color: #27ae60;">Si</td>
+          <td style="color: #e74c3c;">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 03 PERSONAS POR MERCADO -->
+<!-- ============================================ -->
+<section id="s03">
+  <h2>Seccion 03</h2>
+  <h3>Personas por Mercado</h3>
+  <p class="lead">Seis personas reales, distribuidas por sub-region. Cada una representa un momento de vida y un dolor financiero especifico de su mercado. No son segmentos -- son historias.</p>
+
+  <div class="divider"></div>
+
+  <!-- PERSONA 1 - ANDINA -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 01 -- Region Andina</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Valentina Rios</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127464;&#127476; La emprendedora de Instagram que necesita cobrar en serio</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 28 anos. <strong style="color: var(--white);">Ciudad:</strong> Medellin, Colombia.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Tienda de ropa propia por Instagram + ferias de fin de semana.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> COP 1.5M-3.5M/mes ($350-$800 USD).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> La Creadora Imparable -- su Instagram tiene 12K seguidores pero su capacidad de cobro esta en la edad de piedra.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Valentina armo su marca desde cero: disena, fotografia, publica, responde DMs, empaca y despacha. Pero el momento de cobrar es el mas fragil de toda la cadena. Un cliente le dice "paso por Nequi" y a veces la plata llega tarde, a veces no llega. Cuando un cliente quiere pagar con tarjeta de credito en una feria, Valentina tiene que decir "solo efectivo" y ve como la venta se va. Su ansiedad: no ser tomada en serio como negocio porque no puede cobrar como uno.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Pierde 4-5 ventas por semana en ferias por no aceptar tarjeta. Bold le cuesta $45.000 COP/mes + comision. Nequi solo sirve si el cliente tiene Nequi. Sus facturas son capturas de pantalla de WhatsApp.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Nequi + Daviplata + efectivo + "me haces transferencia?". Un patchwork financiero que funciona a fuerza de voluntad.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">En una feria en El Poblado, una influencer quiere comprarle 3 piezas con tarjeta Amex. Valentina solo tiene efectivo y Nequi. La influencer dice "que pena, otro dia." Esa noche, Valentina busca "cobrar con tarjeta sin datafono Colombia."</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Tengo la marca, tengo los clientes, tengo el producto. Lo unico que no tengo es como cobrar sin parecer informal."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 2 - ANDINA -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header" style="background: var(--gradient-deep);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 02 -- Region Andina</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Jorge Quispe</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127477;&#127466; El bodeguero que quiere que su negocio sobreviva a la digitalizacion</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 45 anos. <strong style="color: var(--white);">Ciudad:</strong> Lima, Peru.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Bodega de barrio (tienda de abarrotes) de 15 anos de antiguedad.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> PEN 2,500-4,000/mes ($650-$1,050 USD).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> El Pilar del Barrio -- su bodega es el centro social y comercial de 3 cuadras. Pero el mundo se esta digitalizando y el se siente quedando atras.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Jorge ve que sus clientes mas jovenes usan Yape para todo, pero Yape tiene limite de montos. Ve que los supermercados aceptan tarjeta y el no puede. Sabe que su negocio esta perdiendo relevancia frente a las tiendas de conveniencia con POS. No quiere cerrar -- quiere evolucionar. Pero cada solucion que cotiza le parece disenada para negocios mas grandes. Su ansiedad: volverse obsoleto sin darse cuenta.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">El 40% de sus clientes ya le piden pagar con Yape o tarjeta. Izipay le pide contrato, RUC activo y comision por transaccion. Yape tiene limites que no sirven para compras grandes. Lleva 15 anos con cuaderno y calculadora.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Efectivo + Yape (para montos menores) + cuaderno. Sin trazabilidad digital, sin reportes, sin posibilidad de demostrar ingresos para un credito.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Su hija de 22 anos, que estudia administracion, le dice: "Papa, si no puedes cobrar con tarjeta, vas a perder todos los clientes cuando abran un Tambo en la esquina." Esa frase lo despierta.</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Mi bodega lleva 15 anos. No voy a dejar que cierre porque no puedo cobrar con tarjeta."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 3 - MEXICO/CA -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header" style="background: linear-gradient(135deg, #5A00B4, #FF6400);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 03 -- Mexico / Centroamerica</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Fernanda Lopez</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127474;&#127485; La taquera millenial que vende en TikTok y cobra en efectivo</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 34 anos. <strong style="color: var(--white);">Ciudad:</strong> Guadalajara, Mexico.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Puesto de tacos gourmet + catering por pedido en redes sociales.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> MXN 15,000-35,000/mes ($850-$2,000 USD).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> La Revolucionaria del Sabor -- convirtio su receta familiar en un negocio viral, pero la tecnologia de cobro no le sigue el paso.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Fernanda tiene 45K seguidores en TikTok viendo sus videos de tacos. Sus DMs estan llenos de pedidos. Pero el proceso de cobro es un desastre: "pasame a mi Banorte", "tienes CoDi?", "en efectivo al entregar". Cada forma de cobro diferente es una friccion. Quiere una sola herramienta que diga "paga aqui" y funcione sin importar como quiera pagar su cliente.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Cobra por transferencia SPEI, pero los comprobantes se pierden en WhatsApp. CoDi nunca funciono. Clip le cobra 3.6% + IVA. Sus clientes de catering quieren pagar con tarjeta de credito a meses y ella no puede.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Transferencia SPEI + efectivo + a veces Mercado Pago (pero le cobra comision). Todo manual, todo desorganizado.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Un cliente corporativo le pide catering para 50 personas y quiere factura + pago con tarjeta empresarial. Fernanda no puede hacer ninguna de las dos. Pierde un pedido de $15,000 MXN. Esa noche llora de frustracion.</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Puedo cocinar para 100 personas, pero no puedo cobrarles a todos. Eso no tiene sentido."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 4 - MEXICO/CA -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header" style="background: linear-gradient(135deg, #FFA000, #FF6400);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 04 -- Mexico / Centroamerica</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Edwin Ramirez</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127468;&#127481; El migrante retornado que trae ideas pero no herramientas</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 36 anos. <strong style="color: var(--white);">Origen:</strong> Huehuetenango, Guatemala. <strong style="color: var(--white);">Estuvo en:</strong> EE.UU. 8 anos.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Taller mecanico + venta de repuestos por WhatsApp.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> Q 8,000-15,000/mes ($1,000-$1,900 USD).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> El Constructor del Retorno -- volvio a Guatemala con ahorros, ideas de negocio americanas y cero infraestructura financiera local para ejecutarlas.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Edwin se acostumbro a Venmo, Cash App, Square. En EE.UU. cobrar con tarjeta era natural. Cuando volvio a Guatemala, descubrio que el sistema financiero no habia avanzado. Los bancos le piden 12 documentos para una cuenta empresarial. No existe un "Square guatemalteco". Se siente atrapado entre la sofisticacion que conoce y la realidad que enfrenta.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">No puede aceptar pagos con tarjeta en su taller. BAM le pide historial crediticio que no tiene en Guatemala. Tigo Money es para montos pequenos. Sus clientes que compraron carro con financiamiento quieren pagar reparaciones con tarjeta.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Efectivo + transferencias bancarias manuales + todavia tiene cuenta de Bank of America para recibir pagos de clientes que quedaron en EE.UU.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Un amigo ecuatoriano que tambien retorno le muestra Payphone: "Mira, yo cobro con el celular, sin datafono, sin nada." Edwin ve la app y dice: "Esto es lo que yo necesitaba desde que volvi."</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"En Estados Unidos cualquiera cobra con el celular. Volvi a mi pais y parece que retrocedi 20 anos."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 5 - CONO SUR -->
+  <div style="margin-bottom: 3rem;">
+    <div class="persona-header" style="background: linear-gradient(135deg, #222222, #5A00B4);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 05 -- Cono Sur</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Martin Figueroa</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127462;&#127479; El freelancer que cobra en dolares y vive en pesos</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 30 anos. <strong style="color: var(--white);">Ciudad:</strong> Buenos Aires, Argentina.<br>
+          <strong style="color: var(--white);">Ocupacion:</strong> Disenador UX/UI freelance. Clientes en EE.UU., Espana y Chile.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> USD $2,000-$4,000/mes (pero en Argentina eso es una pesadilla cambiaria).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> El Nomada Digital Atrapado -- trabaja para el mundo pero vive en un pais donde el sistema financiero le pone zancadillas cada dia.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Martin cobra en dolares por Payoneer o Wise, pero perderlos al cambio oficial le cuesta 30-40% de su ingreso. Usa cuevas, cripto, y una red de contactos para mover su dinero. Cada transaccion es una negociacion. Suena con una herramienta que le deje operar en dolares sin friccion. Su ansiedad: que el sistema le coma lo que gana.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Payoneer cobra comision + le pesifica al oficial. Si cobra en pesos pierde. Si cobra en cripto, la volatilidad lo come. Wise le deposita en Argentina pero el banco le retiene impuestos. No hay solucion limpia.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Payoneer + Wise + Binance P2P + efectivo en cuevas. Un sistema paralelo que funciona pero que lo hace sentir fuera de la ley.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Un colega chileno le dice: "Con Payphone cobro directo en dolares, me llega a la tarjeta Mastercard y gasto donde quiera. Cero drama." Martin piensa: "Si eso funciona en Argentina, me cambio manana."</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Trabajo para Silicon Valley y no puedo cobrar sin perder un tercio. Necesito una herramienta que me trate como un profesional, no como un problema."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 6 - CONO SUR -->
+  <div style="margin-bottom: 2rem;">
+    <div class="persona-header" style="background: linear-gradient(135deg, #FF6400, #FFA000);">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.5rem;">Persona 06 -- Cono Sur</span>
+      <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Catalina Munoz</div>
+      <div style="opacity: 0.85; margin-top: 0.25rem;">&#127464;&#127473; La emprendedora tech-savvy que quiere escalar sin complicarse</div>
+    </div>
+    <div class="persona-body">
+      <div class="grid-2">
+        <div>
+          <h5>Perfil</h5>
+          <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Edad:</strong> 31 anos. <strong style="color: var(--white);">Ciudad:</strong> Santiago, Chile.<br>
+          <strong style="color: var(--white);">Negocio:</strong> Tienda online de productos sustentables + pop-up stores mensuales.<br>
+          <strong style="color: var(--white);">Ingresos:</strong> CLP 1.2M-2.5M/mes ($1,300-$2,700 USD).<br>
+          <strong style="color: var(--white);">Arquetipo:</strong> La Escaladora Consciente -- quiere crecer pero sin depender de plataformas que le cobren el 5% de cada venta.</p>
+
+          <h5 style="margin-top: 1.5rem;">Psicologia</h5>
+          <p style="font-size: 0.85rem;">Catalina tiene su tienda en Shopify, cobra con Transbank, y siente que por cada venta paga mas comisiones de las que deberia. En sus pop-up stores necesita un POS portatil, pero Transbank le cobra arriendo + comision. MercadoPago le cobra 4.5%. Siente que todo el sistema esta disenado para quitarle margen. Su ansiedad: que las comisiones se coman la rentabilidad que tanto le costo construir.</p>
+        </div>
+        <div>
+          <h5>Punto de dolor</h5>
+          <p style="font-size: 0.85rem;">Transbank cobra 2.95% + arriendo de POS. Mercado Pago cobra 4.5% online. Webpay le cobra setup + mensualidad. Cada canal de venta tiene un procesador diferente con un costo diferente. No tiene una vista unificada de sus ventas.</p>
+
+          <h5 style="margin-top: 1.5rem;">Solucion actual</h5>
+          <p style="font-size: 0.85rem;">Transbank para presencial + Webpay para Shopify + transferencia bancaria para pedidos por Instagram. Tres sistemas, tres comisiones, cero integracion.</p>
+
+          <h5 style="margin-top: 1.5rem;">Momento detonante</h5>
+          <p style="font-size: 0.85rem;">Hace sus numeros de diciembre y descubre que pago $180.000 CLP en comisiones en un solo mes. Busca "alternativa a Transbank sin comision" y encuentra a Payphone.</p>
+
+          <div class="example-box" style="margin-top: 1rem;">
+            <div class="label" style="color: var(--naranja);">Cita</div>
+            <em style="color: var(--gray-200);">"Yo empece este negocio para tener libertad, no para trabajar para Transbank."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 04 ADAPTACION DE VOZ POR PAIS -->
+<!-- ============================================ -->
+<section id="s04">
+  <h2>Seccion 04</h2>
+  <h3>Adaptacion de Voz por Pais</h3>
+  <p class="lead">La voz de Payphone es una sola. El tono se adapta. Pero el idioma tiene variaciones reales entre paises que pueden hacer que un copy perfecto en Ecuador suene ridiculo en Argentina o pretencioso en Mexico. Esta seccion es el GPS linguistico.</p>
+
+  <div class="divider"></div>
+
+  <h4>Principio fundamental: espanol neutro con sabor local</h4>
+  <div class="card card-accent">
+    <p style="font-size: 0.95rem; color: var(--gray-200);">Payphone usa un espanol neutro latinoamericano como base. Eso significa: sin modismos que solo funcionen en un pais, sin conjugaciones que suenen extranas en otro, sin vocabulario que tenga significados opuestos entre mercados. Pero "neutro" no significa "sin personalidad". Significa que el 80% del copy funciona en toda la region, y el 20% se localiza con sabor de cada mercado.</p>
+    <p style="font-size: 0.95rem; color: var(--gray-200); margin-bottom: 0;">La regla: si un copy se entiende perfectamente en Bogota, Lima, Ciudad de Mexico y Buenos Aires sin edicion, es copy neutro valido. Si necesita ajuste, se localiza. Nunca se traduce -- se adapta.</p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Tuteo, voseo y ustedeo: la guia definitiva</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Pais</th>
+        <th>Forma dominante</th>
+        <th>En app / UX</th>
+        <th>En redes sociales</th>
+        <th>En comunicacion formal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Ecuador</td>
+        <td>Tuteo (tu)</td>
+        <td>"Cobra desde tu celular"</td>
+        <td>Tu (informal)</td>
+        <td>Usted (solo formal)</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Colombia</td>
+        <td>Ustedeo / Tuteo</td>
+        <td>"Cobre desde su celular" o "Cobra desde tu celular" (depende de la region)</td>
+        <td>Tu (Bogota/Costa) / Usted (interior)</td>
+        <td>Usted</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Peru</td>
+        <td>Tuteo (tu)</td>
+        <td>"Cobra desde tu celular"</td>
+        <td>Tu (informal)</td>
+        <td>Usted</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Mexico</td>
+        <td>Tuteo (tu)</td>
+        <td>"Cobra desde tu celular"</td>
+        <td>Tu (siempre)</td>
+        <td>Usted</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Guatemala / CA</td>
+        <td>Voseo / Ustedeo</td>
+        <td>"Cobra desde tu celular" (neutro, no vosear en UX)</td>
+        <td>Vos (informal, Guatemala) / Tu (El Salvador)</td>
+        <td>Usted</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Chile</td>
+        <td>Tuteo / Voseo informal</td>
+        <td>"Cobra desde tu celular"</td>
+        <td>Tu (formal redes) / vos se evita en marca</td>
+        <td>Usted</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Argentina</td>
+        <td>Voseo (vos)</td>
+        <td>"Cobra desde tu celu" (tuteo aceptado en UX)</td>
+        <td>Vos (obligatorio, suena falso si se tutea)</td>
+        <td>Usted (solo muy formal)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card" style="margin-top: 1rem; border-left: 3px solid var(--amarillo);">
+    <h5>Regla de oro para la app</h5>
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-bottom: 0;">En la interfaz del producto (UX), usamos <strong style="color: var(--white);">tuteo neutro</strong> como default global: "Cobra desde tu celular", "Tu saldo", "Tus transacciones". Es la forma que menos fricciona en toda la region. La unica excepcion es Argentina, donde el voseo es tan dominante que el tuteo puede sentirse artificial. Para Argentina, evaluamos una localizacion de UX especifica.</p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Vocabulario critico por pais</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Concepto Payphone</th>
+        <th>Ecuador</th>
+        <th>Colombia</th>
+        <th>Peru</th>
+        <th>Mexico</th>
+        <th>Argentina</th>
+        <th>Chile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Celular</td>
+        <td>Celular</td>
+        <td>Celular</td>
+        <td>Celular</td>
+        <td>Celular / Cel</td>
+        <td>Celu</td>
+        <td>Celular</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Dinero</td>
+        <td>Plata</td>
+        <td>Plata</td>
+        <td>Plata</td>
+        <td>Lana / Dinero</td>
+        <td>Guita / Plata</td>
+        <td>Plata / Lucas</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Tienda pequena</td>
+        <td>Tienda</td>
+        <td>Tienda / Negocio</td>
+        <td>Bodega</td>
+        <td>Tiendita / Changarrito</td>
+        <td>Negocio / Kiosco</td>
+        <td>Almacen / Negocio</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Datafono / POS</td>
+        <td>Datafono</td>
+        <td>Datafono</td>
+        <td>POS</td>
+        <td>Terminal</td>
+        <td>Posnet</td>
+        <td>POS / Transbank</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Genial / Cool</td>
+        <td>Chevere / Bacano</td>
+        <td>Chevere / Bacano</td>
+        <td>Chevere / Mostro</td>
+        <td>Chido / Padre</td>
+        <td>Copado / Piola</td>
+        <td>Bacan / La raja</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Comision</td>
+        <td>Comision</td>
+        <td>Comision</td>
+        <td>Comision</td>
+        <td>Comision</td>
+        <td>Comision</td>
+        <td>Comision</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">Tramite</td>
+        <td>Tramite</td>
+        <td>Tramite / Vuelta</td>
+        <td>Tramite</td>
+        <td>Tramite</td>
+        <td>Tramite</td>
+        <td>Tramite</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin-top: 3rem;">Copy adaptado: la misma pieza en 4 versiones</h4>
+  <p>Una sola pieza de copy, localizada para 4 mercados. Misma estructura, mismo mensaje, diferente sabor.</p>
+
+  <div class="card" style="margin-top: 1.5rem;">
+    <h5 style="color: var(--white);">Pieza: Notificacion push -- primera activacion de TAP</h5>
+    <div class="grid-2" style="margin-top: 1rem;">
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Ecuador</div>
+        <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu TAP ya esta activo</p>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Ya puedes cobrar con tarjeta acercando el celular. Asi de simple. Sin datafono, sin costo.</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Colombia</div>
+        <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu TAP ya esta listo</p>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Ahora puedes cobrar con tarjeta desde tu celular. Sin datafono, sin comisiones. Facil, parcero.</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Mexico</div>
+        <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu TAP esta activado</p>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Ya puedes cobrar con tarjeta desde tu cel. Sin terminal, sin comision. Asi de facil.</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Argentina</div>
+        <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu TAP esta activo</p>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Ya podes cobrar con tarjeta acercando el celu. Sin posnet, sin comision. Asi de simple.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1.5rem;">
+    <h5 style="color: var(--white);">Pieza: Post de redes sociales -- propuesta de valor</h5>
+    <div class="grid-2" style="margin-top: 1rem;">
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Ecuador</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">Antes necesitabas un datafono de $15/mes para cobrar con tarjeta.<br><br>Ahora solo necesitas tu celular.<br><br>Cero costo. Cero tramites. Cero excusas.<br><br>Descarga Payphone y empieza a cobrar hoy.<br><br>#Payphone #CobrarSinDatafono #Ecuador</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Colombia</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">Antes necesitabas un datafono que cobra comision por cada venta.<br><br>Ahora solo necesitas tu celular.<br><br>Cero costo. Cero vueltas. Cero complicaciones.<br><br>Descarga Payphone y empieza a cobrar hoy.<br><br>#Payphone #CobraSinDatafono #Colombia</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Mexico</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">Antes necesitabas una terminal que te cobra comision por cada venta.<br><br>Ahora solo necesitas tu cel.<br><br>Cero costo. Cero tramites. Cero pretextos.<br><br>Descarga Payphone y empieza a cobrar hoy.<br><br>#Payphone #CobraSinTerminal #Mexico</p>
+      </div>
+      <div class="example-box">
+        <div class="label" style="color: var(--naranja);">Argentina</div>
+        <p style="font-size: 0.85rem; color: var(--gray-200); margin-bottom: 0;">Antes necesitabas un posnet que te cobra comision por cada venta.<br><br>Ahora solo necesitas tu celu.<br><br>Cero costo. Cero tramites. Cero vueltas.<br><br>Descarga Payphone y empeza a cobrar hoy.<br><br>#Payphone #CobraSinPosnet #Argentina</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Palabras peligrosas: lo que NUNCA decimos en ciertos mercados</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Palabra / Frase</th>
+        <th>Pais donde es problematica</th>
+        <th>Por que</th>
+        <th>Alternativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Coger" (tomar)</td>
+        <td>Argentina, Mexico, Uruguay</td>
+        <td>Connotacion sexual</td>
+        <td>"Tomar", "agarrar"</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Jalar"</td>
+        <td>Colombia, Mexico</td>
+        <td>Puede asociarse a drogas</td>
+        <td>"Halar", "tirar"</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Pija" (elegante en EC)</td>
+        <td>Argentina, Uruguay, Espana</td>
+        <td>Vulgar</td>
+        <td>Evitar completamente</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Concha"</td>
+        <td>Argentina</td>
+        <td>Vulgar</td>
+        <td>Evitar completamente</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Boludo"</td>
+        <td>Fuera de Argentina</td>
+        <td>Ofensivo en otros paises, coloquial en AR</td>
+        <td>No usar en copy de marca</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Pendejo"</td>
+        <td>Mexico vs. Argentina</td>
+        <td>Diferente significado (tonto en MX, nino en AR)</td>
+        <td>Evitar completamente</td>
+      </tr>
+      <tr>
+        <td style="color: var(--white); font-weight: 600;">"Verga"</td>
+        <td>Todo LATAM excepto Venezuela/MX coloquial</td>
+        <td>Vulgar en la mayoria de paises</td>
+        <td>Evitar completamente</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card card-accent" style="margin-top: 2rem;">
+    <h5>Regla de revision linguistica</h5>
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-bottom: 0;">Toda pieza de copy que salga para un mercado nuevo debe ser revisada por un hablante nativo de ese pais. No por un "hispanohablante generico" -- por alguien que viva en ese mercado y pueda decir: "esto suena natural" o "esto suena raro". La diferencia entre una marca que se siente local y una que se siente importada esta en ese filtro humano.</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 05 ADAPTACIONES VISUALES -->
+<!-- ============================================ -->
+<section id="s05">
+  <h2>Seccion 05</h2>
+  <h3>Adaptaciones Visuales por Mercado</h3>
+  <p class="lead">La identidad visual de Payphone es una sola. Pero la fotografia, los escenarios y las referencias culturales cambian por mercado. Lo que no cambia, jamas. Lo que se adapta, siempre con criterio.</p>
+
+  <div class="divider"></div>
+
+  <h4>Lo sagrado: nunca cambia, en ningun mercado</h4>
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h5>Logo</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">El isotipo (cola de ballena) y el wordmark ("payphone" en minusculas) no se modifican para ningun mercado. No se agregan banderas, no se agregan sufijos de pais, no se cambia el color. El logo es global.</p>
+    </div>
+    <div class="card card-accent">
+      <h5>Colores</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Naranja #FF6400 como primario (70%+ de presencia visual). Violeta #5A00B4, Amarillo #FFA000 y Obsidiana #222222 como complementarios. Sin excepciones por mercado. Sin colores de bandera en materiales de marca.</p>
+    </div>
+    <div class="card card-accent">
+      <h5>Tipografia</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Aeonik para headlines. Inter para cuerpo. La escala tipografica definida en el Brand Book ES aplica globalmente. No se agregan fuentes por mercado.</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Lo que se adapta: fotografia y direccion de imagen</h4>
+  <div class="card">
+    <h5>Principio central</h5>
+    <p style="font-size: 0.95rem; color: var(--gray-200);">Cada mercado tiene su textura visual. Un salon de belleza en Medellin no se ve como uno en Lima. Una bodega en Peru no se ve como una tiendita en Mexico. La marca debe sentirse <strong style="color: var(--white);">nativa en cada mercado</strong>, no importada. Eso significa que la fotografia cambia, pero el tratamiento visual (temperatura calida, luz natural, sujetos reales, sin stock generico) se mantiene.</p>
+  </div>
+
+  <div class="grid-2" style="margin-top: 1.5rem;">
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(255,100,0,0.08);">
+        <span style="font-size: 1.2rem;">&#127464;&#127476;</span> Colombia
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Ferias artesanales, salones de belleza en barrios populares, cafeterias de especialidad, tiendas de ropa en El Poblado y Chapinero, plazas de mercado.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Emprendedoras jovenes (25-35), duenos de negocio familiar, baristas, artesanos. Diversidad etnica visible: afrocolombianos, mestizos, indigenas.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Colorido pero no carnavalesco. Urbano con toques tropicales. Luz natural, calida, de ciudad ecuatorial.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Paisajes de Cartagena sin contexto comercial. "Colombia exotica" para turistas. Imagenes de cafe generico.</p>
+      </div>
+    </div>
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(255,100,0,0.08);">
+        <span style="font-size: 1.2rem;">&#127477;&#127466;</span> Peru
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Bodegas de barrio, mercados como Surquillo, restaurantes de comida criolla, puestos ambulantes formalizados, talleres de artesania.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Bodegueros (40-55), cocineros jovenes, emprendedoras en Gamarra, vendedores ambulantes con celular. Diversidad: andinos, costenos, limenos.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Urbano limeno gris-calido. Mercados con color natural (frutas, textiles). Interiores de bodega con estanteria real.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Machu Picchu. Llamas. Folklore generico. Peru como destino turistico en vez de mercado real.</p>
+      </div>
+    </div>
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(90,0,180,0.08);">
+        <span style="font-size: 1.2rem;">&#127474;&#127485;</span> Mexico
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Puestos de tacos, tienditas de barrio (changarros), mercados sobre ruedas, coworkings en Roma/Condesa, talleres mecanicos, fondas.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Taqueros, tenderas, freelancers en laptop, mecanicos, artesanas de mercados. Rango de edades amplio (20-55). Piel morena predominante.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Colores vivos pero no estereotipados. Luz fuerte mexicana (sombras marcadas). Arquitectura de colonia popular.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Sombreros, cactus, mariachis, calaveras. "Mexico para gringos". Estereotipos visuales de Dia de Muertos fuera de contexto.</p>
+      </div>
+    </div>
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(90,0,180,0.08);">
+        <span style="font-size: 1.2rem;">&#127468;&#127481;</span> Centroamerica
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Tiendas de barrio, talleres mecanicos, pulperias, mercados centrales, negocios de comida rapida familiar. Contexto semi-rural valido.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Emprendedores retornados, duenas de pulperia, mecanicos, vendedores de mercado. Diversidad: indigenas, ladinos, garífunas.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Calido, tropical, pero no resort. Infraestructura real (no postcard). Humedad visible.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Imagenes de playa tipo turismo. Pobreza explotada visualmente. "Centroamerica pintoresca".</p>
+      </div>
+    </div>
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(255,160,0,0.08);">
+        <span style="font-size: 1.2rem;">&#127464;&#127473;</span> Chile
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Pop-up stores en Lastarria, ferias de diseno, coworkings en Providencia, almacenes de barrio, restaurantes de Patronato.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Emprendedores tech-savvy (25-35), duenas de tiendas Shopify, disenadores independientes. Estetica mas "primer mundo" que resto de LATAM.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Urbano, limpio, minimal. Luz chilena (clara, seca). Arquitectura moderna mezclada con barrios tradicionales.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Andes como fondo. "Chile europeo". Estereotipos de roto/cuico.</p>
+      </div>
+    </div>
+    <div class="market-card">
+      <div class="mc-header" style="background: rgba(255,160,0,0.08);">
+        <span style="font-size: 1.2rem;">&#127462;&#127479;</span> Argentina
+      </div>
+      <div class="mc-body">
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Escenarios:</strong> Kioscos, coworkings en Palermo, estudios de freelancers, ferias de San Telmo, bares notables, almacenes de barrio.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Sujetos:</strong> Freelancers digitales (25-35), kiosqueros, baristas de especialidad, disenadores, programadores. Estetica urbana-portena.</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--white);">Ambiente:</strong> Urbano, con patina. Luz de Buenos Aires (gris-dorada). Arquitectura europea latinizada. Cafes, vereda, notebook.</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Evitar:</strong> Tango, asado, Boca Juniors fuera de contexto. "Argentina folclorica". Imagenes que ignoren la crisis economica real.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Regla anti-"latinoamericanismo generico"</h4>
+  <div class="card" style="border-left: 3px solid #e74c3c;">
+    <p style="font-size: 0.95rem; color: var(--gray-200);">El error mas comun de las marcas que expanden a LATAM es usar fotografia que no es de ningun lugar. Personas sin contexto cultural reconocible, oficinas genericas, paisajes que podrian ser de cualquier pais. Eso mata la conexion.</p>
+    <div class="grid-2" style="margin-top: 1rem;">
+      <div class="example-box">
+        <div class="label no">Nunca hacer</div>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Foto de una persona "latina generica" sonriendo con un celular. Fondo blanco. Podria ser de cualquier banco, cualquier app, cualquier pais.</p>
+      </div>
+      <div class="example-box">
+        <div class="label si">Siempre hacer</div>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">Foto de Valentina en su stand de feria en Medellin, acercando el celular de un cliente a su telefono para cobrar con TAP. Se ve la feria, se ve la ropa, se ve Colombia.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Aplicacion de marca en materiales locales</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Que se mantiene global</th>
+          <th>Que se localiza</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">App Store listing</td>
+          <td>Logo, screenshots de UI, calificacion</td>
+          <td>Descripcion adaptada con vocabulario local, screenshots con copy localizado</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Redes sociales</td>
+          <td>Formato visual, grilla, logo en corner</td>
+          <td>Fotografia local, copy con sabor del pais, hashtags locales</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Material POP (stickers, banderola)</td>
+          <td>Logo, colores, tipografia</td>
+          <td>Copy en sticker ("Aqui aceptamos Payphone" vs "Acepto pagos con Payphone")</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Landing pages</td>
+          <td>Layout, componentes UI, estructura</td>
+          <td>Hero copy, testimoniales locales, proof points del pais, fotografia</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Pitch deck</td>
+          <td>Estructura, diseno, narrativa macro</td>
+          <td>Market data por pais, competidores locales, regulacion especifica</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Videos</td>
+          <td>Intro/outro con branding, musica, ritmo</td>
+          <td>Locaciones, actores, acento, referencias culturales</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 06 GO-TO-MARKET REGIONAL -->
+<!-- ============================================ -->
+<section id="s06">
+  <h2>Seccion 06</h2>
+  <h3>Go-to-Market Regional</h3>
+  <p class="lead">Cada pais es una ola diferente. El modelo de entrada se adapta, pero la logica es la misma: entrar por el micro-emprendedor, ganar la calle, y escalar desde ahi.</p>
+
+  <div class="divider"></div>
+
+  <h4>Modelo de entrada universal: "De abajo hacia arriba"</h4>
+  <div class="card card-accent">
+    <p style="font-size: 0.95rem; color: var(--gray-200);">Payphone no entra por arriba (alianzas corporativas, B2B enterprise). Entra por abajo: el taquero, la bodeguera, la emprendedora de Instagram. Cuando 10,000 micro-negocios en una ciudad usan Payphone, los bancos vienen a nosotros. El modelo probado en Ecuador se replica:</p>
+    <div class="grid-4" style="margin-top: 1.5rem; margin-bottom: 0;">
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--naranja);">01</div>
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin-bottom: 0;"><strong style="color: var(--white);">Semilla</strong><br>Founders + early adopters + red personal. 500-1,000 usuarios en la primera ciudad.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--naranja);">02</div>
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin-bottom: 0;"><strong style="color: var(--white);">Traccion</strong><br>Influencers locales + PR + activaciones en ferias y mercados. 5,000-10,000 usuarios.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--naranja);">03</div>
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin-bottom: 0;"><strong style="color: var(--white);">Densidad</strong><br>Referral loops + paid ads locales + partnerships con gremios. 50,000+ usuarios.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--naranja);">04</div>
+        <p style="font-size: 0.8rem; color: var(--gray-300); margin-bottom: 0;"><strong style="color: var(--white);">Dominancia</strong><br>Producto como canal. Efecto red. Cada comercio que acepta Payphone trae 3 mas. 200,000+ usuarios.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Narrativa de lanzamiento por mercado</h4>
+  <p>Cada mercado necesita una historia de "por que aqui, por que ahora" que resuene localmente.</p>
+
+  <div class="grid-2" style="margin-top: 1.5rem;">
+    <div class="card">
+      <h5>&#127464;&#127476; Colombia: "Llego lo que Bold no te da gratis"</h5>
+      <p style="font-size: 0.85rem; color: var(--gray-200);">Narrativa: "Colombia es el pais con mas emprendedores per capita de LATAM. Cada uno merece cobrar con tarjeta sin pagar comision. Payphone ya lo demostro en Ecuador con 2 millones de personas. Ahora llega a Colombia."</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Angulo PR:</strong> "La fintech ecuatoriana que crecio sin venture capital llega a Colombia a competir con Bold y Nequi -- con precio $0."</p>
+    </div>
+    <div class="card">
+      <h5>&#127477;&#127466; Peru: "Lo que Yape no hace, Payphone si"</h5>
+      <p style="font-size: 0.85rem; color: var(--gray-200);">Narrativa: "Peru ya adopto el pago digital con Yape. Pero Yape no te deja cobrar con tarjeta, no te da e-commerce, no te da herramientas de negocio. Payphone completa lo que Yape empezo."</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Angulo PR:</strong> "Payphone llega a Peru para convertir a 3 millones de bodegueros en comercios digitales -- gratis."</p>
+    </div>
+    <div class="card">
+      <h5>&#127474;&#127485; Mexico: "Tu negocio merece mas que CoDi"</h5>
+      <p style="font-size: 0.85rem; color: var(--gray-200);">Narrativa: "Mexico tiene 4.1 millones de tienditas sin solucion de cobro digital real. CoDi fracaso. Clip cobra comision. Payphone llega con la formula que ya funciono en Ecuador: cero costo, cero tramites, todo desde tu celular."</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Angulo PR:</strong> "La fintech que mato al datafono en Ecuador ahora viene por la terminal en Mexico."</p>
+    </div>
+    <div class="card">
+      <h5>&#127464;&#127473;&#127462;&#127479; Cono Sur: "Cobrar sin que te coman las comisiones"</h5>
+      <p style="font-size: 0.85rem; color: var(--gray-200);">Narrativa: "En Chile, Transbank cobra 2.95%. En Argentina, Mercado Pago cobra 4.5%. Payphone cobra 0% al usuario. La plataforma que democratizo el cobro en Ecuador llega al Cono Sur para devolver el margen a los emprendedores."</p>
+      <p style="font-size: 0.85rem; margin-bottom: 0;"><strong style="color: var(--white);">Angulo PR:</strong> "Zero-fee fintech Payphone expands from Ecuador to Chile and Argentina, challenging payment incumbents."</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Influencers y voces por pais</h4>
+  <div class="card">
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-bottom: 1rem;">No buscamos mega-influencers. Buscamos micro-influencers de nicho que ya hablen a nuestra audiencia: emprendedores, creadores de contenido de negocios, educadores financieros.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Pais</th>
+          <th>Tipo de influencer ideal</th>
+          <th>Plataforma principal</th>
+          <th>Mecanica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Colombia</td>
+          <td>Emprendedoras de Instagram (moda, belleza, food), educadores financieros</td>
+          <td>Instagram Reels + TikTok</td>
+          <td>Demo real de cobro con TAP en su negocio + codigo de referido</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Peru</td>
+          <td>Bodegueros con presencia en redes, chefs/cocineros jovenes, tiktokers de finanzas</td>
+          <td>TikTok + Facebook</td>
+          <td>"Reto bodeguero": cobrar 10 ventas con TAP en un dia + mostrar resultados</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Mexico</td>
+          <td>Taqueros/foodpreneurs con TikTok, youtubers de emprendimiento, @changarrosmx tipo cuentas</td>
+          <td>TikTok + YouTube</td>
+          <td>Video "Monte mi negocio con $0 en herramientas" mostrando Payphone</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Guatemala/CA</td>
+          <td>Emprendedores retornados, comerciantes de mercado con redes, figuras comunitarias</td>
+          <td>Facebook + WhatsApp</td>
+          <td>Testimonio real de como Payphone resolvio un problema de cobro concreto</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Chile</td>
+          <td>Emprendedores Shopify, disenadores independientes, creadores de contenido de negocios</td>
+          <td>Instagram + LinkedIn</td>
+          <td>Comparacion honesta: "Lo que pagaba en Transbank vs Payphone"</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Argentina</td>
+          <td>Freelancers tech, youtubers de finanzas personales, kiosqueros con redes</td>
+          <td>Instagram + YouTube</td>
+          <td>"Como cobro en dolares sin perder" usando Payphone</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Partnerships estrategicos por mercado</h4>
+  <div class="grid-3">
+    <div class="card">
+      <h5>Camaras de comercio y gremios</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Alianza con camaras locales de comercio y gremios de micro-emprendedores para distribuir Payphone como "herramienta oficial de cobro". Modelo probado en Ecuador con Camara de Comercio de Quito.</p>
+    </div>
+    <div class="card">
+      <h5>Plataformas de delivery</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">Integracion con Rappi, PedidosYa, Didi Food como metodo de pago/cobro para restaurantes que no tienen POS propio. "Cobra tu Rappi con Payphone."</p>
+    </div>
+    <div class="card">
+      <h5>Cooperativas de ahorro</h5>
+      <p style="font-size: 0.85rem; margin-bottom: 0;">En mercados con baja bancarizacion (Guatemala, Peru, Ecuador), las cooperativas tienen mas presencia que los bancos. Partnership para ofrecer Payphone a sus socios como herramienta de cobro digital.</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Eventos culturales y momentos de marca</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Pais</th>
+          <th>Evento / Momento</th>
+          <th>Accion de marca</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Colombia</td>
+          <td>Feria de las Flores (Medellin), Colombia Fintech Forum</td>
+          <td>Activacion en ferias artesanales paralelas + stand en Fintech Forum</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Peru</td>
+          <td>Mistura (festival gastronomico), Fiestas Patrias (julio)</td>
+          <td>"Cobra tu Mistura con Payphone" -- activacion con puestos de comida</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Mexico</td>
+          <td>Buen Fin, INCmty (festival emprendimiento Monterrey)</td>
+          <td>"Tu Buen Fin sin terminal" -- campana de adopcion para changarros</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Guatemala</td>
+          <td>Feria de Agosto (Guatemala City), festivales locales</td>
+          <td>Activacion presencial en mercados + demostracion de TAP</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Chile</td>
+          <td>CyberDay, FiS Americas (Santiago), Feria Pyme</td>
+          <td>"Tu CyberDay sin Transbank" + networking en FiS</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Argentina</td>
+          <td>Lollapalooza AR, Fintech Americas, Hot Sale</td>
+          <td>Activacion con vendedores ambulantes de festival + stands fintech</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Canal social por mercado</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Canal</th>
+          <th>Colombia</th>
+          <th>Peru</th>
+          <th>Mexico</th>
+          <th>Guatemala/CA</th>
+          <th>Chile</th>
+          <th>Argentina</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Primario</td>
+          <td>Instagram</td>
+          <td>TikTok</td>
+          <td>TikTok</td>
+          <td>Facebook</td>
+          <td>Instagram</td>
+          <td>Instagram</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Secundario</td>
+          <td>TikTok</td>
+          <td>Facebook</td>
+          <td>Instagram</td>
+          <td>WhatsApp</td>
+          <td>LinkedIn</td>
+          <td>YouTube</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">B2B / Investors</td>
+          <td>LinkedIn</td>
+          <td>LinkedIn</td>
+          <td>LinkedIn</td>
+          <td>LinkedIn</td>
+          <td>LinkedIn</td>
+          <td>LinkedIn</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Comunidad</td>
+          <td>WhatsApp Groups</td>
+          <td>WhatsApp Groups</td>
+          <td>WhatsApp / Telegram</td>
+          <td>WhatsApp Groups</td>
+          <td>Discord / Slack</td>
+          <td>Telegram / Discord</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 07 NARRATIVA INVERSIONISTAS LATAM -->
+<!-- ============================================ -->
+<section id="s07">
+  <h2>Seccion 07</h2>
+  <h3>Narrativa para Inversionistas LATAM</h3>
+  <p class="lead">La expansion a LATAM no es un plan -- es una historia que convierte interes en cheques. Cada dato de Ecuador es evidencia. Cada nuevo mercado es upside.</p>
+
+  <div class="divider"></div>
+
+  <h4>Historia de 2 minutos para VCs</h4>
+  <div class="card" style="background: linear-gradient(135deg, rgba(255,100,0,0.1) 0%, rgba(90,0,180,0.05) 100%); padding: 2.5rem;">
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%;">
+      <strong style="color: var(--white); font-size: 1.1rem;">El problema:</strong> 200 millones de latinoamericanos tienen un smartphone pero siguen operando en efectivo. 50 millones de micro-negocios venden por Instagram y WhatsApp pero cobran con transferencias manuales y cash. Las soluciones existentes cobran comision, requieren hardware o solo funcionan para P2P.
+    </p>
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%;">
+      <strong style="color: var(--white); font-size: 1.1rem;">La solucion:</strong> Payphone convierte cualquier smartphone en infraestructura financiera completa -- cobro TAP con tarjeta, links de pago, QR, e-commerce y tarjeta Mastercard -- todo en una app, cero costo para el usuario, sin necesidad de cuenta bancaria.
+    </p>
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%;">
+      <strong style="color: var(--white); font-size: 1.1rem;">La traccion:</strong> 2M+ de usuarios en Ecuador, Guatemala y El Salvador. Crecimiento 100% organico. $0 en paid acquisition. Unit economics positivos. El producto funciona y los usuarios lo demuestran.
+    </p>
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%;">
+      <strong style="color: var(--white); font-size: 1.1rem;">La oportunidad:</strong> LATAM hispanohablante (500M+ personas, $125B en pagos digitales) esta en el punto de inflexion. PIX transformo Brasil. Yape esta transformando Peru. Pero nadie tiene la suite completa merchant-first que tiene Payphone. Estamos entrando a Colombia y Peru en 2026, Mexico en 2027.
+    </p>
+    <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%; margin-bottom: 0;">
+      <strong style="color: var(--white); font-size: 1.1rem;">El ask:</strong> Estamos levantando capital para acelerar la expansion regional. Cada dolar que entra se convierte en usuarios, en mercados y en procesamiento de transacciones. El modelo esta probado. Solo falta escala.
+    </p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Proof points de Ecuador (los datos que cierran reuniones)</h4>
+  <div class="grid-3">
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">2M+</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Usuarios registrados en Ecuador</p>
+    </div>
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">$0</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Invertido en paid acquisition</p>
+    </div>
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">3</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Paises con operacion activa</p>
+    </div>
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">100%</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Crecimiento organico</p>
+    </div>
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">5</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Productos en una sola app (TAP, QR, Link, e-com, tarjeta)</p>
+    </div>
+    <div class="card card-accent" style="text-align: center;">
+      <div class="stat-number">0%</div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0;">Comision al usuario (cero costo)</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Ventaja competitiva en 3 frases</h4>
+  <div class="card card-violet">
+    <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--gray-200); line-height: 1.8;">
+      <p style="max-width: 100%;"><strong style="color: var(--white);">1. Suite completa, no feature aislada.</strong> Yape hace P2P. Bold hace POS. Nu hace banca. Payphone hace todo: TAP + QR + Link + E-commerce + Tarjeta. En una sola app. Es el "sistema operativo financiero" del micro-emprendedor.</p>
+      <p style="max-width: 100%;"><strong style="color: var(--white);">2. Probado en el mercado mas dificil.</strong> Ecuador es dolarizado, altamente regulado y dominado por bancos tradicionales. Si funciona ahi, funciona en Colombia, Peru y Mexico donde las condiciones son mas favorables.</p>
+      <p style="max-width: 100%; margin-bottom: 0;"><strong style="color: var(--white);">3. Cero costo = viralidad estructural.</strong> No cobramos al usuario. Eso elimina la principal barrera de adopcion en mercados de bajo ingreso. El producto se vende solo porque no hay razon para no usarlo.</p>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">"Por que ahora" -- el timing perfecto</h4>
+  <div class="card">
+    <div class="grid-2" style="margin: 0;">
+      <div>
+        <h5>Vientos a favor</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Regulacion fintech madura en Colombia, Peru, Mexico, Chile</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Post-pandemia: habito de pago digital irreversible</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Generacion Z ingresando al mercado laboral (mobile-first natives)</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Smartphones con NFC ya son mayoria en LATAM</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">CoDi fracaso, PIX funciono -- los mercados quieren su propia solucion</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ventana de oportunidad</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Yape (Peru) y Nequi (Colombia) dominan P2P pero no merchant</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Mercado Pago esta atado a su marketplace</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Ningun player tiene suite completa TAP+QR+Link+E-com+Tarjeta</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">Los bancos tardan 2-3 anos en reaccionar a fintech</li>
+          <li style="padding: 0.4rem 0; color: var(--gray-300); font-size: 0.85rem;">El costo de expansion tech es decreciente (infra cloud, APIs, compliance-as-service)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">10 slides clave del pitch deck LATAM</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Slide</th>
+          <th>Mensaje central</th>
+          <th>Dato clave</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="color: var(--naranja); font-weight: 700;">01</td><td style="color: var(--white); font-weight: 600;">Portada</td><td>Logo + one-liner + "Convirtiendo smartphones en infraestructura financiera"</td><td>--</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">02</td><td style="color: var(--white); font-weight: 600;">El problema</td><td>200M de sub-bancarizados, 50M de micro-negocios sin herramientas de cobro</td><td>70% del comercio LATAM sigue en efectivo</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">03</td><td style="color: var(--white); font-weight: 600;">La solucion</td><td>Suite completa en una app: TAP + QR + Link + E-com + Tarjeta. Cero costo.</td><td>5 productos, 1 app, 0 comision</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">04</td><td style="color: var(--white); font-weight: 600;">Traccion Ecuador</td><td>2M+ usuarios, $0 paid, 3 paises, unit economics positivos</td><td>Graficos de crecimiento MoM</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">05</td><td style="color: var(--white); font-weight: 600;">Mercado LATAM</td><td>TAM $125B, SAM $28B, SOM $1.2B. Mapa pais por pais con penetracion</td><td>TAM/SAM/SOM visual</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">06</td><td style="color: var(--white); font-weight: 600;">Competencia</td><td>Mapa competitivo: nadie combina todo. Payphone es la unica suite completa cero costo</td><td>Tabla comparativa</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">07</td><td style="color: var(--white); font-weight: 600;">Modelo de negocio</td><td>Monetizacion: servicios premium merchant, procesamiento, tarjeta, API. Revenue diversificado</td><td>Revenue mix y unit economics</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">08</td><td style="color: var(--white); font-weight: 600;">Plan de expansion</td><td>Fase 1: CO+PE (2026), Fase 2: MX+CA (2027), Fase 3: CL+AR (2028)</td><td>Timeline visual con milestones</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">09</td><td style="color: var(--white); font-weight: 600;">Equipo</td><td>Founders + equipo ejecutivo + advisors. Track record en fintech y operaciones LATAM</td><td>Fotos + credentials</td></tr>
+        <tr><td style="color: var(--naranja); font-weight: 700;">10</td><td style="color: var(--white); font-weight: 600;">El ask</td><td>Monto, uso de fondos (60% expansion, 25% producto, 15% equipo), milestones esperados</td><td>"Con $X llegamos a Y usuarios en Z meses"</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 08 SHOWCASE DE COPY -->
+<!-- ============================================ -->
+<section id="s08">
+  <h2>Seccion 08</h2>
+  <h3>Showcase de Copy LATAM</h3>
+  <p class="lead">10 piezas de copy final para la expansion regional. No son borradores -- son la marca hablando en cada mercado. Listas para usar.</p>
+
+  <div class="divider"></div>
+
+  <!-- PIEZA 1: App Store Colombia -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 01</span>
+      <strong style="color: var(--white);">App Store listing -- Colombia</strong>
+    </div>
+    <div class="cp-body">
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.25rem;">NOMBRE DE APP</p>
+      <p style="font-size: 1.1rem; color: var(--white); font-weight: 600; margin-bottom: 1rem;">Payphone: Cobra y Paga</p>
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.25rem;">SUBTITULO</p>
+      <p style="font-size: 1rem; color: var(--white); margin-bottom: 1rem;">Cobra con tarjeta desde tu celular</p>
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.25rem;">DESCRIPCION</p>
+      <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">
+        Payphone convierte tu celular en tu herramienta de cobro profesional. Cobra con tarjeta de credito y debito usando TAP (acercando la tarjeta a tu celular), envia links de cobro por WhatsApp, genera QR para tu negocio, y recibe pagos en tu tienda online. Todo en una sola app. Sin datafono. Sin comision. Sin tramites.
+        <br><br>
+        Ya funciona con mas de 2 millones de personas en America Latina. Ahora esta en Colombia.
+        <br><br>
+        Lo que puedes hacer con Payphone:
+        <br>- Cobrar con tarjeta acercando la tarjeta a tu celular (TAP)
+        <br>- Enviar links de cobro por WhatsApp, Instagram o email
+        <br>- Generar tu QR de cobro para tu negocio
+        <br>- Recibir pagos en tu tienda online con boton de pago
+        <br>- Pagar con tu tarjeta Mastercard Payphone
+        <br>- Ver todas tus ventas en tiempo real
+        <br><br>
+        Sin datafono. Sin comision. Sin complicaciones.
+        <br><br>
+        Descarga Payphone y empieza a cobrar como los grandes.
+      </p>
+    </div>
+    <div class="cp-context">
+      Pais: Colombia | Canal: App Store / Google Play | Objetivo: Downloads + activacion
+    </div>
+  </div>
+
+  <!-- PIEZA 2: Hero headline Mexico -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 02</span>
+      <strong style="color: var(--white);">Hero headline -- Landing page Mexico</strong>
+    </div>
+    <div class="cp-body" style="text-align: center;">
+      <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; background: var(--gradient-sunset); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Tu cel ya es tu terminal de cobro.</div>
+      <p style="font-size: 1.1rem; color: var(--gray-300); max-width: 550px; margin: 0 auto 1.5rem;">Cobra con tarjeta, envia links de pago, genera tu QR y maneja tu negocio. Todo desde una app. Sin terminal. Sin comision. Sin pretextos.</p>
+      <div style="display: inline-block; background: var(--gradient-sunset); color: white; padding: 0.85rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem;">Descarga gratis</div>
+    </div>
+    <div class="cp-context">
+      Pais: Mexico | Canal: Landing page | Nota: "cel" en lugar de "celular", "terminal" en lugar de "datafono", "pretextos" en lugar de "excusas" (mas natural en Mexico)
+    </div>
+  </div>
+
+  <!-- PIEZA 3: LinkedIn Juan Diego expansion -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-violet">Pieza 03</span>
+      <strong style="color: var(--white);">LinkedIn -- Juan Diego, expansion regional</strong>
+    </div>
+    <div class="cp-body">
+      <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">
+        Nos dijeron que desde Ecuador no se podia construir un producto para toda LATAM.
+        <br><br>
+        Que necesitabamos estar en Mexico City o Bogota. Que sin una ronda de Serie A, no podiamos expandirnos. Que el mercado ecuatoriano era "demasiado pequeno" para validar algo regional.
+        <br><br>
+        Hoy Payphone tiene 2 millones de usuarios en 3 paises. Crecimos 100% organico. $0 en paid acquisition. Y cada uno de esos usuarios llego porque el producto resolvio un problema real: cobrar con tarjeta sin pagar comision, sin datafono, sin tramites.
+        <br><br>
+        Ahora vamos por Colombia y Peru. No porque alguien nos dijo que era el siguiente paso. Porque los emprendedores de alla nos lo estan pidiendo.
+        <br><br>
+        En LATAM hay 50 millones de micro-negocios que venden por WhatsApp e Instagram y cobran en efectivo. Cada uno de ellos merece las mismas herramientas financieras que tiene una cadena de retail. Payphone se las da. Gratis.
+        <br><br>
+        Ecuador fue el stress test. LATAM es la mision.
+        <br><br>
+        Si estas construyendo o invirtiendo en fintech LATAM, hablemos.
+        <br><br>
+        #Payphone #FinTech #LATAM #Colombia #Peru
+      </p>
+    </div>
+    <div class="cp-context">
+      Canal: LinkedIn (perfil Juan Diego) | Objetivo: Awareness + pipeline de inversionistas | Pilar: Founder Perspective + Investor Relations
+    </div>
+  </div>
+
+  <!-- PIEZA 4: Email inversionista LATAM -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-violet">Pieza 04</span>
+      <strong style="color: var(--white);">Email de prospeccion -- Inversionista LATAM</strong>
+    </div>
+    <div class="cp-body">
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.5rem;">Asunto: 2M usuarios, $0 paid, expandiendo a 6 paises -- Payphone</p>
+      <div style="border-top: 1px solid var(--dark-border); padding-top: 1.5rem; margin-top: 1rem;">
+        <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.9; max-width: 100%;">
+          Hola [Nombre],
+          <br><br>
+          Le escribo porque [fondo/tesis de inversion] se alinea con lo que estamos construyendo en Payphone.
+          <br><br>
+          En tres lineas: Payphone convierte cualquier celular en la infraestructura financiera completa de un negocio -- cobro TAP con tarjeta, links de pago, QR, e-commerce y tarjeta Mastercard -- todo cero costo al usuario. Hoy tenemos 2M+ de usuarios en Ecuador, Guatemala y El Salvador, 100% crecimiento organico.
+          <br><br>
+          La tesis LATAM es directa: 200M de personas sub-bancarizadas con smartphone, 50M de micro-negocios sin herramientas de cobro, y un modelo que ya demostro product-market fit en el mercado mas dificil de la region. Estamos entrando a Colombia y Peru en 2026, Mexico y Centroamerica en 2027.
+          <br><br>
+          Estamos abriendo nuestra ronda para acelerar la expansion. Los unit economics son positivos y el modelo escala sin quemar capital en adquisicion pagada.
+          <br><br>
+          Me encantaria compartirle los numeros en una llamada de 20 minutos. Le funciona esta semana o la proxima?
+          <br><br>
+          Juan Diego
+          <br>Fundador, Payphone (Unicore LLC)
+          <br><span style="font-size: 0.8rem; color: var(--gray-400);">payphone.app</span>
+        </p>
+      </div>
+    </div>
+    <div class="cp-context">
+      Canal: Email directo | Objetivo: Meeting booking | Tono: Seguro + Directo | Nota: Personalizar linea 2 con tesis del fondo
+    </div>
+  </div>
+
+  <!-- PIEZA 5: Comunicado de prensa -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 05</span>
+      <strong style="color: var(--white);">Comunicado de prensa -- Expansion regional</strong>
+    </div>
+    <div class="cp-body">
+      <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 1rem;">PARA PUBLICACION INMEDIATA</p>
+      <p style="font-size: 1.2rem; color: var(--white); font-weight: 700; font-family: var(--font-display); margin-bottom: 1rem;">Payphone, la fintech ecuatoriana con 2 millones de usuarios, anuncia expansion a Colombia y Peru</p>
+      <p style="font-size: 0.95rem; color: var(--gray-200); font-style: italic; margin-bottom: 1.5rem;">La plataforma que convierte cualquier celular en terminal de cobro llega a dos de los mercados mas grandes de la region con su modelo de cero costo al usuario</p>
+      <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.8; max-width: 100%;">
+        <strong style="color: var(--white);">Quito, Ecuador -- [Fecha] --</strong> Payphone, la plataforma de autonomia financiera movil desarrollada por Unicore LLC, anuncio hoy su expansion a Colombia y Peru, los dos primeros mercados de una estrategia de crecimiento que abarcara seis paises de America Latina en los proximos 36 meses.
+        <br><br>
+        La plataforma, que ya cuenta con mas de 2 millones de usuarios registrados en Ecuador, Guatemala y El Salvador, permite a cualquier persona cobrar con tarjeta de credito y debito usando la tecnologia TAP de su celular, enviar links de cobro por WhatsApp, generar codigos QR y gestionar pagos de e-commerce, todo sin costo y sin necesidad de cuenta bancaria.
+        <br><br>
+        "Construimos Payphone en el mercado mas exigente de la region -- Ecuador, dolarizado, con alta dependencia del efectivo y regulacion estricta. Si funciona aqui, funciona en cualquier parte de LATAM", afirmo Juan Diego, fundador y CTO de Payphone. "No estamos experimentando. Estamos escalando un modelo probado."
+        <br><br>
+        La empresa apunta a capturar la oportunidad de 50 millones de micro-negocios en America Latina que actualmente operan sin herramientas formales de cobro digital, un mercado estimado en $28 mil millones en volumen de transacciones anuales.
+        <br><br>
+        <strong style="color: var(--white);">Sobre Payphone</strong><br>
+        Payphone es una plataforma de autonomia financiera que convierte cualquier smartphone en herramienta de cobro, pago y gestion financiera. Fundada en 2016 en Ecuador, sirve a mas de 2 millones de usuarios en tres paises. Unicore LLC. payphone.app
+      </p>
+    </div>
+    <div class="cp-context">
+      Canal: PR wire + distribucion directa a periodistas fintech | Audiencia: Prensa de negocios LATAM, fintech media, tech blogs
+    </div>
+  </div>
+
+  <!-- PIEZA 6: Anuncios FB/IG -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 06</span>
+      <strong style="color: var(--white);">Anuncios Facebook/Instagram -- 3 variaciones</strong>
+    </div>
+    <div class="cp-body">
+      <div class="grid-3">
+        <div class="example-box">
+          <div class="label" style="color: var(--naranja);">Variacion A -- Dolor</div>
+          <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.5rem;">Pierdes ventas porque no cobras con tarjeta?</p>
+          <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0.75rem;">Con Payphone cobras con tarjeta acercandola a tu celular. Sin datafono. Sin comision. Sin tramites. Ya funciona en 3 paises con 2M+ de personas.</p>
+          <p style="font-size: 0.8rem; color: var(--naranja); margin-bottom: 0;">CTA: Descarga gratis</p>
+        </div>
+        <div class="example-box">
+          <div class="label" style="color: var(--naranja);">Variacion B -- Aspiracional</div>
+          <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.5rem;">Tu negocio merece cobrar como los grandes.</p>
+          <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0.75rem;">TAP con tarjeta, links de pago, QR, e-commerce. Todo desde tu celular. Todo gratis. Payphone te da las herramientas que antes solo tenian las cadenas grandes.</p>
+          <p style="font-size: 0.8rem; color: var(--naranja); margin-bottom: 0;">CTA: Empieza a cobrar</p>
+        </div>
+        <div class="example-box">
+          <div class="label" style="color: var(--naranja);">Variacion C -- Social proof</div>
+          <p style="font-size: 0.9rem; color: var(--white); font-weight: 600; margin-bottom: 0.5rem;">2 millones de personas ya cobran con Payphone.</p>
+          <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0.75rem;">Tu celular es tu terminal de cobro. Sin hardware, sin comision, sin complicaciones. La app que ya funciona en Ecuador, Guatemala y El Salvador ahora esta en [pais].</p>
+          <p style="font-size: 0.8rem; color: var(--naranja); margin-bottom: 0;">CTA: Unete gratis</p>
+        </div>
+      </div>
+    </div>
+    <div class="cp-context">
+      Canal: Meta Ads (Facebook + Instagram) | Formato: Single image + Video | Segmentacion: Emprendedores, duenos de negocio, vendedores online, 22-45 anos
+    </div>
+  </div>
+
+  <!-- PIEZA 7: Onboarding Peru -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 07</span>
+      <strong style="color: var(--white);">Pantallas de onboarding -- Peru</strong>
+    </div>
+    <div class="cp-body">
+      <div class="grid-3">
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 2rem; text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">&#128179;</div>
+          <p style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem;">Cobra con tarjeta desde tu celular</p>
+          <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">Acerca la tarjeta a tu celular y listo. Sin POS, sin contrato, sin comision.</p>
+        </div>
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 2rem; text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">&#128279;</div>
+          <p style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem;">Envia links de cobro por WhatsApp</p>
+          <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">Tu cliente recibe el link, paga con tarjeta, y tu recibes la plata. Asi de facil.</p>
+        </div>
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 2rem; text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">&#128200;</div>
+          <p style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem;">Tu negocio en tu bolsillo</p>
+          <p style="font-size: 0.85rem; color: var(--gray-400); margin-bottom: 0;">Mira tus ventas, retira cuando quieras, controla todo desde una sola app.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cp-context">
+      Pais: Peru | Canal: In-app onboarding | Nota: Vocabulario peruano ("plata", sin jerga local compleja). "POS" en lugar de "datafono" (termino mas comun en Peru).
+    </div>
+  </div>
+
+  <!-- PIEZA 8: Push notification Colombia -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-orange">Pieza 08</span>
+      <strong style="color: var(--white);">Push notification -- Colombia</strong>
+    </div>
+    <div class="cp-body">
+      <div class="grid-3">
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+          <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">PRIMERA VENTA</p>
+          <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Tu primera venta con TAP</p>
+          <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Recibiste tu primer pago con tarjeta. Asi de facil es cobrar con Payphone. La plata ya esta en tu cuenta.</p>
+        </div>
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+          <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">REACTIVACION</p>
+          <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">Llevas 7 dias sin cobrar</p>
+          <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Tu TAP sigue activo y listo. Comparte tu link de cobro por WhatsApp y empieza a recibir pagos otra vez.</p>
+        </div>
+        <div style="background: var(--dark-surface); border-radius: 12px; padding: 1.5rem;">
+          <p style="font-size: 0.7rem; color: var(--gray-500); margin-bottom: 0.5rem;">MILESTONE</p>
+          <p style="font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 0.35rem;">10 ventas con Payphone</p>
+          <p style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 0;">Ya llevas 10 cobros con Payphone. Tu negocio esta creciendo y nosotros estamos contigo en cada venta.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cp-context">
+      Pais: Colombia | Canal: Push notification (iOS/Android) | Nota: "plata" es natural en Colombia. Tono directo + motivador.
+    </div>
+  </div>
+
+  <!-- PIEZA 9: Narrativa pitch deck -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-violet">Pieza 09</span>
+      <strong style="color: var(--white);">Narrativa pitch deck regional -- Slide 1 (voiceover)</strong>
+    </div>
+    <div class="cp-body">
+      <div style="background: linear-gradient(135deg, rgba(255,100,0,0.15), rgba(90,0,180,0.1)); border-radius: 12px; padding: 2.5rem;">
+        <p style="font-size: 1.05rem; color: var(--gray-200); line-height: 2; max-width: 100%;">
+          Imagina que eres una emprendedora en Medellin. Disenas tu propia ropa, la fotografias, la publicas en Instagram. Tienes 12 mil seguidores. Tus DMs estan llenos de pedidos. Pero cuando alguien quiere pagarte con tarjeta, tienes que decir: "solo efectivo o Nequi."
+          <br><br>
+          Ahora imagina que eres un bodeguero en Lima. Tu tienda lleva 15 anos. Tus clientes jovenes quieren pagar con Yape o tarjeta. Yape tiene limites. Izipay te pide contrato y comision. Sientes que tu negocio se esta quedando atras.
+          <br><br>
+          Ahora imagina que eres un taquero en Guadalajara. Tu TikTok tiene 45 mil seguidores. Tus tacos son virales. Pero cuando un corporativo te pide catering y quiere pagar con tarjeta empresarial, no puedes. Pierdes el pedido.
+          <br><br>
+          Estas tres personas tienen algo en comun: un celular en el bolsillo con capacidad para cobrar con tarjeta, pero ninguna herramienta que se lo permita. Hasta ahora.
+          <br><br>
+          <strong style="color: var(--white); font-size: 1.15rem;">Eso es Payphone.</strong>
+        </p>
+      </div>
+    </div>
+    <div class="cp-context">
+      Canal: Pitch deck (presentacion oral) | Audiencia: VCs, family offices, inversionistas angeles | Tono: Seguro + Emocional narrativo
+    </div>
+  </div>
+
+  <!-- PIEZA 10: Email partnership camara de comercio -->
+  <div class="copy-piece">
+    <div class="cp-header">
+      <span class="badge badge-violet">Pieza 10</span>
+      <strong style="color: var(--white);">Email partnership -- Camara de Comercio</strong>
+    </div>
+    <div class="cp-body">
+      <p style="font-size: 0.8rem; color: var(--naranja); font-weight: 600; margin-bottom: 0.5rem;">Asunto: Propuesta -- Herramienta de cobro digital gratuita para sus afiliados</p>
+      <div style="border-top: 1px solid var(--dark-border); padding-top: 1.5rem; margin-top: 1rem;">
+        <p style="font-size: 0.9rem; color: var(--gray-200); line-height: 1.9; max-width: 100%;">
+          Estimado/a [Nombre],
+          <br><br>
+          Mi nombre es Juan Diego, fundador de Payphone (Unicore LLC). Payphone es una plataforma de cobro y pagos digitales que convierte cualquier celular en un terminal de cobro profesional -- sin costo, sin hardware y sin necesidad de cuenta bancaria.
+          <br><br>
+          Hoy servimos a mas de 2 millones de personas en Ecuador, Guatemala y El Salvador, y estamos en proceso de expansion a [pais]. Nos gustaria proponer una alianza con [nombre de la camara] para ofrecer Payphone como herramienta de formalizacion y digitalizacion de cobro para sus afiliados y micro-emprendedores asociados.
+          <br><br>
+          La propuesta concreta:
+          <br>- Acceso gratuito a Payphone para todos los afiliados de la camara
+          <br>- Capacitacion presencial o virtual para comerciantes sobre cobro digital
+          <br>- Material POP co-brandeado para los negocios afiliados
+          <br>- Dashboard de metricas de adopcion digital para la camara
+          <br><br>
+          Nuestro caso de exito con la Camara de Comercio de Quito demostro un incremento del 40% en adopcion digital de micro-comerciantes en los primeros 6 meses de alianza.
+          <br><br>
+          Me encantaria agendar una reunion de 30 minutos para presentar la propuesta en detalle. Quedo atento a su disponibilidad.
+          <br><br>
+          Cordialmente,
+          <br>Juan Diego
+          <br>Fundador, Payphone (Unicore LLC)
+        </p>
+      </div>
+    </div>
+    <div class="cp-context">
+      Canal: Email directo | Audiencia: Directivos de camaras de comercio regionales | Tono: Formal + Propositivo | Nota: Usar "usted" en mercados que lo requieran
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 09 REGLAS LATAM -->
+<!-- ============================================ -->
+<section id="s09">
+  <h2>Seccion 09</h2>
+  <h3>Reglas LATAM</h3>
+  <p class="lead">10 cosas que Payphone NUNCA hace en su expansion regional. Mas las reglas de sensibilidad cultural y el protocolo para manejar la pregunta inevitable.</p>
+
+  <div class="divider"></div>
+
+  <h4>10 cosas que Payphone NUNCA hace en LATAM</h4>
+  <ul class="never-list">
+    <li><div><div class="rule-text">Nunca usa el mismo copy para todos los paises sin revision local.</div><div class="rule-why">"Cobrar con datafono" tiene sentido en Ecuador y Colombia. En Mexico es "terminal". En Argentina es "posnet". Una palabra incorrecta destruye la credibilidad local.</div></div></li>
+    <li><div><div class="rule-text">Nunca exotiza ni estereotipa a ningun pais en su comunicacion visual.</div><div class="rule-why">Nada de sombreros mexicanos, tango argentino, llamas peruanas ni cafe colombiano como recurso visual. Mostramos personas reales en contextos comerciales reales.</div></div></li>
+    <li><div><div class="rule-text">Nunca compara paises entre si en comunicacion publica.</div><div class="rule-why">"Mejor que lo que tienen en Peru" o "mas avanzado que Colombia" genera rechazo instantaneo. Cada mercado tiene su propio contexto y su propio valor.</div></div></li>
+    <li><div><div class="rule-text">Nunca usa "Latinoamerica" como si fuera un solo pais.</div><div class="rule-why">Mexico no es Colombia. Peru no es Argentina. Cada comunicacion debe ser especifica al mercado o, como minimo, reconocer la diversidad sin aplanarla.</div></div></li>
+    <li><div><div class="rule-text">Nunca entra a un mercado diciendo "venimos a ensenarles".</div><div class="rule-why">El tono de "mision civilizadora" genera rechazo legitimo. Entramos a aprender del mercado local, no a iluminarlo. La narrativa es: "construimos algo que funciona y queremos compartirlo."</div></div></li>
+    <li><div><div class="rule-text">Nunca hace chistes con acentos, dialectos o modismos de otro pais.</div><div class="rule-why">Lo que es humor en un pais es burla en otro. El humor de marca es universal (situacional, no linguistico) o no existe.</div></div></li>
+    <li><div><div class="rule-text">Nunca opina sobre politica local de ningun pais.</div><div class="rule-why">Payphone no tiene posicion politica. No en Ecuador, no en Colombia, no en ninguna parte. Ni en redes, ni en PR, ni en comunicaciones internas que puedan filtrarse.</div></div></li>
+    <li><div><div class="rule-text">Nunca lanza en un pais sin tener soporte local en el idioma y horario de ese pais.</div><div class="rule-why">Si un usuario en Colombia tiene un problema a las 10am hora Bogota, la respuesta no puede venir 3 horas despues desde Quito. El soporte local no es negociable.</div></div></li>
+    <li><div><div class="rule-text">Nunca usa testimonios de un pais para vender en otro sin contextualizarlos.</div><div class="rule-why">"Camila en Quito usa Payphone" no convence a un bodeguero en Lima. Los testimonios deben ser locales o, como minimo, presentarse como "caso de exito regional" con contexto.</div></div></li>
+    <li><div><div class="rule-text">Nunca asume que lo que funciono en Ecuador funcionara exactamente igual en otro mercado.</div><div class="rule-why">El modelo se adapta. Los canales cambian. Los tiempos de adopcion varian. La humildad operativa es tan importante como la ambicion estrategica.</div></div></li>
+  </ul>
+
+  <h4 style="margin-top: 3rem;">Sensibilidad cultural por pais</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Pais</th>
+          <th>Sensibilidad clave</th>
+          <th>Que cuidar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Colombia</td>
+          <td>Estereotipos de violencia y narcotrafico</td>
+          <td>Nunca referir al "pasado" de Colombia. No usar imagenes que evoquen inseguridad. Colombia se percibe moderna, emprendedora, optimista. Esa es la Colombia que hablamos.</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Peru</td>
+          <td>Clasismo y racismo estructural</td>
+          <td>Incluir diversidad etnica real en fotografia (andino, costeno, amazonico). No solo mostrar Lima. Peru es mas que su capital. Respetar la diversidad sin folclorizarla.</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Mexico</td>
+          <td>Relacion con EE.UU. y estereotipos gringos</td>
+          <td>No usar lenguaje que suene "importado desde Silicon Valley". Mexico tiene orgullo de su propia innovacion. Posicionar Payphone como herramienta LATAM, no como "app gringa que habla espanol".</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Guatemala/CA</td>
+          <td>Migracion, pobreza, desigualdad</td>
+          <td>No explotar la narrativa del migrante para marketing. Si incluimos historias de migrantes, con dignidad y agencia, nunca como victimas. Centroamerica tiene identidad propia mas alla de la migracion.</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Chile</td>
+          <td>Post-estallido social, desigualdad</td>
+          <td>Chile se percibe como el pais "mas desarrollado" de LATAM, pero con desigualdad profunda. No asumir que el mercado es "facil" por ser mas bancarizado. Los emprendedores chilenos tienen las mismas fricciones.</td>
+        </tr>
+        <tr>
+          <td style="color: var(--white); font-weight: 600;">Argentina</td>
+          <td>Crisis economica perpetua, orgullo cultural intenso</td>
+          <td>No trivializar la inflacion ni la crisis. Los argentinos la viven con humor pero no aceptan que otros se rian. El tono debe ser empatico con la realidad macro. Argentina tiene una identidad cultural fortisima -- respetarla sin imitarla.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Manejar la pregunta: "Payphone es de Ecuador?"</h4>
+  <div class="card" style="background: linear-gradient(135deg, rgba(255,100,0,0.1) 0%, rgba(90,0,180,0.05) 100%);">
+    <p style="font-size: 0.95rem; color: var(--gray-200);">Esta pregunta va a aparecer en cada mercado nuevo. La respuesta correcta no es esconder el origen ni pedir disculpas por el. Es usar Ecuador como proof point.</p>
+
+    <div class="grid-2" style="margin-top: 1.5rem;">
+      <div class="example-box">
+        <div class="label no">Nunca responder asi</div>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">"Payphone es una empresa global con operaciones en multiples mercados de la region." (Vago, corporativo, esconde el origen.)</p>
+      </div>
+      <div class="example-box">
+        <div class="label si">Siempre responder asi</div>
+        <p style="font-size: 0.85rem; color: var(--gray-300); margin-bottom: 0;">"Si, Payphone nacio en Ecuador. Construimos el producto en uno de los mercados mas exigentes de la region y logramos 2 millones de usuarios sin un dolar en publicidad. Ahora llevamos ese modelo probado a [pais]."</p>
+      </div>
+    </div>
+
+    <p style="font-size: 0.9rem; color: var(--gray-200); margin-top: 1.5rem; margin-bottom: 0;"><strong style="color: var(--white);">El framework:</strong> Origen (Ecuador) + Proof point (2M usuarios, crecimiento organico) + Proyeccion (expansion a su mercado). Nunca defensivo, siempre ofensivo. Ecuador no es una debilidad -- es la demostracion de que el modelo funciona en condiciones dificiles.</p>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Reglas de adaptacion: el checklist antes de publicar</h4>
+  <div class="card card-accent">
+    <ul style="list-style: none; padding: 0;">
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">1.</strong> El copy fue revisado por un hablante nativo del mercado destino?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">2.</strong> La fotografia muestra personas y escenarios reconocibles de ese pais?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">3.</strong> Los terminos financieros usan el vocabulario local (datafono/terminal/posnet)?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">4.</strong> La forma de tratamiento (tu/vos/usted) es correcta para el pais y contexto?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">5.</strong> No se usa ninguna palabra del listado de "palabras peligrosas"?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">6.</strong> No hay estereotipos visuales ni culturales del pais?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">7.</strong> Los competidores mencionados (si los hay) son relevantes para ese mercado?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">8.</strong> Los proof points usan datos actualizados y verificables?</li>
+      <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--dark-border); color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">9.</strong> La pieza pasa el "test del surfer" (suena natural, no corporativa)?</li>
+      <li style="padding: 0.6rem 0; color: var(--gray-200); font-size: 0.9rem;"><strong style="color: var(--naranja);">10.</strong> Alguien del equipo de marca aprobo voz y tono?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 10 FASES DE ROLLOUT -->
+<!-- ============================================ -->
+<section id="s10">
+  <h2>Seccion 10</h2>
+  <h3>Fases de Rollout Regional</h3>
+  <p class="lead">La expansion a LATAM no es un big bang. Es una secuencia estrategica de 3 fases en 36 meses, cada una disenada para maximizar aprendizaje y minimizar riesgo.</p>
+
+  <div class="divider"></div>
+
+  <!-- FASE 1 -->
+  <div class="phase-card phase-1" style="margin-bottom: 2rem;">
+    <span class="badge badge-orange" style="margin-bottom: 1rem;">Fase 1 -- 2026</span>
+    <h4 style="margin-top: 0.5rem;">Colombia + Peru</h4>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">Los dos mercados mas similares a Ecuador en comportamiento de usuario, idioma y estructura de mercado. Expansion natural con menor riesgo regulatorio.</p>
+
+    <div class="grid-2" style="margin-top: 1.5rem;">
+      <div>
+        <h5>Colombia</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ciudad de entrada:</strong> Medellin (hub emprendedor, high density de micro-negocios)</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Expansion:</strong> Medellin -> Bogota -> Cali -> ciudades intermedias</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2026:</strong> 100,000 usuarios registrados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Instagram + influencers emprendedoras + activaciones en ferias</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Partnership clave:</strong> Camara de Comercio de Medellin</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Peru</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ciudad de entrada:</strong> Lima (concentracion economica, 10M+ habitantes)</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Expansion:</strong> Lima -> Arequipa -> Cusco -> ciudades del norte</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2026:</strong> 75,000 usuarios registrados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> TikTok + bodegueros con redes + activaciones en mercados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Partnership clave:</strong> Asociacion de Bodegueros de Lima</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5 style="margin-top: 1.5rem;">Elementos de marca Fase 1</h5>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tag tag-yes">Landing page localizada CO/PE</span>
+      <span class="tag tag-yes">App Store listing localizado</span>
+      <span class="tag tag-yes">Kit de redes sociales (30 piezas)</span>
+      <span class="tag tag-yes">Material POP (stickers, QR, banderola)</span>
+      <span class="tag tag-yes">Press kit con boilerplate regional</span>
+      <span class="tag tag-yes">Pitch deck version LATAM</span>
+      <span class="tag tag-yes">Video demo localizado (2 min)</span>
+    </div>
+
+    <h5 style="margin-top: 1.5rem;">Metricas clave Fase 1</h5>
+    <table style="margin-top: 0.5rem;">
+      <thead><tr><th>Metrica</th><th>Colombia</th><th>Peru</th></tr></thead>
+      <tbody>
+        <tr><td style="color: var(--white);">Usuarios registrados</td><td>100,000</td><td>75,000</td></tr>
+        <tr><td style="color: var(--white);">Usuarios activos mensuales</td><td>35,000</td><td>25,000</td></tr>
+        <tr><td style="color: var(--white);">Transacciones/mes</td><td>150,000</td><td>100,000</td></tr>
+        <tr><td style="color: var(--white);">CAC organico</td><td>< $1.50</td><td>< $1.50</td></tr>
+        <tr><td style="color: var(--white);">NPS</td><td>> 45</td><td>> 45</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FASE 2 -->
+  <div class="phase-card phase-2" style="margin-bottom: 2rem;">
+    <span class="badge badge-violet" style="margin-bottom: 1rem;">Fase 2 -- 2027</span>
+    <h4 style="margin-top: 0.5rem;">Mexico + Centroamerica Expandida</h4>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">El mercado mas grande de LATAM hispanohablante (Mexico) + consolidacion de Centroamerica donde ya tenemos presencia. Mayor complejidad regulatoria, mayor escala.</p>
+
+    <div class="grid-2" style="margin-top: 1.5rem;">
+      <div>
+        <h5>Mexico</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ciudad de entrada:</strong> Guadalajara (Silicon Valley mexicano, ecosistema tech)</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Expansion:</strong> Guadalajara -> CDMX -> Monterrey -> ciudades medias</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2027:</strong> 250,000 usuarios registrados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> TikTok + YouTube + activaciones en tianguis/mercados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Regulacion:</strong> Ley Fintech cumplimiento completo requerido antes de launch</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Centroamerica Expandida</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Mercados:</strong> Honduras, Costa Rica, Panama (complementando GT + SV existentes)</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Estrategia:</strong> Expansion por corredor de remesas -- los usuarios de GT y SV traen a su red en paises vecinos</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2027:</strong> 150,000 usuarios nuevos en mercados expandidos</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Facebook + WhatsApp + word of mouth + activaciones presenciales</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ventaja:</strong> Presencia existente en la region genera efecto de red</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5 style="margin-top: 1.5rem;">Elementos de marca Fase 2 (adicionales a Fase 1)</h5>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tag tag-yes">Campana de paid ads regional (Meta + TikTok)</span>
+      <span class="tag tag-yes">Video testimoniales por mercado</span>
+      <span class="tag tag-yes">Partnership con gremios de tienditas (MX)</span>
+      <span class="tag tag-yes">Programa de referidos localizado</span>
+      <span class="tag tag-yes">Hub de contenido por pais en blog</span>
+      <span class="tag tag-yes">OOH selectivo en ciudades clave</span>
+    </div>
+  </div>
+
+  <!-- FASE 3 -->
+  <div class="phase-card phase-3" style="margin-bottom: 2rem;">
+    <span class="badge badge-yellow" style="margin-bottom: 1rem;">Fase 3 -- 2028</span>
+    <h4 style="margin-top: 0.5rem;">Chile + Argentina</h4>
+    <p style="font-size: 0.9rem; color: var(--gray-200);">Mercados de mayor sofisticacion digital y mayor ticket promedio. Requieren posicionamiento diferenciado -- aqui no competimos contra el efectivo, competimos contra las comisiones.</p>
+
+    <div class="grid-2" style="margin-top: 1.5rem;">
+      <div>
+        <h5>Chile</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ciudad de entrada:</strong> Santiago</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Angulo:</strong> "Tu alternativa a Transbank con cero comision"</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2028:</strong> 80,000 usuarios registrados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Instagram + LinkedIn + PR tech + partnerships Shopify</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Argentina</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Ciudad de entrada:</strong> Buenos Aires</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Angulo:</strong> "Cobra y opera en dolares sin perder en el cambio"</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Meta Q4 2028:</strong> 120,000 usuarios registrados</li>
+          <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;"><strong style="color: var(--white);">Canales:</strong> Instagram + YouTube + comunidades tech + PR fintech</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5 style="margin-top: 1.5rem;">Elementos de marca Fase 3 (adicionales)</h5>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tag tag-yes">Localizacion completa de UX (voseo AR)</span>
+      <span class="tag tag-yes">Campanas de brand awareness (above the line)</span>
+      <span class="tag tag-yes">Evento propio anual "Payphone Summit LATAM"</span>
+      <span class="tag tag-yes">API documentation en ingles y espanol</span>
+      <span class="tag tag-yes">Programa de developers/integradores</span>
+    </div>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Timeline visual consolidado</h4>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Trimestre</th>
+          <th>Hito</th>
+          <th>Mercados activos</th>
+          <th>Meta usuarios acumulados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q2 2026</td>
+          <td style="color: var(--white);">Lanzamiento Colombia</td>
+          <td>EC + GT + SV + CO</td>
+          <td>2.1M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q3 2026</td>
+          <td style="color: var(--white);">Lanzamiento Peru</td>
+          <td>EC + GT + SV + CO + PE</td>
+          <td>2.2M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q4 2026</td>
+          <td style="color: var(--white);">Cierre Fase 1 -- evaluacion y optimizacion</td>
+          <td>5 paises</td>
+          <td>2.4M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q1 2027</td>
+          <td style="color: var(--white);">Lanzamiento Mexico (Guadalajara)</td>
+          <td>6 paises</td>
+          <td>2.6M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q2 2027</td>
+          <td style="color: var(--white);">Expansion Centroamerica (HN, CR, PA)</td>
+          <td>9 paises</td>
+          <td>3.0M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q4 2027</td>
+          <td style="color: var(--white);">Cierre Fase 2 -- Mexico CDMX + Monterrey</td>
+          <td>9 paises</td>
+          <td>3.8M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q1 2028</td>
+          <td style="color: var(--white);">Lanzamiento Chile</td>
+          <td>10 paises</td>
+          <td>4.0M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q2 2028</td>
+          <td style="color: var(--white);">Lanzamiento Argentina</td>
+          <td>11 paises</td>
+          <td>4.3M</td>
+        </tr>
+        <tr>
+          <td style="color: var(--naranja); font-weight: 600;">Q4 2028</td>
+          <td style="color: var(--white);">Cierre Fase 3 -- 5M+ usuarios LATAM</td>
+          <td>11 paises</td>
+          <td>5.0M+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 style="margin-top: 3rem;">Metricas de exito por fase</h4>
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h5>Fase 1 -- Validacion</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Usuarios registrados: 175K (CO+PE)</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Ratio registro/activacion: > 40%</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">NPS: > 45 en ambos mercados</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">CAC: < $1.50 organico</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Primera transaccion < 48h post-registro</li>
+      </ul>
+    </div>
+    <div class="card card-violet">
+      <h5>Fase 2 -- Escala</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Usuarios registrados: 400K nuevos (MX+CA)</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Revenue per user positivo en CO/PE</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Viralidad (K-factor): > 1.2</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Brand awareness espontaneo: > 5% en target</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Partnerships activos: > 10 por mercado</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h5 style="color: var(--amarillo);">Fase 3 -- Dominancia</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">5M+ usuarios totales LATAM</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">11 paises con operacion activa</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Revenue run rate sostenible</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Reconocimiento de marca top 5 fintech LATAM</li>
+        <li style="padding: 0.35rem 0; color: var(--gray-300); font-size: 0.85rem;">Posicionamiento para Serie A/B</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div style="text-align: center; padding: 3rem 0;">
+    <div class="quote" style="border: none; text-align: center; padding: 0; margin: 0 auto 2rem; font-size: 1.6rem;">
+      Ecuador fue el laboratorio. LATAM es la mision. El mundo es la vision.
+    </div>
+    <p style="font-size: 0.85rem; color: var(--gray-500); max-width: 500px; margin: 0 auto 3rem;">Payphone no se expande porque puede. Se expande porque 200 millones de personas lo necesitan y todavia no lo saben.</p>
+    <span style="font-family: var(--font-display); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-500);">Payphone Brand Book LATAM 2026 | Unicore LLC | Confidencial</span>
+  </div>
+</section>
+
+</main>
+
+<script>
+// Smooth scroll & active nav
+document.querySelectorAll('nav a').forEach(a => {
+  a.addEventListener('click', e => {
+    document.querySelector('nav').classList.remove('open');
+  });
+});
+
+// Intersection Observer for active nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + entry.target.id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>

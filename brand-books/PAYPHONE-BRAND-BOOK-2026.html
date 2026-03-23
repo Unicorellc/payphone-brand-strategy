@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payphone Brand Book 2026</title>
+<style>
+:root {
+  --naranja: #FF6400;
+  --violeta: #5A00B4;
+  --amarillo: #FFA000;
+  --dark: #222222;
+  --white: #FFFFFF;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #E8E8E8;
+  --gray-400: #999999;
+  --gray-600: #666666;
+  --gray-800: #333333;
+  --gradient-sunset: linear-gradient(135deg, #FF6400, #FFA000);
+  --gradient-electric: linear-gradient(135deg, #FF6400, #5A00B4);
+  --gradient-dawn: linear-gradient(135deg, #FFA000, #FF6400, #5A00B4);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: var(--dark);
+  color: var(--white);
+  padding: 2rem 1.5rem;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .nav-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--naranja);
+  margin-bottom: 0.25rem;
+}
+
+nav .nav-sub {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  display: block;
+  color: var(--gray-400);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s, padding-left 0.2s;
+  letter-spacing: 0.02em;
+}
+
+nav a:hover, nav a.active {
+  color: var(--naranja);
+  padding-left: 0.5rem;
+}
+
+nav a .nav-num {
+  color: var(--gray-600);
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+nav .nav-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.65rem;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* MAIN */
+main {
+  margin-left: 260px;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  background: var(--dark);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,100,0,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(90,0,180,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--naranja);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 span {
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-meta {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+.hero-meta span {
+  margin-right: 2rem;
+}
+
+/* SECTIONS */
+section {
+  padding: 6rem 8rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+section:last-child { border-bottom: none; }
+
+.section-num {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--naranja);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+h2.light { color: var(--white); }
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--gray-800);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray-800);
+  max-width: 720px;
+  margin-bottom: 1.25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+/* SPECIAL SECTIONS */
+.section-dark {
+  background: var(--dark);
+  color: var(--white);
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.section-dark h2, .section-dark h3, .section-dark h4, .section-dark p {
+  color: var(--white);
+}
+
+.section-dark .lead { color: var(--gray-400); }
+
+.section-accent {
+  background: var(--gray-50);
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.card-dark {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.card-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--naranja);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.card h4 {
+  margin-top: 0;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--gray-600);
+}
+
+.card-dark p { color: var(--gray-400); }
+
+/* DECLARATION */
+.declaration {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  max-width: 700px;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--naranja);
+}
+
+.declaration-dark {
+  color: var(--white);
+}
+
+/* CALLOUTS */
+.callout {
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.callout-yes {
+  background: rgba(34,197,94,0.08);
+  border-left: 4px solid #22C55E;
+}
+
+.callout-no {
+  background: rgba(239,68,68,0.08);
+  border-left: 4px solid #EF4444;
+}
+
+.callout-tip {
+  background: rgba(255,100,0,0.08);
+  border-left: 4px solid var(--naranja);
+}
+
+.callout-label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.callout-yes .callout-label { color: #22C55E; }
+.callout-no .callout-label { color: #EF4444; }
+.callout-tip .callout-label { color: var(--naranja); }
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  text-align: left;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-400);
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  vertical-align: top;
+}
+
+/* COLOR SWATCHES */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.swatch {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+.swatch-color {
+  height: 120px;
+}
+
+.swatch-info {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.swatch-name {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.swatch-hex {
+  color: var(--gray-400);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+/* PERSONA */
+.persona {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+}
+
+.persona-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.persona-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.persona-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.persona-role {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.persona-section h5 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--naranja);
+  margin-bottom: 0.5rem;
+}
+
+.persona-section p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.persona-quote {
+  grid-column: 1 / -1;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  padding: 1.5rem;
+  background: var(--gray-50);
+  border-radius: 8px;
+  border-left: 4px solid var(--naranja);
+}
+
+/* COPY SHOWCASE */
+.showcase {
+  background: var(--gray-50);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border: 1px solid var(--gray-200);
+}
+
+.showcase-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--naranja);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.showcase-hero {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+
+.showcase-sub {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.showcase-dark {
+  background: var(--dark);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.showcase-dark .showcase-hero { color: var(--white); }
+.showcase-dark .showcase-sub { color: var(--gray-400); }
+
+.showcase-body {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--gray-800);
+  max-width: none;
+}
+
+.showcase-dark .showcase-body { color: rgba(255,255,255,0.8); }
+
+/* WORD CHIPS */
+.word-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.word-chip {
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.word-own {
+  background: rgba(255,100,0,0.1);
+  color: var(--naranja);
+  border: 1px solid rgba(255,100,0,0.2);
+}
+
+.word-ban {
+  background: rgba(239,68,68,0.08);
+  color: #EF4444;
+  border: 1px solid rgba(239,68,68,0.15);
+  text-decoration: line-through;
+}
+
+/* TOUCHPOINT */
+.touchpoint {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 2.5rem;
+  background: var(--gray-50);
+  border-radius: 16px;
+  border: 1px solid var(--gray-200);
+}
+
+.touchpoint-visual {
+  background: var(--dark);
+  border-radius: 12px;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--white);
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* DONTS LIST */
+.dont-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.dont-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #EF4444;
+  background: rgba(239,68,68,0.08);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dont-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.dont-text strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* AUDIT SECTION */
+.audit-grade {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.grade-b {
+  background: rgba(255,160,0,0.15);
+  color: var(--amarillo);
+  border: 3px solid var(--amarillo);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  nav { display: none; }
+  main { margin-left: 0; }
+  .hero { padding: 4rem 3rem; }
+  .hero h1 { font-size: 3rem; }
+  section { padding: 4rem 3rem; }
+  h2 { font-size: 2.2rem; }
+  .persona-grid { grid-template-columns: 1fr; }
+  .touchpoint { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 3rem 1.5rem; }
+  .hero h1 { font-size: 2.2rem; }
+  section { padding: 3rem 1.5rem; }
+  h2 { font-size: 1.8rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .declaration { font-size: 1.4rem; }
+}
+
+/* SCORE BAR */
+.score-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+
+.score-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.score-track {
+  flex: 1;
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  position: relative;
+  max-width: 300px;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--gradient-sunset);
+}
+
+.score-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--naranja);
+  width: 40px;
+}
+
+/* MISC */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+blockquote {
+  border-left: 4px solid var(--naranja);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--gray-600);
+  background: var(--gray-50);
+  border-radius: 0 8px 8px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--gray-200);
+  margin: 3rem 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tag-orange { background: rgba(255,100,0,0.1); color: var(--naranja); }
+.tag-purple { background: rgba(90,0,180,0.1); color: var(--violeta); }
+.tag-green { background: rgba(34,197,94,0.1); color: #16A34A; }
+.tag-red { background: rgba(239,68,68,0.1); color: #EF4444; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo">Payphone</div>
+  <div class="nav-sub">Brand Book 2026</div>
+  <a href="#audit"><span class="nav-num">00</span>Brand Audit</a>
+  <a href="#soul"><span class="nav-num">01</span>Brand Soul</a>
+  <a href="#positioning"><span class="nav-num">02</span>Positioning & Strategy</a>
+  <a href="#personas"><span class="nav-num">03</span>Audience Personas</a>
+  <a href="#personality"><span class="nav-num">04</span>Personality & Archetypes</a>
+  <a href="#verbal"><span class="nav-num">05</span>Verbal Identity</a>
+  <a href="#copy"><span class="nav-num">06</span>Copy Showcase</a>
+  <a href="#visual"><span class="nav-num">07</span>Visual Identity</a>
+  <a href="#action"><span class="nav-num">08</span>Brand in Action</a>
+  <a href="#donts"><span class="nav-num">09</span>Brand Don'ts</a>
+  <a href="#evolution"><span class="nav-num">10</span>Evolution Rules</a>
+  <div class="nav-footer">
+    Confidential<br>
+    Unicore LLC &copy; 2026<br>
+    Version 1.0 &mdash; March 2026
+  </div>
+</nav>
+
+<!-- HERO -->
+<main>
+<div class="hero" id="top">
+  <div class="hero-eyebrow">Payphone &mdash; Brand Book 2026</div>
+  <h1>The brand system for <span>financial autonomy.</span></h1>
+  <p class="lead" style="color: var(--gray-400); max-width: 560px;">
+    This document defines how Payphone looks, speaks, thinks, and shows up in the world. It is the single source of truth for everyone who builds, markets, and represents the brand.
+  </p>
+  <div class="hero-meta">
+    <span>Unicore LLC</span>
+    <span>Version 1.0</span>
+    <span>March 2026</span>
+    <span>Confidential</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 00 BRAND AUDIT -->
+<!-- ============================================================ -->
+<section id="audit">
+  <div class="section-num">00 &mdash; Brand Audit</div>
+  <h2>The Honest Assessment</h2>
+  <p class="lead">Before we build forward, we audit backward. This is a clear-eyed evaluation of where Payphone's brand stands today &mdash; what earns its place, what needs surgery, and what is missing entirely.</p>
+
+  <div class="audit-grade grade-b">B-</div>
+  <p><strong>Overall Grade: B-minus.</strong> Payphone has stronger raw materials than 90% of LATAM fintechs. The whale tail icon is genuinely distinctive. The Explorer archetype is well-chosen. The color system is bold without being juvenile. But the execution layer &mdash; how these elements come together in real touchpoints &mdash; is inconsistent, and several critical brand infrastructure pieces are either underdeveloped or absent entirely.</p>
+
+  <h3>What's Working (Keep and Strengthen)</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Identity</div>
+      <h4>The Whale Tail Icon</h4>
+      <p>This is a genuinely great logo mark. It carries the ocean/freedom metaphor without being literal. It is ownable, scalable, and memorable. The perception data backs it up: 62% freedom, 19% exploration, 11% solidity, 9% flow. Few fintech logos achieve this kind of emotional resonance. Protect it.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Strategy</div>
+      <h4>Explorer Archetype</h4>
+      <p>Positioning alongside Johnnie Walker, Jeep, and Virgin is exactly right for a fintech trying to own "autonomy" as a category word. It creates natural distance from the Ruler/Caregiver archetypes that banks default to. The "surfer digital" persona gives it texture.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Color</div>
+      <h4>Naranja Payphone #FF6400</h4>
+      <p>This orange is not ING orange. It is not Amazon orange. It sits in its own territory &mdash; warmer, more saturated, more Latin American. Against the sea of blue fintechs and green neobanks, this stands out. The violet secondary creates a premium tension that prevents the orange from reading "budget."</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Voice</div>
+      <h4>The Four Voice Pillars</h4>
+      <p>Simple, Confiable, Valiente, Humana. These four words do real work. They create guardrails without being restrictive. The tone adaptation system (Motivador + Directo for positive, Empatico + Seguro for negative) is sophisticated brand thinking that most companies at this stage lack.</p>
+    </div>
+  </div>
+
+  <h3>What's Generic or Weak (Cut or Rebuild)</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Weak</div>
+      <h4>The Mission Statement</h4>
+      <p>"Simplificar la relacion con el dinero" could belong to literally any fintech, neobank, or payment app on the planet. Mercado Pago, Nu, Revolut, Cash App &mdash; all of them could adopt this statement without changing a single product feature. It is true but not ownable. It needs to be rebuilt around what only Payphone can claim.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Weak</div>
+      <h4>Slogan: "Existe un mundo mas simple"</h4>
+      <p>This is a sentiment, not a slogan. It makes no promise. It names no tension. It could be used by an airline, a meal kit company, or a meditation app. A fintech slogan should make the reader think about money differently in six words or fewer. This one disappears the moment you finish reading it.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Weak</div>
+      <h4>Content Pillar Naming</h4>
+      <p>"Producto, Crecimiento, Marca, Comunidad" are internal categories, not content pillars with editorial teeth. Compare to Stripe's implied pillars: "Internet Economy," "Developer Craft," "Global Infrastructure." Payphone's pillars should signal what the brand believes, not how it organizes its Notion workspace.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Weak</div>
+      <h4>Competitive Differentiation</h4>
+      <p>The current materials benchmark against Yape, PayPal, and Mercado Pago on content strategy but never articulate why Payphone is structurally different as a product. "Zero cost" is a feature. "No paperwork" is a feature. Features are not positioning. Positioning is the reason someone chooses you even if a competitor matches every feature.</p>
+    </div>
+  </div>
+
+  <h3>What's Missing Entirely</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label" style="color: var(--violeta);">Missing</div>
+      <h4>Investor-Grade Narrative</h4>
+      <p>No positioning statement exists that speaks to capital allocators. No category creation language. No "only" statement. For a company that needs to raise capital, this is the single largest gap. Investors do not fund features &mdash; they fund categories and inevitabilities.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: var(--violeta);">Missing</div>
+      <h4>Copy System</h4>
+      <p>There is a voice manual but almost no example copy. No hero headlines. No email templates. No error state language. No onboarding copy. The brand book tells you what Payphone sounds like but never proves it by writing the actual words. A brand without a copy system is a brand waiting to drift.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: var(--violeta);">Missing</div>
+      <h4>Brand-in-Action Specifications</h4>
+      <p>The current materials cover logo usage and color specs but skip every real touchpoint: What does the pitch deck cover look like? What does the LinkedIn banner say? What is on the business card? What does an empty state feel like? These are the moments where brand either compounds or erodes.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: var(--violeta);">Missing</div>
+      <h4>Evolution Framework</h4>
+      <p>No guidance on what changes as Payphone scales from 2M to 20M users, from Seed to Series B. Without this, every growth phase will trigger a "rebrand" conversation that wastes six months and hundreds of thousands of dollars. The brand book should pre-decide what evolves and what stays sacred.</p>
+    </div>
+  </div>
+
+  <hr>
+  <p><strong>Summary:</strong> Payphone has a B-minus brand. The raw ingredients &mdash; icon, archetype, color palette, voice pillars &mdash; are genuinely strong. But the execution infrastructure is incomplete, the positioning is generic, and the investor narrative does not exist. What follows is the rebuild.</p>
+</section>
+
+<!-- ============================================================ -->
+<!-- 01 BRAND SOUL -->
+<!-- ============================================================ -->
+<section id="soul" class="section-dark">
+  <div class="section-num">01 &mdash; Brand Soul</div>
+  <h2 class="light">Brand Soul</h2>
+  <p class="lead">The irreducible core. Everything else in this document flows from these four declarations. If a decision conflicts with the Brand Soul, the decision is wrong.</p>
+
+  <h3 style="color: var(--naranja);">Declaration</h3>
+  <div class="declaration declaration-dark" style="border-color: var(--naranja);">
+    Payphone exists to make financial autonomy the default &mdash; not the privilege &mdash; for every person and business in Latin America and beyond.
+  </div>
+  <p>This is not a mission statement. It is a declaration of intent. The word "default" is deliberate: Payphone does not aspire to offer autonomy as an option. It works to make the old model &mdash; where banks gatekeep access, charge for basic services, and trap people in paperwork &mdash; the anomaly.</p>
+
+  <h3 style="color: var(--naranja);">Brand Essence: Autonomy</h3>
+  <p>One word. Autonomy.</p>
+  <p>Not "freedom" &mdash; freedom is abstract, political, overused. Not "simplicity" &mdash; simplicity is a feature, not an identity. Not "empowerment" &mdash; empowerment implies someone else is granting power.</p>
+  <p><strong>Autonomy means you already have the power. You just need the infrastructure to use it.</strong></p>
+  <p>Payphone is that infrastructure. It does not liberate people. It removes the barriers that made them feel captive in the first place. This distinction matters: Payphone is not the hero of the story. The user is. Payphone is the vehicle.</p>
+  <p>The whale tail logo captures this perfectly. A whale does not need permission to cross oceans. It does not file paperwork to migrate. It moves because it can. That is the emotional truth of Payphone's brand: <em>you are already free &mdash; now move.</em></p>
+
+  <h3 style="color: var(--naranja);">Founding Tension</h3>
+  <p><strong>The paradox:</strong> Money is the most personal thing in someone's life, but the systems that manage it are the most impersonal institutions on Earth.</p>
+  <p>Banks were built for banks. Payment systems were built for payment companies. Payphone was built for the person holding the phone. This tension &mdash; between the deeply personal nature of money and the cold machinery of traditional finance &mdash; is the crack Payphone exists inside. Every product decision, every design choice, every word of copy should widen that crack.</p>
+  <p>The founding tension also contains a geographic truth: Latin America has 650 million people and some of the highest smartphone penetration rates in the world, but financial infrastructure that was designed in the 1970s. The gap between what the technology allows and what the institutions permit is enormous. Payphone lives in that gap.</p>
+
+  <h3 style="color: var(--naranja);">Cultural Moment: Why Now?</h3>
+  <p>Three forces are converging that make Payphone's timing structural, not accidental:</p>
+  <div class="card-grid">
+    <div class="card card-dark">
+      <div class="card-label">Force 01</div>
+      <h4 style="color: var(--white);">The Smartphone Became the Branch</h4>
+      <p>In LATAM, 78% of adults own a smartphone. Fewer than 55% have a bank account. The phone is not a channel &mdash; it is the institution. Payphone understood this before the banks did.</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-label">Force 02</div>
+      <h4 style="color: var(--white);">Merchants Rejected the Terminal</h4>
+      <p>TAP to Phone is not a feature &mdash; it is a category shift. When a street vendor can accept contactless payments with the phone already in their pocket, the entire POS hardware industry becomes a relic. Payphone is the first mover in LATAM on this shift.</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-label">Force 03</div>
+      <h4 style="color: var(--white);">Regulation Opened the Door</h4>
+      <p>Ecuador and Central American markets are actively creating regulatory frameworks for fintech. This is not deregulation &mdash; it is new regulation designed for digital-native players. Companies born on phones, not in branches, have the structural advantage. Payphone is that company.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 02 POSITIONING & STRATEGY -->
+<!-- ============================================================ -->
+<section id="positioning">
+  <div class="section-num">02 &mdash; Positioning & Strategy</div>
+  <h2>Positioning & Strategy</h2>
+  <p class="lead">Positioning is not what you say about yourself. It is the space you occupy in someone's mind when they think about the category. These statements define that space for Payphone's two critical audiences.</p>
+
+  <h3>Operator-Facing Positioning Statement</h3>
+  <div class="declaration">
+    For individuals and businesses in Latin America who are overserved by bank bureaucracy and underserved by bank technology, Payphone is the financial autonomy platform that lets you pay, get paid, and grow without a bank standing in the middle &mdash; unlike traditional banks and first-generation wallets, because Payphone was built phone-first, zero-cost, and merchant-native from day one.
+  </div>
+
+  <h3>Investor-Facing Positioning Statement</h3>
+  <div class="declaration">
+    Payphone is the financial autonomy layer for Latin America's 650 million mobile-first consumers and 30 million underserved merchants &mdash; a zero-cost, phone-native platform that replaces bank accounts, POS terminals, and payment gateways with a single app, already serving 2 million users across Ecuador and Central America with capital-efficient unit economics.
+  </div>
+
+  <h3>Category Being Created</h3>
+  <h4>Financial Autonomy Platform</h4>
+  <p>Payphone is not a neobank. Neobanks are still banks &mdash; they just moved the branch to an app. Payphone is not a payment processor. Payment processors serve the merchant; they tolerate the consumer. Payphone is not a wallet. Wallets hold money; they do not replace the infrastructure around it.</p>
+  <p><strong>Payphone is a Financial Autonomy Platform:</strong> the complete financial layer between a person and their money, built for the phone, not adapted to it. This category is defined by three structural requirements:</p>
+  <ol>
+    <li><strong>Zero-cost to the user.</strong> Not "low fee." Not "competitive pricing." Zero. The platform monetizes through merchant services and value-added products, never by taxing the individual's transactions.</li>
+    <li><strong>Phone-native architecture.</strong> The phone is not a screen that mirrors a backend built for desktop. The phone IS the infrastructure. TAP to Phone is the purest expression of this: the merchant's existing phone becomes the POS terminal.</li>
+    <li><strong>Monolithic simplicity.</strong> One app. One account. Personal payments, business payments, e-commerce, card, API. Not six apps from six brands. Payphone is one thing that does everything money requires.</li>
+  </ol>
+
+  <h3>The Competitor Designed to Make Obsolete</h3>
+  <p><strong>Traditional bank accounts paired with third-party POS terminals.</strong></p>
+  <p>Payphone's structural enemy is not Mercado Pago or Yape. Those are horizontal competitors fighting for the same customer in different ways. Payphone's real adversary is the incumbent stack: the combination of a bank account (with its fees, paperwork, and branch visits), a POS terminal (with its rental fees, setup complexity, and hardware dependency), and a payment gateway (with its integration costs and settlement delays). That three-piece stack is what Payphone collapses into one app. Every customer who switches from that stack to Payphone validates the category.</p>
+
+  <h3>The "Only" Statement</h3>
+  <div class="declaration">
+    Payphone is the only financial platform in Latin America that lets a merchant accept tap-to-pay, generate payment links, manage e-commerce, and issue cards &mdash; all from one app, at zero cost, without ever signing a bank contract.
+  </div>
+  <p>This "only" statement is designed to be falsifiable. If a competitor can truthfully claim all five elements (tap-to-pay, payment links, e-commerce, cards, zero cost, no bank contract), Payphone must evolve the statement. But as of March 2026, no competitor in the LATAM market can.</p>
+
+  <div class="callout callout-tip">
+    <div class="callout-label">Positioning Test</div>
+    <p>Read the "Only" statement to a VC who covers LATAM fintech. If their first reaction is "wait &mdash; really? Nobody else does all of that?" then the positioning is working. If their reaction is "yeah, that sounds like a lot of companies," the positioning needs sharpening.</p>
+  </div>
+
+  <h3>Messaging Hierarchy</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Message</th>
+        <th>Audience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag tag-orange">Category</span></td>
+        <td>Financial autonomy platform for Latin America</td>
+        <td>Everyone</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-purple">Differentiator 1</span></td>
+        <td>Your phone is your entire financial infrastructure</td>
+        <td>Users + Merchants</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-purple">Differentiator 2</span></td>
+        <td>Zero cost &mdash; not low cost, not competitive cost, zero</td>
+        <td>Price-sensitive users</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-purple">Differentiator 3</span></td>
+        <td>One app replaces your bank, your POS, and your payment gateway</td>
+        <td>Merchants + Operators</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-green">Proof Point 1</span></td>
+        <td>2M+ users across Ecuador and Central America</td>
+        <td>Investors</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-green">Proof Point 2</span></td>
+        <td>TAP to Phone: first in LATAM to turn any phone into a POS</td>
+        <td>Investors + Press</td>
+      </tr>
+      <tr>
+        <td><span class="tag tag-green">Proof Point 3</span></td>
+        <td>Monolithic architecture: Personal, Business, E-Commerce, Developers, TAP &mdash; one platform</td>
+        <td>Technical investors + Partners</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================================ -->
+<!-- 03 AUDIENCE PERSONAS -->
+<!-- ============================================================ -->
+<section id="personas" class="section-accent">
+  <div class="section-num">03 &mdash; Audience Personas</div>
+  <h2>Audience Personas</h2>
+  <p class="lead">Three primary personas. Each represents a real cluster of Payphone's user base. These are not demographic cutouts &mdash; they are psychological profiles built around the moment of conversion.</p>
+
+  <!-- PERSONA 1 -->
+  <div class="persona">
+    <div class="persona-header">
+      <div class="persona-avatar" style="background: var(--gradient-sunset);">CM</div>
+      <div>
+        <div class="persona-name">Camila Mendoza</div>
+        <div class="persona-role">Micro-entrepreneur &bull; 32 &bull; Quito, Ecuador</div>
+      </div>
+    </div>
+    <p><span class="tag tag-orange">Archetype: The Builder</span></p>
+    <div class="persona-grid">
+      <div class="persona-section">
+        <h5>Psychology</h5>
+        <p>Camila runs a nail salon out of her home and sells handmade accessories at weekend bazaars. She earns $400-800/month and manages every dollar manually. She is not financially illiterate &mdash; she is financially underestimated. She tracks expenses in a notebook. She does not trust banks because banks have never trusted her: the one time she applied for a merchant account, she was asked for three months of formal pay stubs she does not have.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Pain Points</h5>
+        <p>Cannot accept card payments without renting a POS terminal she cannot afford. Loses clients who do not carry cash. Cannot separate business money from personal money without opening a business bank account (which requires a commercial license she has not formalized). Sends invoices via WhatsApp photos of handwritten receipts.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Current Solution</h5>
+        <p>Cash, bank transfers via her personal account, occasional PayPal for international clients. She uses a spreadsheet on her phone to track who owes her. Settlement is manual: she checks her bank app, matches amounts, messages clients to confirm.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Trigger Moment</h5>
+        <p>A customer at her bazar booth says "I only have my card." Camila loses a $35 sale. That night, she searches "cobrar con tarjeta sin datafono" and finds Payphone TAP. She downloads the app and accepts her first tap payment the next morning. No hardware. No contract. No bank approval. That experience &mdash; the gap between "I cannot" and "I just did" &mdash; is the conversion moment.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Emotional Conversion Need</h5>
+        <p>Camila does not need to be "empowered." She is already powerful. She needs a tool that treats her existing business as legitimate without forcing her through bureaucratic gatekeeping. Payphone's brand must signal: <em>you belong here, exactly as you are.</em></p>
+      </div>
+      <div class="persona-quote">
+        "I just need to be able to charge people. That is it. I do not need a bank to tell me I am a real business. My clients already know I am."
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 2 -->
+  <div class="persona">
+    <div class="persona-header">
+      <div class="persona-avatar" style="background: var(--gradient-electric);">AR</div>
+      <div>
+        <div class="persona-name">Andres Reyes</div>
+        <div class="persona-role">Freelance consultant + side business &bull; 38 &bull; Guayaquil, Ecuador</div>
+      </div>
+    </div>
+    <p><span class="tag tag-purple">Archetype: The Optimizer</span></p>
+    <div class="persona-grid">
+      <div class="persona-section">
+        <h5>Psychology</h5>
+        <p>Andres works a salaried job at a consulting firm and runs an online store selling imported gadgets on the side. He earns $900-1,200/month combined. He is technically fluent &mdash; comfortable with APIs, payment integrations, and e-commerce platforms. He is not looking for the simplest tool; he is looking for the most capable one that does not waste his time. He has used Mercado Pago, tried PayPal, and built a Shopify store that he abandoned because the transaction fees ate his margins.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Pain Points</h5>
+        <p>Transaction fees erode thin margins on his e-commerce products. Managing separate platforms for his consulting invoices and his store payments creates operational overhead. He wants one dashboard that shows personal income, business income, and e-commerce revenue. Every tool he has tried solves one piece and ignores the rest.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Current Solution</h5>
+        <p>Mercado Pago for e-commerce (hates the fees), bank transfer for consulting invoices (slow settlement), personal debit card for everything. He manually reconciles across three platforms every Sunday night. He has a spreadsheet with 47 tabs.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Trigger Moment</h5>
+        <p>He calculates that Mercado Pago fees cost him $1,800 last year. He searches for alternatives. He finds Payphone, sees "zero cost," assumes it is a bait-and-switch, and reads the fine print. When he realizes the zero-cost model is structural (not promotional), he signs up. When he discovers the API documentation and payment link generator, he moves his entire e-commerce operation in one weekend.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Emotional Conversion Need</h5>
+        <p>Andres needs to feel smart for choosing Payphone, not grateful. He is not a charity case &mdash; he is a sophisticated operator making a rational decision. The brand must signal competence, not benevolence. <em>This is the tool that serious operators use.</em></p>
+      </div>
+      <div class="persona-quote">
+        "I spent more on payment processing fees last year than on my car insurance. That is not a cost of doing business &mdash; that is a tax on ambition."
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA 3 -->
+  <div class="persona">
+    <div class="persona-header">
+      <div class="persona-avatar" style="background: linear-gradient(135deg, var(--amarillo), var(--naranja));">SP</div>
+      <div>
+        <div class="persona-name">Sarah Park</div>
+        <div class="persona-role">VC Associate &bull; 29 &bull; Miami, FL</div>
+      </div>
+    </div>
+    <p><span class="tag tag-green">Archetype: The Evaluator</span></p>
+    <div class="persona-grid">
+      <div class="persona-section">
+        <h5>Psychology</h5>
+        <p>Sarah covers LATAM fintech for a $400M growth-stage fund. She sees 30 pitch decks per week. She has developed a sixth sense for "neobank with a twist" and filters those out in under 90 seconds. She is looking for category creators, not feature bundles. She needs to take a company to her Monday partner meeting and explain in two sentences why this one is different. If she cannot do that, the company dies in her inbox.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Pain Points</h5>
+        <p>Every LATAM fintech deck opens with "650 million people, underbanked." She has seen this slide 400 times. She cannot distinguish between companies based on their materials because everyone uses the same language: "democratize finance," "financial inclusion," "mobile-first." She is desperate for a company that skips the platitudes and shows her a structural insight she has not seen.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Current Solution</h5>
+        <p>She relies on warm intros, Twitter/X discourse, and conference sightings to filter signal from noise. She pays attention to founders who write publicly about their market with specificity. She dismisses companies whose websites look like every other fintech template. She forwards the interesting ones to her partner with a one-line note.</p>
+      </div>
+      <div class="persona-section">
+        <h5>Trigger Moment</h5>
+        <p>She reads a LinkedIn post from Juan Diego, Payphone's founder, about how TAP to Phone will eliminate POS hardware in LATAM within five years. It is specific. It includes a number she has not seen. It names the incumbents it will displace. She clicks through to the Payphone website. The site does not say "we are democratizing finance." It says "your phone is your entire financial infrastructure." She forwards it to her partner: "This one actually gets it."</p>
+      </div>
+      <div class="persona-section">
+        <h5>Emotional Conversion Need</h5>
+        <p>Sarah needs to feel like she discovered Payphone, not like she was sold to. She needs materials sharp enough to make her look smart in front of her partners. The brand must signal: <em>we know exactly who we are, and we can prove it.</em></p>
+      </div>
+      <div class="persona-quote">
+        "I do not need another deck that says 'massive TAM.' I need a founder who can tell me exactly which incumbent they are killing and why the timing is now."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 04 PERSONALITY & ARCHETYPES -->
+<!-- ============================================================ -->
+<section id="personality" class="section-dark">
+  <div class="section-num">04 &mdash; Personality & Archetypes</div>
+  <h2 class="light">Brand Personality &<br>Archetypes</h2>
+  <p class="lead">A brand without personality is a logo on a slide. Payphone's personality is engineered to feel inevitable &mdash; like the brand could not have been built any other way.</p>
+
+  <h3 style="color: var(--naranja);">Primary Archetype: The Explorer</h3>
+  <p>The Explorer is driven by the desire for freedom, discovery, and self-sufficiency. The Explorer does not rebel against the system out of anger &mdash; it simply builds something better and walks away. This archetype is defined by forward motion, not backward glancing.</p>
+  <p><strong>Why it fits Payphone:</strong> Payphone does not fight banks. It makes them optional. It does not protest the status quo. It builds the alternative and invites people to walk through the door. The Explorer archetype communicates this without aggression: <em>there is a better way, and we already found it.</em></p>
+  <p><strong>Brand references in this archetype:</strong></p>
+  <ul style="color: var(--gray-400);">
+    <li><strong>Patagonia</strong> &mdash; built a global business by refusing to act like one. Payphone borrows this: massive scale, founder-soul energy.</li>
+    <li><strong>Jeep</strong> &mdash; not the fanciest vehicle; the one that goes where others cannot. Payphone serves markets that Stripe and Square have not reached.</li>
+    <li><strong>Virgin</strong> &mdash; entered every industry by asking "why is this so complicated?" Payphone asks the same question about financial services in LATAM.</li>
+  </ul>
+
+  <h3 style="color: var(--naranja);">Secondary Archetype: The Creator</h3>
+  <p>The Creator archetype channels the builder instinct &mdash; the compulsion to make something from nothing, to turn a vision into a tangible product. While the Explorer provides direction, the Creator provides craft.</p>
+  <p><strong>Why it fits Payphone:</strong> Payphone's product is not a reskin of existing banking infrastructure. It was engineered from scratch to be phone-native. TAP to Phone did not exist before Payphone built it for this market. The Creator archetype gives the brand permission to be proud of its craft without being arrogant about it.</p>
+  <p><strong>Brand references:</strong></p>
+  <ul style="color: var(--gray-400);">
+    <li><strong>Stripe</strong> &mdash; developer-first, obsessively well-built, quiet confidence in craft. Payphone's API and developer tools carry this energy.</li>
+    <li><strong>Dyson</strong> &mdash; "everyone else accepted that vacuums had to use bags." Payphone asks: "why does accepting a card payment require a separate piece of hardware?"</li>
+  </ul>
+
+  <h3 style="color: var(--naranja);">6-Axis Personality Scoring</h3>
+  <p>Each axis runs from 0 to 100. These scores define where Payphone sits on critical brand personality dimensions.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Playful vs. Serious</div>
+    <div class="score-track"><div class="score-fill" style="width: 35%;"></div></div>
+    <div class="score-value">35</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Leans serious but never stiff. Payphone manages money &mdash; humor is welcome in social content but absent in transactional and investor contexts. Think: a witty friend who happens to be a financial advisor, not a comedian doing finance bits.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Exclusive vs. Accessible</div>
+    <div class="score-track"><div class="score-fill" style="width: 80%;"></div></div>
+    <div class="score-value">80</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Deeply accessible. Payphone's zero-cost model is a philosophical commitment to access, not a growth hack. But "accessible" does not mean "unsophisticated." The design and language should feel premium &mdash; luxury accessibility, like a high-end hotel with no dress code.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Bold vs. Restrained</div>
+    <div class="score-track"><div class="score-fill" style="width: 70%;"></div></div>
+    <div class="score-value">70</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Payphone is bold. The orange demands it. The zero-cost positioning demands it. TAP to Phone demands it. But bold is not loud. Payphone does not shout &mdash; it states. The difference is the difference between a press release and a manifesto.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Innovative vs. Traditional</div>
+    <div class="score-track"><div class="score-fill" style="width: 85%;"></div></div>
+    <div class="score-value">85</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Heavily innovative, but innovation expressed through outcome, not jargon. Payphone never says "leveraging cutting-edge technology." It says "your phone is now a POS terminal." Show the result, not the process.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Global vs. Local</div>
+    <div class="score-track"><div class="score-fill" style="width: 55%;"></div></div>
+    <div class="score-value">55</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Balanced center with a slight lean toward global. Payphone is proudly LATAM-born but builds with global ambition. The brand should feel international without losing its Latin American roots. Think: a company that started in Quito and is clearly headed for the world.</p>
+
+  <div class="score-bar">
+    <div class="score-label" style="color: var(--white);">Warm vs. Clinical</div>
+    <div class="score-track"><div class="score-fill" style="width: 65%;"></div></div>
+    <div class="score-value">65</div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--gray-400); margin-left: 156px; margin-top: -0.5rem;">Warm. The "Humana" voice pillar requires it. But warm in the way a capable doctor is warm &mdash; empathetic and reassuring, not sentimental. Payphone handles people's money. Warmth builds trust; sentimentality erodes it.</p>
+
+  <h3 style="color: var(--naranja);">Three Cultural References</h3>
+  <div class="card-grid">
+    <div class="card card-dark">
+      <div class="card-label">Reference 01</div>
+      <h4 style="color: var(--white);">Anthony Bourdain's "Parts Unknown"</h4>
+      <p>Bourdain made the unfamiliar feel essential. He walked into places most travel shows ignored and revealed depth where others saw simplicity. Payphone does the same: it enters markets that Stripe overlooks and reveals massive, sophisticated demand. The brand tone should carry Bourdain's quality: curious, specific, never condescending.</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-label">Reference 02</div>
+      <h4 style="color: var(--white);">Dieter Rams' Design Principles</h4>
+      <p>"Good design is as little design as possible." Payphone's zero-cost, one-app philosophy is the financial equivalent of Rams' design ethos. Remove every unnecessary element. What remains is pure function. The brand should feel like a Braun product: nothing extra, nothing missing.</p>
+    </div>
+    <div class="card card-dark">
+      <div class="card-label">Reference 03</div>
+      <h4 style="color: var(--white);">Surf Culture's Relationship with the Ocean</h4>
+      <p>Surfers do not conquer the ocean; they read it and move with it. This is the energetic truth of the whale tail brand mark and the "surfer digital" persona. Payphone does not fight the financial system &mdash; it reads the currents and builds products that move with them. The brand should carry surf culture's blend of calm and intensity: relaxed on the surface, deeply skilled underneath.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 05 VERBAL IDENTITY -->
+<!-- ============================================================ -->
+<section id="verbal">
+  <div class="section-num">05 &mdash; Verbal Identity</div>
+  <h2>Verbal Identity</h2>
+  <p class="lead">The words Payphone uses &mdash; and refuses to use &mdash; are as much a part of the brand as the whale tail. This section defines the verbal system with enough precision to write any piece of Payphone communication without guessing.</p>
+
+  <h3>Name Mythology</h3>
+  <p>"Payphone" is a deliberate paradox. The payphone &mdash; the physical object &mdash; was the original democratic communication technology. It stood on street corners in every neighborhood, available to anyone with a coin. It did not ask for your credit score. It did not require an account. You picked it up, put in your money, and connected. It was public infrastructure for private conversations.</p>
+
+  <p>The name carries this history forward into finance. A payphone on a street corner in Quito in 1995 and the Payphone app on a smartphone in 2026 share the same structural commitment: anyone can use it, the barrier is effectively zero, and the technology disappears behind the outcome. You do not think about the engineering of a phone call; you think about the person on the other end. Payphone wants the same invisibility for financial transactions: you do not think about the payment; you think about what you just bought or sold.</p>
+
+  <p>There is a third layer. The name "Payphone" is English in a Spanish-speaking market. This is intentional. It signals global ambition without abandoning local identity. It reads naturally in both languages. It is short enough to work as a verb ("payphone me the money"), a noun ("I use Payphone"), and a brand ("built by Payphone"). Most importantly, it is memorable precisely because of the slight cognitive dissonance: <em>why would a fintech app name itself after an obsolete piece of technology?</em> That question is the hook. The answer is the brand.</p>
+
+  <h3>Four Voice Principles</h3>
+
+  <h4>01. Simple</h4>
+  <p>Payphone speaks in plain language. Not dumbed-down language &mdash; plain language. There is a difference. Dumbed-down language assumes the reader is not smart enough. Plain language respects the reader's time enough to be clear.</p>
+  <div class="callout callout-yes">
+    <div class="callout-label">Do this</div>
+    <p>"You can accept card payments with your phone. No terminal needed."</p>
+    <p>"Send a payment link. Get paid in seconds."</p>
+    <p>"Your money, one app. That is Payphone."</p>
+  </div>
+  <div class="callout callout-no">
+    <div class="callout-label">Not this</div>
+    <p>"Our cutting-edge NFC-enabled solution facilitates contactless payment acceptance."</p>
+    <p>"Leverage our omnichannel payment infrastructure to optimize your cash flow."</p>
+    <p>"Payphone's holistic financial ecosystem empowers users with seamless transactions."</p>
+  </div>
+
+  <h4>02. Confident</h4>
+  <p>Payphone makes statements, not suggestions. The brand has earned the right to be direct because the product delivers on the claims. Confidence is not arrogance &mdash; arrogance makes claims without evidence; confidence makes claims and then proves them.</p>
+  <div class="callout callout-yes">
+    <div class="callout-label">Do this</div>
+    <p>"2 million people already use Payphone. Here is why."</p>
+    <p>"TAP to Phone replaces your POS terminal. Permanently."</p>
+    <p>"Zero fees. Not a promotion. The model."</p>
+  </div>
+  <div class="callout callout-no">
+    <div class="callout-label">Not this</div>
+    <p>"We believe Payphone could potentially help some users reduce their costs."</p>
+    <p>"We are trying to build a better way to handle payments."</p>
+    <p>"We think our approach might disrupt the traditional banking model."</p>
+  </div>
+
+  <h4>03. Brave</h4>
+  <p>Payphone names the thing. If the banking system is broken, Payphone says so. If a feature replaces an incumbent product, Payphone says which one. Bravery in brand voice means specificity &mdash; the willingness to take a position that not everyone will agree with.</p>
+  <div class="callout callout-yes">
+    <div class="callout-label">Do this</div>
+    <p>"Banks charge you to hold your own money. We do not. That is the difference."</p>
+    <p>"POS terminals are a $12 billion industry built on renting you something your phone already does."</p>
+    <p>"The biggest barrier to financial inclusion in LATAM is not poverty. It is paperwork."</p>
+  </div>
+  <div class="callout callout-no">
+    <div class="callout-label">Not this</div>
+    <p>"We offer a competitive alternative to traditional financial services."</p>
+    <p>"There are many ways to handle payments, and Payphone is one of them."</p>
+    <p>"We complement existing banking infrastructure with additional digital options."</p>
+  </div>
+
+  <h4>04. Human</h4>
+  <p>Payphone is built by people for people. The voice reflects this. It uses first person ("we built this because..."). It acknowledges imperfection. It talks to users the way a smart friend talks about money: honestly, without jargon, and with genuine interest in the other person's situation.</p>
+  <div class="callout callout-yes">
+    <div class="callout-label">Do this</div>
+    <p>"We built TAP to Phone because we watched a vendor lose a sale for not having a terminal. That felt wrong."</p>
+    <p>"Your transfer is on its way. If anything looks off, we are here."</p>
+    <p>"Running a business is hard enough. Payments should be the easy part."</p>
+  </div>
+  <div class="callout callout-no">
+    <div class="callout-label">Not this</div>
+    <p>"Dear valued user, your transaction has been processed successfully."</p>
+    <p>"Payphone is committed to providing industry-leading customer satisfaction."</p>
+    <p>"Please be advised that your account balance has been updated accordingly."</p>
+  </div>
+
+  <h3>Tone by Context</h3>
+
+  <h4>Investor Pitch</h4>
+  <p><strong>Tone: Confident + Precise.</strong> Every sentence should make the investor feel like they are learning something. No filler. No "massive TAM" slides without specifics.</p>
+  <div class="showcase">
+    <div class="showcase-label">Sample Lines</div>
+    <p class="showcase-body">"Payphone processes $X million monthly across Ecuador and Central America at zero cost to the user. The unit economics work because we are not subsidizing growth &mdash; we monetize through merchant services at 40% gross margins."</p>
+    <p class="showcase-body">"TAP to Phone is not a feature. It is a category shift. Every phone sold in LATAM is a POS terminal that does not know it yet. Payphone is the activation layer."</p>
+    <p class="showcase-body">"We are not building a neobank. Neobanks are still banks. We are building the financial infrastructure layer that makes banks optional."</p>
+  </div>
+
+  <h4>In-Product</h4>
+  <p><strong>Tone: Clear + Calm.</strong> The user is handling their money. Every word must reduce anxiety, never add to it. Use active voice. Name the action and the result.</p>
+  <div class="showcase">
+    <div class="showcase-label">Sample Lines</div>
+    <p class="showcase-body">"Payment sent. Maria will receive $25.00 in seconds."</p>
+    <p class="showcase-body">"Your payment link is ready. Share it anywhere &mdash; WhatsApp, email, Instagram."</p>
+    <p class="showcase-body">"You earned $340 this week through Payphone. Here is the breakdown."</p>
+  </div>
+
+  <h4>Social Media</h4>
+  <p><strong>Tone: Sharp + Culturally Aware.</strong> Social is where Payphone's personality shows most. The brand can be witty here, but wit always serves a point. Never post for the algorithm; post because you have something worth saying.</p>
+  <div class="showcase">
+    <div class="showcase-label">Sample Lines</div>
+    <p class="showcase-body">"Your POS terminal has a monthly rental fee. Your phone does not. Choose wisely."</p>
+    <p class="showcase-body">"The average bank requires 14 documents to open a merchant account. Payphone requires a phone number."</p>
+    <p class="showcase-body">"Someone just accepted their first card payment using only their phone. No hardware. No contract. Just Payphone and five seconds."</p>
+  </div>
+
+  <h4>Error States</h4>
+  <p><strong>Tone: Honest + Reassuring.</strong> Something went wrong. Acknowledge it. Explain it. Fix it. Never blame the user. Never hide behind vague language.</p>
+  <div class="showcase">
+    <div class="showcase-label">Sample Lines</div>
+    <p class="showcase-body">"That payment did not go through. The most common reason is insufficient funds on the sender's card. Want to try a different method?"</p>
+    <p class="showcase-body">"We are having trouble connecting right now. Your money is safe &mdash; nothing was charged. Try again in a moment."</p>
+    <p class="showcase-body">"This link has expired. Payment links last 24 hours. Create a new one &mdash; it takes three seconds."</p>
+  </div>
+
+  <h4>Crisis Communication</h4>
+  <p><strong>Tone: Direct + Accountable.</strong> No corporate hedging. State what happened. State what you are doing. State when you will update. Do not speculate. Do not minimize.</p>
+  <div class="showcase">
+    <div class="showcase-label">Sample Lines</div>
+    <p class="showcase-body">"At 2:15 PM today, some users experienced delays in payment processing. The issue was caused by [specific reason]. All delayed payments have now been processed. No funds were lost."</p>
+    <p class="showcase-body">"We identified a security issue affecting [specific scope]. We have already [specific action taken]. If your account was affected, you will receive a direct notification within the hour."</p>
+    <p class="showcase-body">"We made a mistake. [What happened.] Here is what we are doing to fix it and prevent it from happening again. We will post an update by [specific time]."</p>
+  </div>
+
+  <h3>20 Words Payphone Owns</h3>
+  <p>These words appear frequently in Payphone communications. They are the vocabulary of the brand. When writing for Payphone, reach for these first.</p>
+  <div class="word-grid">
+    <span class="word-chip word-own">Autonomy</span>
+    <span class="word-chip word-own">Phone-native</span>
+    <span class="word-chip word-own">Zero-cost</span>
+    <span class="word-chip word-own">Tap</span>
+    <span class="word-chip word-own">Flow</span>
+    <span class="word-chip word-own">Infrastructure</span>
+    <span class="word-chip word-own">Merchant</span>
+    <span class="word-chip word-own">Builder</span>
+    <span class="word-chip word-own">Layer</span>
+    <span class="word-chip word-own">Movement</span>
+    <span class="word-chip word-own">Ocean</span>
+    <span class="word-chip word-own">Signal</span>
+    <span class="word-chip word-own">Craft</span>
+    <span class="word-chip word-own">Current</span>
+    <span class="word-chip word-own">Navigate</span>
+    <span class="word-chip word-own">Surface</span>
+    <span class="word-chip word-own">Latitude</span>
+    <span class="word-chip word-own">Open</span>
+    <span class="word-chip word-own">Direct</span>
+    <span class="word-chip word-own">Steady</span>
+  </div>
+
+  <h3>10 Words Payphone Bans</h3>
+  <p>These words never appear in Payphone communications. They are either meaningless through overuse, inaccurate to how Payphone works, or belong to a brand personality Payphone is not.</p>
+  <div class="word-grid">
+    <span class="word-chip word-ban">Disrupt</span>
+    <span class="word-chip word-ban">Empower</span>
+    <span class="word-chip word-ban">Leverage</span>
+    <span class="word-chip word-ban">Seamless</span>
+    <span class="word-chip word-ban">Ecosystem</span>
+    <span class="word-chip word-ban">Synergy</span>
+    <span class="word-chip word-ban">Revolutionize</span>
+    <span class="word-chip word-ban">Best-in-class</span>
+    <span class="word-chip word-ban">Democratize</span>
+    <span class="word-chip word-ban">Cutting-edge</span>
+  </div>
+
+  <h3>5 Generic Fintech Phrases, Rewritten</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Generic Version</th>
+        <th>Payphone Version</th>
+        <th>Why It's Better</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>"We are democratizing access to financial services."</td>
+        <td>"Your phone is your bank, your POS, and your payment gateway. No application required."</td>
+        <td>Specific. Names the products being replaced. Ends with the outcome, not the aspiration.</td>
+      </tr>
+      <tr>
+        <td>"Our seamless payment solution empowers businesses."</td>
+        <td>"Accept card payments with your phone. No terminal. No monthly fee. No contract."</td>
+        <td>Shows the product instead of describing it with adjectives. Three "no" statements establish the value prop through negation &mdash; more persuasive than positive claims.</td>
+      </tr>
+      <tr>
+        <td>"We leverage cutting-edge technology to revolutionize the financial ecosystem."</td>
+        <td>"We turned your phone into a card terminal. That is TAP to Phone."</td>
+        <td>One concrete capability beats five abstract claims. The sentence is shorter than the generic version's first clause.</td>
+      </tr>
+      <tr>
+        <td>"Join millions of users who trust our platform."</td>
+        <td>"2 million people use Payphone to get paid without renting a terminal, paying a fee, or signing a contract."</td>
+        <td>Same social proof, but now it says what those 2 million people actually do. Specificity is credibility.</td>
+      </tr>
+      <tr>
+        <td>"We are building the future of finance in Latin America."</td>
+        <td>"A street vendor in Quito accepted her first card payment today using only her phone. That is not the future. That is Tuesday."</td>
+        <td>Stories beat claims. Grounds the brand promise in a moment the reader can picture. The punchline ("That is Tuesday") establishes that the future already arrived.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================================ -->
+<!-- 06 COPY SHOWCASE -->
+<!-- ============================================================ -->
+<section id="copy" class="section-dark">
+  <div class="section-num">06 &mdash; Copy Showcase</div>
+  <h2 class="light">Copy Showcase</h2>
+  <p class="lead">Eight pieces of final copy. Not drafts. Not placeholders. These are ready to ship. They demonstrate how the verbal identity translates into real communications across contexts.</p>
+
+  <!-- PIECE 1: Hero Headline -->
+  <div class="showcase showcase-dark" style="text-align: center; padding: 4rem;">
+    <div class="showcase-label">01 &mdash; Hero Headline + Subheadline (Website / App Store)</div>
+    <div class="showcase-hero" style="font-size: 3rem; max-width: 600px; margin: 0 auto 1rem;">Your phone is your<br>entire financial<br>infrastructure.</div>
+    <p class="showcase-sub" style="max-width: 480px; margin: 0 auto;">Pay, get paid, accept cards, send links, manage your business &mdash; all from one app, at zero cost. 2 million people already do.</p>
+  </div>
+
+  <!-- PIECE 2: About Page -->
+  <div class="showcase" style="margin-top: 3rem;">
+    <div class="showcase-label">02 &mdash; About Page First Paragraph</div>
+    <p class="showcase-body">Payphone started with a question that felt too simple to be interesting: why does accepting a card payment require a separate piece of hardware? It is 2026. Your phone has more computing power than the Apollo guidance system. It has NFC. It has biometric security. It has a camera that can read QR codes in low light at ten feet. And yet, if you sell empanadas at a street market in Quito, you are expected to rent a plastic terminal for $30 a month just to take a card. We looked at that and thought: this is a solved problem being artificially prolonged. So we built Payphone. One app that turns any phone into a payment terminal, a bank account, a payment gateway, and an e-commerce platform. Zero cost to the user. No contract. No hardware. No bank required. Two million people across Ecuador and Central America use it today. By the time you finish reading this page, another one will have signed up.</p>
+  </div>
+
+  <!-- PIECE 3: LinkedIn Post -->
+  <div class="showcase" style="margin-top: 3rem;">
+    <div class="showcase-label">03 &mdash; LinkedIn Launch Post (Juanjo's POV)</div>
+    <p class="showcase-body" style="white-space: pre-line;">Last week, I watched a woman in a market in Guayaquil lose a $12 sale because the customer only had a card.
+
+She had the product. She had the customer. She had the intent to transact. The only thing standing between her and revenue was a $30/month plastic terminal she could not justify.
+
+This is not a "financial inclusion" problem. This is an infrastructure problem. And infrastructure problems get solved by engineers, not by charity.
+
+At Payphone, we turned her phone into a card terminal. No hardware. No monthly fee. No bank contract. She accepted her first card payment in under 60 seconds.
+
+There are 30 million merchants like her across Latin America. Merchants who are ready to sell but blocked by legacy payment infrastructure designed for malls, not markets.
+
+We have 2 million users. We process payments at zero cost. We just launched TAP to Phone &mdash; and the early numbers are staggering.
+
+We are not building a neobank. We are building the financial infrastructure layer that makes banks optional.
+
+If you invest in LATAM fintech, or if you build for underserved merchants, I want to talk. DM is open.
+
+#fintech #payments #latam</p>
+  </div>
+
+  <!-- PIECE 4: Investor Cold Outreach Email -->
+  <div class="showcase showcase-dark" style="margin-top: 3rem;">
+    <div class="showcase-label">04 &mdash; Investor Cold Outreach Email</div>
+    <p class="showcase-body"><strong>Subject: The $12 billion POS terminal industry has a phone problem</strong></p>
+    <br>
+    <p class="showcase-body">Hi [Name],</p>
+    <p class="showcase-body">Quick context: I am Juan Diego, founder of Payphone. We are the financial autonomy platform for Latin America &mdash; 2M+ users, zero-cost model, and we just launched TAP to Phone: the ability for any merchant to accept contactless card payments using only their existing smartphone.</p>
+    <p class="showcase-body">Here is why this matters to your portfolio:</p>
+    <p class="showcase-body">Latin America has 30 million small merchants. Fewer than 8% can accept card payments. The bottleneck is not demand &mdash; it is the hardware: POS terminals cost $300-600 to deploy and $15-40/month to maintain. That is a $12 billion industry built on renting people a capability their phone already has.</p>
+    <p class="showcase-body">Payphone eliminates the terminal entirely. A merchant downloads our app, verifies their identity, and accepts their first tap payment in under five minutes. No hardware. No contract. No monthly fee. Our unit economics work because we monetize through merchant services at healthy margins &mdash; not by taxing the individual.</p>
+    <p class="showcase-body">We are raising our [round] and would welcome 20 minutes to walk you through the model, the numbers, and why we believe TAP to Phone is a category-creating moment for LATAM payments.</p>
+    <p class="showcase-body">Worth a conversation?</p>
+    <p class="showcase-body">Juan Diego<br>Founder, Payphone<br>payphone.com</p>
+  </div>
+
+  <!-- PIECE 5: Onboarding Welcome -->
+  <div class="showcase" style="margin-top: 3rem; text-align: center;">
+    <div class="showcase-label">05 &mdash; Onboarding Welcome Screen (Mobile)</div>
+    <div class="showcase-hero" style="font-size: 1.8rem; max-width: 400px; margin: 0 auto 0.75rem;">Welcome to Payphone.</div>
+    <p class="showcase-sub" style="max-width: 360px; margin: 0 auto 1.5rem;">You are three steps from paying, getting paid, and accepting card payments &mdash; all from this phone. No bank required.</p>
+    <p class="showcase-body" style="max-width: 360px; margin: 0 auto; font-size: 0.85rem; color: var(--gray-400);">
+      Step 1: Verify your phone number<br>
+      Step 2: Add your name and ID<br>
+      Step 3: You are live<br><br>
+      Average setup time: 90 seconds.
+    </p>
+  </div>
+
+  <!-- PIECE 6: Push Notification -->
+  <div class="showcase showcase-dark" style="margin-top: 3rem;">
+    <div class="showcase-label">06 &mdash; Push Notification (Merchant First Payment)</div>
+    <p class="showcase-body"><strong>Your first card payment just landed.</strong></p>
+    <p class="showcase-body">$18.50 from a customer &mdash; accepted with just your phone. No terminal. No fee. That is how it works from now on.</p>
+  </div>
+
+  <!-- PIECE 7: Fundraising One-Liner -->
+  <div class="showcase" style="margin-top: 3rem; text-align: center; padding: 3rem;">
+    <div class="showcase-label">07 &mdash; Fundraising One-Liner</div>
+    <div class="showcase-hero" style="font-size: 1.6rem; max-width: 640px; margin: 0 auto;">Payphone is the zero-cost financial platform turning every smartphone in Latin America into a bank branch, POS terminal, and payment gateway &mdash; already live with 2M+ users.</div>
+  </div>
+
+  <!-- PIECE 8: 404 Error Page -->
+  <div class="showcase showcase-dark" style="margin-top: 3rem; text-align: center; padding: 4rem;">
+    <div class="showcase-label">08 &mdash; 404 Error Page</div>
+    <div class="showcase-hero" style="font-size: 5rem; margin-bottom: 0.5rem; background: var(--gradient-sunset); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">404</div>
+    <div class="showcase-hero" style="font-size: 1.5rem;">This page swam off.</div>
+    <p class="showcase-sub" style="max-width: 400px; margin: 1rem auto;">Even whales take wrong turns sometimes. The page you are looking for does not exist &mdash; but everything else does.</p>
+    <p class="showcase-body" style="margin-top: 1.5rem;">
+      <span style="color: var(--naranja); font-weight: 600; cursor: pointer;">Go to homepage</span>
+      &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;
+      <span style="color: var(--gray-400); cursor: pointer;">Contact support</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 07 VISUAL IDENTITY DIRECTION -->
+<!-- ============================================================ -->
+<section id="visual">
+  <div class="section-num">07 &mdash; Visual Identity Direction</div>
+  <h2>Visual Identity Direction</h2>
+  <p class="lead">This section is a designer brief. It is specific enough to execute against and opinionated enough to prevent drift. If a visual decision is not covered here, default to the simplest option that honors the brand personality.</p>
+
+  <h3>Color System</h3>
+  <p>Payphone's color system is built on contrast and warmth. The primary palette is intentionally small &mdash; two colors that do 90% of the work. The secondary palette adds range without adding noise.</p>
+
+  <h4>Primary Colors (Use Everywhere)</h4>
+  <div class="swatch-grid">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #FF6400;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Naranja Payphone</div>
+        <div class="swatch-hex">#FF6400 / RGB 255, 100, 0</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">The brand's primary identifier. Used for CTAs, active states, key headlines, the logo mark, and any element that says "this is Payphone." It is warm, saturated, and energetic without tipping into aggressive. Never use at less than 60% opacity &mdash; diluted orange reads as salmon, which is a different brand entirely.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #222222;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Oscuro Payphone</div>
+        <div class="swatch-hex">#222222 / RGB 34, 34, 34</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">The brand's grounding color. Used for backgrounds in dark mode, body text, and as the primary background for investor-facing materials. It is not black (#000000) &mdash; pure black is harsh and reads as "tech default." #222222 has enough warmth to feel intentional. Use for all dark backgrounds, never #000000.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4>Secondary Colors (Use Selectively)</h4>
+  <div class="swatch-grid">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #5A00B4;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Violeta Payphone</div>
+        <div class="swatch-hex">#5A00B4 / RGB 90, 0, 180</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">The premium signal. Violet creates depth and sophistication. Used for secondary CTAs, data visualization accent, investor materials accent, and gradient endpoints. It prevents the orange from reading "budget" by adding a luxury counterpoint. Never use as a background color for text &mdash; accessibility contrast ratios fail against most text colors.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #FFA000;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Amarillo Payphone</div>
+        <div class="swatch-hex">#FFA000 / RGB 255, 160, 0</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">The energy accent. Amber-gold that bridges orange and yellow. Used for highlights, notification badges, success states, and warm gradient endpoints. It should feel like late-afternoon sunlight. Never use for body text or large text blocks &mdash; it lacks sufficient contrast against white backgrounds.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #FFFFFF; border: 1px solid #E8E8E8;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Blanco Payphone</div>
+        <div class="swatch-hex">#FFFFFF / RGB 255, 255, 255</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">Clean white for light mode backgrounds, cards, and containers. Use generous white space &mdash; it is the brand's most important "color" because it gives the orange room to breathe. Payphone designs should never feel crowded.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4>Gradient System</h4>
+  <div class="swatch-grid">
+    <div class="swatch">
+      <div class="swatch-color" style="background: linear-gradient(135deg, #FF6400, #FFA000);"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Sunset Gradient</div>
+        <div class="swatch-hex">#FF6400 to #FFA000 / 135deg</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">Primary gradient. Use for hero sections, CTAs, feature highlights, and brand moments. This is the "warm" gradient &mdash; it evokes the transition from afternoon to golden hour. It should feel aspirational and inviting.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: linear-gradient(135deg, #FF6400, #5A00B4);"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Electric Gradient</div>
+        <div class="swatch-hex">#FF6400 to #5A00B4 / 135deg</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">Premium gradient. Use for investor materials, pitch deck accents, and elevated brand moments. This is the "depth" gradient &mdash; it signals sophistication and ambition. Reserve for contexts where Payphone is speaking to capital or partners, not to end users.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: linear-gradient(135deg, #FFA000, #FF6400, #5A00B4);"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Dawn Gradient</div>
+        <div class="swatch-hex">#FFA000 to #FF6400 to #5A00B4 / 135deg</div>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; margin-bottom: 0;">Full spectrum gradient. Use sparingly &mdash; only for major brand moments like launch campaigns, year-in-review materials, or event branding. This is the "everything" gradient. It should feel like a sunrise over ocean.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Typography</h3>
+
+  <h4>Primary Typeface: Aeonik</h4>
+  <p>Aeonik is a geometric sans-serif that balances warmth with precision. Its rounded terminals prevent it from feeling clinical (unlike Helvetica), while its consistent stroke width keeps it from feeling playful (unlike Circular). It is the typographic equivalent of Payphone's brand personality: approachable authority.</p>
+  <p><strong>Weights in use:</strong> Regular (400) for body text, Medium (500) for subheadings and emphasis, Bold (700) for headlines and CTAs. Light (300) for large display text only &mdash; never for body copy.</p>
+
+  <h4>Secondary Typeface: System Sans-Serif Stack</h4>
+  <p>For contexts where Aeonik is not available (email, third-party platforms, user-generated templates): use the system sans-serif stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif. Never use a decorative or serif fallback.</p>
+
+  <h4>Type Scale</h4>
+  <table>
+    <thead>
+      <tr><th>Level</th><th>Size</th><th>Weight</th><th>Use</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Display</td><td>48-72px</td><td>Bold 700</td><td>Hero headlines, major brand moments</td></tr>
+      <tr><td>H1</td><td>36-48px</td><td>Bold 700</td><td>Page titles, section headers</td></tr>
+      <tr><td>H2</td><td>28-32px</td><td>Bold 700</td><td>Section subheadings</td></tr>
+      <tr><td>H3</td><td>20-24px</td><td>Medium 500</td><td>Card titles, feature names</td></tr>
+      <tr><td>Body Large</td><td>18px</td><td>Regular 400</td><td>Lead paragraphs, key descriptions</td></tr>
+      <tr><td>Body</td><td>16px</td><td>Regular 400</td><td>Standard body copy</td></tr>
+      <tr><td>Small</td><td>14px</td><td>Regular 400</td><td>Captions, metadata, secondary text</td></tr>
+      <tr><td>Micro</td><td>12px</td><td>Medium 500</td><td>Labels, tags, legal text</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Three Non-Negotiable Typography Rules</h4>
+  <div class="callout callout-tip">
+    <div class="callout-label">Rule 01</div>
+    <p><strong>Never stack more than three type sizes on a single screen or layout.</strong> If you need a fourth, you have a hierarchy problem, not a type problem. Reduce content or restructure the layout.</p>
+  </div>
+  <div class="callout callout-tip">
+    <div class="callout-label">Rule 02</div>
+    <p><strong>Headlines are always sentence case, never all-caps.</strong> All-caps reads as shouting. Payphone states; it does not shout. The only exception is labels and micro-text (tags, section numbers, metadata), where all-caps with wide letter-spacing serves a structural purpose.</p>
+  </div>
+  <div class="callout callout-tip">
+    <div class="callout-label">Rule 03</div>
+    <p><strong>Body text line-height is always 1.6-1.8x the font size.</strong> Payphone's brand is built on breathing room. Tight leading makes text feel anxious &mdash; the opposite of the brand's emotional target. When in doubt, add more space.</p>
+  </div>
+
+  <h3>Logo Direction</h3>
+
+  <h4>The Whale Tail Icon</h4>
+  <p>The whale tail is Payphone's most valuable brand asset. It is abstract enough to scale across contexts (app icon, favicon, watermark, physical signage) and specific enough to be immediately recognizable. The tail represents a whale mid-dive &mdash; the moment of descent into the ocean, which metaphorically maps to diving into financial autonomy.</p>
+
+  <h4>Wordmark: "payphone"</h4>
+  <p>The wordmark is set in lowercase Aeonik Bold. Lowercase is a deliberate choice: it communicates accessibility and approachability while the weight prevents it from reading as passive. The wordmark is always rendered as one word, never "Pay Phone" or "PayPhone." Casing rules: "payphone" in the logo, "Payphone" at the start of sentences, never "PAYPHONE" in all-caps.</p>
+
+  <h4>6 Logo Misuse Rules</h4>
+  <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 01</div>
+      <p><strong>Never rotate the whale tail.</strong> The tail points upward and to the right. Rotating it changes the meaning: a downward tail implies sinking, not diving. The direction is non-negotiable.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 02</div>
+      <p><strong>Never change the logo colors.</strong> The whale tail is Naranja Payphone or white (on dark backgrounds). Never blue, never green, never grayscale. Brand partnerships may show the logo in white; they may never recolor it to match partner brand palettes.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 03</div>
+      <p><strong>Never add effects to the logo.</strong> No drop shadows, no glows, no gradients applied to the logo mark itself (gradients may appear behind it as background). No 3D rendering. The logo is flat by design.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 04</div>
+      <p><strong>Never place the logo on busy backgrounds.</strong> The logo requires a minimum clear zone equal to the height of the whale tail icon on all four sides. If the background is photographic, place the logo on a solid color card or overlay.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 05</div>
+      <p><strong>Never separate the icon from the wordmark when both are present.</strong> The whale tail and "payphone" text maintain a fixed spatial relationship. They may be used independently (icon-only for app icons; wordmark-only for inline text), but when used together, spacing ratios are locked.</p>
+    </div>
+    <div class="card">
+      <div class="card-label" style="color: #EF4444;">Misuse 06</div>
+      <p><strong>Never render the logo below 24px height in digital or 8mm in print.</strong> Below these thresholds, the whale tail's curves lose definition and the wordmark becomes illegible. At small sizes, use the icon-only variant.</p>
+    </div>
+  </div>
+
+  <h3>Imagery Direction</h3>
+
+  <h4>Three-Word Filter</h4>
+  <p>Every image used in Payphone communications must pass through a three-word filter: <strong>Authentic. Dynamic. Warm.</strong> If an image does not satisfy all three, it does not ship.</p>
+  <ul>
+    <li><strong>Authentic:</strong> Real people in real environments. Not studio-lit models pretending to use phones. Not stock photos of "diverse groups laughing at a laptop." Real merchants in real markets. Real hands holding real phones. Real transactions in real light.</li>
+    <li><strong>Dynamic:</strong> Images should convey motion, energy, or the moment just before or after an action. A hand reaching for a phone. A merchant mid-transaction. A crowd moving through a street market. Never static posed portraits. Never "person staring at camera with arms crossed."</li>
+    <li><strong>Warm:</strong> Color grading should lean warm. Golden hour tones. Amber highlights. Shadows that trend purple-gray, not blue-gray. This aligns with the Naranja/Violeta palette and prevents the brand from feeling clinical or cold.</li>
+  </ul>
+
+  <h4>Subjects</h4>
+  <p>Prioritize these subjects in brand photography:</p>
+  <ol>
+    <li>Hands interacting with phones (payment moments, tapping, sending links)</li>
+    <li>Small merchants in their natural environment (market stalls, home salons, street food, repair shops)</li>
+    <li>Urban Latin American streetscapes (Quito, Guayaquil, Guatemala City, San Salvador)</li>
+    <li>Close-up product shots (app screens showing real UI, not mockups)</li>
+    <li>Ocean and water imagery (used sparingly, for brand-level campaigns, never for product marketing)</li>
+  </ol>
+
+  <h4>Banned Stock Photo Types</h4>
+  <div class="callout callout-no">
+    <div class="callout-label">Never use these</div>
+    <p><strong>The "diverse boardroom":</strong> Six people of carefully balanced demographics standing around a glass table with laptops. This is the visual equivalent of "synergy."</p>
+    <p><strong>The "happy phone user":</strong> Person alone on a solid background, smiling at their phone screen. No context, no story, no environment. Visually empty.</p>
+    <p><strong>The "fintech city skyline":</strong> Generic city skyline with blue overlay and floating data points. This screams "we could not think of an image so we used the first result on Shutterstock."</p>
+  </div>
+
+  <h4>Three Reference Image Descriptions</h4>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Reference 01</div>
+      <p>A woman's hands holding a smartphone at a bustling outdoor market in Quito. The phone screen shows a Payphone payment confirmation. Behind her hands, blurred but visible, are rows of colorful produce and the motion of other vendors. Afternoon light. Warm color grade. Shot from a slight overhead angle to emphasize the phone as the center of the transaction.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Reference 02</div>
+      <p>A young man behind the counter of a small electronics repair shop, holding his phone toward a customer's card. The TAP moment. The shop is small, real, lived-in: tools on the wall, a fan spinning overhead, receipts pinned to a corkboard. The customer's hand entering frame from the right with a card creates diagonal energy. Natural light from a window camera-left. Slightly desaturated shadows with warm highlights.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Reference 03</div>
+      <p>An aerial (drone) shot of an Ecuadorian coastal town. Orange-roofed buildings meeting the Pacific Ocean. The image is used at brand-campaign scale with the Payphone whale tail icon overlaid at 15% opacity as a watermark in the lower right. The ocean fills the top third of the frame. The composition connects the brand's visual metaphor (ocean, freedom, movement) to its geographic roots without being literal.</p>
+    </div>
+  </div>
+
+  <h3>Iconography</h3>
+  <h4>System Specifications</h4>
+  <table>
+    <thead>
+      <tr><th>Property</th><th>Specification</th><th>Rationale</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Stroke weight</td>
+        <td>1.5px at 24px icon size (scales proportionally)</td>
+        <td>Thin enough to feel modern, thick enough to be legible on small screens. Aligns with Aeonik's medium stroke weight for visual consistency.</td>
+      </tr>
+      <tr>
+        <td>Corner radius</td>
+        <td>2px on internal corners, square on external terminals</td>
+        <td>Soft internals match the brand's "warm" personality. Square terminals maintain precision and prevent icons from feeling bubbly or childish.</td>
+      </tr>
+      <tr>
+        <td>Fill vs. Outline</td>
+        <td>Outline by default. Fill only for active/selected states.</td>
+        <td>Outline-to-fill transition provides clear interactive feedback without requiring color changes. The filled state always uses Naranja Payphone.</td>
+      </tr>
+      <tr>
+        <td>Grid</td>
+        <td>24x24px base grid with 2px padding (20x20 live area)</td>
+        <td>Standard Material/iOS-compatible grid for cross-platform consistency.</td>
+      </tr>
+      <tr>
+        <td>Style</td>
+        <td>Geometric with humanist details</td>
+        <td>Geometric base (circles, squares, clean angles) with occasional rounded details on one or two elements per icon. Mirrors the brand tension: systematic but human.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Data Visualization Aesthetic</h4>
+  <p>Charts and data displays use the following rules:</p>
+  <ul>
+    <li><strong>Primary data series:</strong> Naranja Payphone (#FF6400) at full opacity</li>
+    <li><strong>Secondary data series:</strong> Violeta Payphone (#5A00B4) at 80% opacity</li>
+    <li><strong>Tertiary data series:</strong> Amarillo Payphone (#FFA000) at 70% opacity</li>
+    <li><strong>Grid lines:</strong> #E8E8E8 (light mode) or rgba(255,255,255,0.1) (dark mode)</li>
+    <li><strong>Labels:</strong> #666666 (light mode) or #999999 (dark mode), Aeonik Regular 12px</li>
+    <li><strong>Never use red/green for positive/negative.</strong> Instead, use Naranja for positive and a neutral gray (#999999) for negative. Red/green color coding fails for colorblind users and triggers unintended emotional responses in financial contexts.</li>
+    <li><strong>Animate data on load.</strong> Charts should draw from left to right or bottom to top. Static data feels dead. Movement is a core brand value.</li>
+  </ul>
+</section>
+
+<!-- ============================================================ -->
+<!-- 08 BRAND IN ACTION -->
+<!-- ============================================================ -->
+<section id="action" class="section-accent">
+  <div class="section-num">08 &mdash; Brand in Action</div>
+  <h2>Brand in Action</h2>
+  <p class="lead">The brand exists only where it touches people. These eight touchpoints define what Payphone looks, reads, and feels like in the real world. Each one is specified precisely enough for a designer or developer to build it.</p>
+
+  <!-- TOUCHPOINT 1 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">01. LinkedIn Profile Banner</h4>
+      <p><strong>Dimensions:</strong> 1584 x 396px</p>
+      <p><strong>Visual:</strong> Dark background (#222222). The Payphone whale tail icon sits in the left third at 40% opacity as a large watermark, creating depth without competing with the profile photo. A thin horizontal line in the Sunset Gradient (#FF6400 to #FFA000) runs across the bottom 4px of the banner, adding a subtle brand signature.</p>
+      <p><strong>Copy (right-aligned, vertically centered):</strong></p>
+      <p style="font-size: 1.1rem; font-weight: 700; line-height: 1.3;">Your phone is your entire<br>financial infrastructure.</p>
+      <p style="font-size: 0.85rem; color: var(--gray-600);">payphone.com</p>
+      <p><strong>Brand Principles Applied:</strong> Restraint (minimal elements), Confidence (the statement is a declaration, not a tagline), Dark Mode (investor-facing gravitas).</p>
+    </div>
+    <div class="touchpoint-visual">
+      <div>
+        <div style="font-size: 3rem; opacity: 0.15; margin-bottom: 1rem;">&#x1F433;</div>
+        <div style="text-align: right; font-weight: 700;">Your phone is your entire<br>financial infrastructure.</div>
+        <div style="text-align: right; font-size: 0.7rem; color: var(--gray-400); margin-top: 0.5rem;">payphone.com</div>
+        <div style="height: 4px; background: linear-gradient(90deg, #FF6400, #FFA000); margin-top: 1.5rem; border-radius: 2px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 2 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">02. Pitch Deck Cover + Divider Slide</h4>
+      <p><strong>Cover Slide:</strong></p>
+      <p><strong>Background:</strong> #222222 (Oscuro Payphone). Full bleed.</p>
+      <p><strong>Center composition:</strong> Payphone logo (whale tail + wordmark) in white, at 120px height, horizontally and vertically centered. Below the logo, 48px of space, then a single line: "Financial Autonomy Platform" in Aeonik Medium, 18px, color #999999, letter-spacing 0.12em, all-caps.</p>
+      <p><strong>Bottom left corner:</strong> "Confidential" in Aeonik Regular, 11px, #666666.</p>
+      <p><strong>Bottom right corner:</strong> "[Month] 2026" in Aeonik Regular, 11px, #666666.</p>
+      <p><strong>Divider Slides:</strong> Same #222222 background. Section number in Naranja Payphone, 14px, uppercase. Section title in white, Aeonik Bold, 48px. A thin horizontal line (2px) in the Electric Gradient (#FF6400 to #5A00B4) spans 30% of the slide width, left-aligned below the title.</p>
+      <p><strong>Brand Principles Applied:</strong> Premium restraint (dark backgrounds signal seriousness to investors), Hierarchy (one element draws focus), Confidence (the logo stands alone without defensive supporting elements).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; gap: 1rem;">
+      <div style="text-align: center;">
+        <div style="font-size: 2rem; opacity: 0.8; margin-bottom: 0.5rem;">&#x1F433;</div>
+        <div style="font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem;">payphone</div>
+        <div style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-400);">Financial Autonomy Platform</div>
+      </div>
+      <div style="font-size: 0.55rem; color: #666; display: flex; justify-content: space-between; width: 100%; margin-top: 2rem;">
+        <span>Confidential</span>
+        <span>March 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 3 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">03. Mobile Onboarding Screen</h4>
+      <p><strong>Screen 1 (Welcome):</strong></p>
+      <p><strong>Background:</strong> White (#FFFFFF). Status bar in dark text.</p>
+      <p><strong>Top third:</strong> Payphone whale tail icon in Naranja, centered, at 64px. Below it, "payphone" wordmark in #222222, 20px.</p>
+      <p><strong>Middle third:</strong> Headline "Welcome to Payphone." in Aeonik Bold, 28px, #222222, centered. Below, body text: "You are three steps from paying, getting paid, and accepting card payments &mdash; all from this phone." in Aeonik Regular, 16px, #666666, centered, max-width 280px.</p>
+      <p><strong>Bottom third:</strong> Primary CTA button: "Get started" &mdash; full-width (with 24px side margins), 52px height, background Naranja Payphone, white text, Aeonik Medium 16px, border-radius 12px. Below the button: "Already have an account? Sign in" as a text link in #666666, 14px.</p>
+      <p><strong>Brand Principles Applied:</strong> Simplicity (three elements: logo, text, button), Human (the copy speaks directly to the user), Zero Friction (the CTA is impossible to miss).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; background: white; color: var(--dark); border: 1px solid var(--gray-200); max-width: 280px; border-radius: 24px; padding: 2rem 1.5rem;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <div style="font-size: 2rem; color: var(--naranja);">&#x1F433;</div>
+        <div style="font-weight: 700; font-size: 0.9rem; margin-top: 0.25rem;">payphone</div>
+      </div>
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <div style="font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem;">Welcome to Payphone.</div>
+        <div style="font-size: 0.75rem; color: var(--gray-600); line-height: 1.5;">You are three steps from paying, getting paid, and accepting card payments.</div>
+      </div>
+      <div style="background: var(--naranja); color: white; text-align: center; padding: 0.75rem; border-radius: 12px; font-weight: 600; font-size: 0.85rem;">Get started</div>
+      <div style="text-align: center; font-size: 0.7rem; color: var(--gray-400); margin-top: 0.75rem;">Already have an account? Sign in</div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 4 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">04. Investor Update Email Header</h4>
+      <p><strong>Email width:</strong> 600px centered, system font stack (email cannot load Aeonik reliably).</p>
+      <p><strong>Header block:</strong> 80px tall, background #222222. Payphone logo in white, left-aligned with 24px left padding, vertically centered, 32px height. Right-aligned: "[Month] 2026 Update" in #999999, 12px, uppercase, letter-spacing 0.1em.</p>
+      <p><strong>Below header:</strong> 4px gradient bar spanning full width (Sunset Gradient).</p>
+      <p><strong>Opening line pattern:</strong> The email always opens with a single bold metric. Example: "This month: $X.XM processed, Y,000 new merchants, Z% month-over-month growth." Aeonik Bold equivalent (system bold), 18px, #222222. This replaces the typical "Dear Investors" greeting &mdash; Payphone leads with a number, not a salutation.</p>
+      <p><strong>Brand Principles Applied:</strong> Data-forward (lead with the number), Confidence (no hedging or caveats in the opening), Professional restraint (dark header signals institutional quality).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; align-items: stretch; padding: 0; overflow: hidden; border-radius: 12px;">
+      <div style="background: var(--dark); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 700; font-size: 0.9rem;">payphone</span>
+        <span style="font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-400);">March 2026 Update</span>
+      </div>
+      <div style="height: 4px; background: linear-gradient(90deg, #FF6400, #FFA000);"></div>
+      <div style="background: white; padding: 1.5rem; color: var(--dark);">
+        <div style="font-weight: 700; font-size: 1rem; line-height: 1.4;">This month: $4.2M processed, 8,400 new merchants, 23% MoM growth.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 5 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">05. Business Card</h4>
+      <p><strong>Size:</strong> Standard 3.5 x 2 inches, rounded corners (3mm radius).</p>
+      <p><strong>Front:</strong> Background #222222. Payphone logo (whale tail + wordmark) in white, centered, at 28px height. Below the logo, a single thin line (0.5px) in Naranja Payphone, 40% of card width, centered. Below the line: "Financial Autonomy Platform" in #666666, 6pt, uppercase, letter-spacing 0.15em.</p>
+      <p><strong>Back:</strong> Background white. Left-aligned text block starting at 30% from top: Name in Aeonik Bold, 10pt, #222222. Title in Aeonik Regular, 8pt, #666666. Below, separated by 12pt space: email, phone, website in Aeonik Regular, 7pt, #999999, each on its own line. Bottom-right corner: whale tail icon only, in Naranja Payphone, 12mm, at 30% opacity.</p>
+      <p><strong>Paper:</strong> Matte white, 400gsm, soft-touch lamination. The card should feel substantial without being ostentatious.</p>
+      <p><strong>Brand Principles Applied:</strong> Premium minimalism (fewer elements = more authority), Tactile quality (paper weight and finish communicate before the card is read), Information hierarchy (name and title before contact details).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; gap: 1rem;">
+      <div style="background: var(--dark); border-radius: 8px; padding: 2rem; text-align: center; width: 100%;">
+        <div style="font-weight: 700; font-size: 0.8rem; margin-bottom: 0.5rem;">payphone</div>
+        <div style="height: 1px; background: var(--naranja); width: 40%; margin: 0 auto 0.5rem;"></div>
+        <div style="font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray-600);">Financial Autonomy Platform</div>
+      </div>
+      <div style="background: white; border-radius: 8px; padding: 1.25rem 1.5rem; color: var(--dark); width: 100%; position: relative;">
+        <div style="font-weight: 700; font-size: 0.75rem;">Val Infante</div>
+        <div style="font-size: 0.65rem; color: var(--gray-600);">Chief Revenue Officer</div>
+        <div style="font-size: 0.6rem; color: var(--gray-400); margin-top: 0.75rem; line-height: 1.6;">val@payphone.com<br>+593 XXX XXXX<br>payphone.com</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 6 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">06. Dashboard Empty State</h4>
+      <p><strong>Context:</strong> A new merchant opens the Payphone Business dashboard for the first time. No transactions yet. No data to display.</p>
+      <p><strong>Visual:</strong> The chart area where transaction data will eventually appear shows a faint outline of a chart (stroke: #E8E8E8, dashed) with a gentle upward trajectory &mdash; suggesting the growth that will come. Above the chart outline, centered:</p>
+      <p><strong>Headline:</strong> "Your first transaction starts here." Aeonik Bold, 24px, #222222.</p>
+      <p><strong>Body:</strong> "Share a payment link, tap a card, or set up your online store. Every business on Payphone started with a single transaction." Aeonik Regular, 14px, #666666, max-width 360px, centered.</p>
+      <p><strong>CTA Button:</strong> "Create a payment link" &mdash; Naranja Payphone background, white text, Aeonik Medium 14px, 44px height, border-radius 10px, centered.</p>
+      <p><strong>Secondary action:</strong> "Learn about TAP to Phone" as a text link in Naranja Payphone, 13px, below the button.</p>
+      <p><strong>Brand Principles Applied:</strong> Human (the copy acknowledges the user is at the beginning, without being condescending), Forward-looking (the dashed chart line anticipates success), Action-oriented (two clear next steps).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; background: white; color: var(--dark); border: 1px solid var(--gray-200);">
+      <div style="width: 80%; height: 60px; border-bottom: 2px dashed #E8E8E8; margin: 0 auto 1.5rem; position: relative;">
+        <div style="position: absolute; bottom: -1px; left: 0; width: 100%; height: 40px; border-bottom: 2px dashed #E8E8E8; border-radius: 0 0 50% 0;"></div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem;">Your first transaction starts here.</div>
+        <div style="font-size: 0.7rem; color: var(--gray-600); line-height: 1.5; margin-bottom: 1rem; max-width: 240px; margin-left: auto; margin-right: auto;">Share a payment link, tap a card, or set up your online store.</div>
+        <div style="display: inline-block; background: var(--naranja); color: white; padding: 0.5rem 1.25rem; border-radius: 10px; font-size: 0.75rem; font-weight: 600;">Create a payment link</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 7 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">07. Social Media Post Template</h4>
+      <p><strong>Format:</strong> 1080 x 1080px (Instagram/LinkedIn) or 1080 x 1920px (Stories/Reels cover).</p>
+      <p><strong>Square post template:</strong></p>
+      <p><strong>Background:</strong> White or #222222 (alternate). Never a gradient background &mdash; gradients are reserved for accent elements.</p>
+      <p><strong>Top-left:</strong> Payphone whale tail icon, 32px, in Naranja (on white) or white (on dark), at 85% opacity.</p>
+      <p><strong>Center:</strong> Headline text, Aeonik Bold, 48-64px, max 6 words per line, max 3 lines. Left-aligned, positioned in the left two-thirds of the frame. The right third is reserved for an image, illustration, or negative space.</p>
+      <p><strong>Bottom:</strong> A 4px gradient bar (Sunset Gradient) spanning the full width, 24px from the bottom edge. Below it (or above it, depending on background): "payphone.com" in 12px, Aeonik Regular, #999999.</p>
+      <p><strong>Accent rule:</strong> One word or phrase in the headline may be colored Naranja Payphone for emphasis. Never more than one. If no word deserves emphasis, use uniform color.</p>
+      <p><strong>Brand Principles Applied:</strong> Consistency (every post is unmistakably Payphone from the thumbnail), Hierarchy (headline dominates, logo supports, CTA anchors), Restraint (the template works because it limits decisions, not because it offers flexibility).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; justify-content: space-between; aspect-ratio: 1; max-width: 280px;">
+      <div style="font-size: 1.5rem; opacity: 0.5;">&#x1F433;</div>
+      <div style="font-weight: 700; font-size: 1.3rem; line-height: 1.2;">Zero fees.<br>Not a promo.<br><span style="color: var(--naranja);">The model.</span></div>
+      <div>
+        <div style="height: 3px; background: linear-gradient(90deg, #FF6400, #FFA000); margin-bottom: 0.5rem;"></div>
+        <div style="font-size: 0.6rem; color: var(--gray-400);">payphone.com</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOUCHPOINT 8 -->
+  <div class="touchpoint">
+    <div>
+      <h4 style="margin-top: 0;">08. Press Kit / Media Page</h4>
+      <p><strong>Page structure:</strong> Hosted at payphone.com/press (or /media). Clean, single-column layout on white background.</p>
+      <p><strong>Header:</strong> "Press Kit" in Aeonik Bold, 48px, #222222. Below: "Everything you need to write about Payphone. If you need something that is not here, email press@payphone.com." Aeonik Regular, 16px, #666666.</p>
+      <p><strong>Section 1 &mdash; Company Overview:</strong> Two-sentence description: "Payphone is the financial autonomy platform for Latin America. One app that lets anyone pay, get paid, and accept card payments from their phone &mdash; at zero cost, without a bank account or POS terminal." Below: key stats in a 2x3 grid &mdash; "2M+ users," "X countries," "$XM monthly volume," "Zero cost to users," "Founded [year]," "Headquarters: Quito, Ecuador."</p>
+      <p><strong>Section 2 &mdash; Brand Assets:</strong> Downloadable ZIP containing: logo (PNG, SVG, white and Naranja versions), whale tail icon only, wordmark only, brand colors (ASE swatch file), Aeonik font specimen (not the font file itself &mdash; license required separately). Each asset shown as a preview thumbnail with a download button.</p>
+      <p><strong>Section 3 &mdash; Leadership:</strong> Photos and one-paragraph bios of key leaders. Photos: professional but not corporate. Shot against neutral backgrounds with warm, natural light. No suits unless that is what the person actually wears.</p>
+      <p><strong>Section 4 &mdash; Recent Coverage:</strong> Links to press articles, podcast appearances, notable social posts. Reverse chronological. Maximum 10 items shown, with a "View all" link.</p>
+      <p><strong>Brand Principles Applied:</strong> Service (the press page exists to make journalists' jobs easier, not to impress them), Completeness (everything they need in one place), Professionalism (the quality of the press page signals the quality of the company).</p>
+    </div>
+    <div class="touchpoint-visual" style="flex-direction: column; background: white; color: var(--dark); border: 1px solid var(--gray-200); align-items: flex-start; gap: 1rem;">
+      <div style="font-weight: 700; font-size: 1.3rem;">Press Kit</div>
+      <div style="font-size: 0.7rem; color: var(--gray-600); line-height: 1.5;">Everything you need to write about Payphone.</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; width: 100%;">
+        <div style="background: var(--gray-100); padding: 0.5rem; border-radius: 6px; font-size: 0.65rem; text-align: center;"><strong>2M+</strong><br>users</div>
+        <div style="background: var(--gray-100); padding: 0.5rem; border-radius: 6px; font-size: 0.65rem; text-align: center;"><strong>Zero</strong><br>cost</div>
+        <div style="background: var(--gray-100); padding: 0.5rem; border-radius: 6px; font-size: 0.65rem; text-align: center;"><strong>4</strong><br>countries</div>
+        <div style="background: var(--gray-100); padding: 0.5rem; border-radius: 6px; font-size: 0.65rem; text-align: center;"><strong>Quito</strong><br>HQ</div>
+      </div>
+      <div style="width: 100%; padding-top: 0.5rem; border-top: 1px solid var(--gray-200);">
+        <div style="font-size: 0.6rem; color: var(--naranja); font-weight: 600;">Download brand assets &darr;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 09 BRAND DON'TS -->
+<!-- ============================================================ -->
+<section id="donts" class="section-dark">
+  <div class="section-num">09 &mdash; Brand Don'ts</div>
+  <h2 class="light">Brand Don'ts</h2>
+  <p class="lead">Fifteen specific, opinionated prohibitions. These are not suggestions. They are walls. Every one exists because someone, somewhere, at some company, made this mistake and diluted their brand. Payphone will not.</p>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">01</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never say "democratize."</strong>
+      This word has been used by every fintech, edtech, healthtech, and proptech company founded since 2015. It means nothing anymore. Payphone does not "democratize finance." Payphone makes financial tools available to everyone at zero cost. Say that instead. Be specific.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">02</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use blue as a brand color.</strong>
+      Blue is the color of banks. It is the color of trust in a banking context. Payphone is not a bank. Using blue &mdash; even as an accent, even in a one-off campaign &mdash; subconsciously positions Payphone in the category it is trying to replace. Orange is the antidote to blue. Stay in character.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">03</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never open a sentence with "At Payphone, we..."</strong>
+      This construction is the copywriting equivalent of clearing your throat before speaking. It adds no information and delays the point. Start with the point. "Your phone is now a POS terminal" is better than "At Payphone, we have developed a feature that allows your phone to function as a POS terminal." The sole exception is Juan Diego's first-person LinkedIn posts, where "At Payphone, we..." can work once per post as a pivot.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">04</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use the word "users" in user-facing copy.</strong>
+      People are not "users." They are people, customers, merchants, builders, entrepreneurs. "Users" is a developer term that leaked into marketing and never left. In internal documents and analytics, "users" is fine. In anything a customer reads, it is banned.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">05</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never put the logo on a gradient background without a solid-color container.</strong>
+      The whale tail has curves. Gradients have color transitions. Placing one on top of the other creates visual noise that makes both elements weaker. If the background is a gradient, place the logo inside a solid-color rectangle (white or #222222) with padding.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">06</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use more than three emojis in a single social post.</strong>
+      Emojis are seasoning, not the meal. Three is the maximum. Zero is often the right number. When used, emojis should replace a bullet point or add tone &mdash; never replace a word. "Send money instantly" is not improved by "Send money instantly."
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">07</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never compare Payphone to competitors by name in public-facing materials.</strong>
+      Naming competitors elevates them. Payphone compares itself to the status quo (banks, POS terminals, paper invoices), not to other fintechs. Internally, competitive analysis is rigorous. Externally, competitors do not exist. Payphone exists in its own category.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">08</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use stock illustrations of floating isometric devices.</strong>
+      The "phone floating at 30 degrees with app screenshots and decorative circles" visual is the stock illustration equivalent of clip art. It signals "we did not invest in real creative." Use actual product screenshots, photography, or abstract brand graphics. Never a floating phone.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">09</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never write "we are excited to announce."</strong>
+      If the announcement is exciting, the content will convey that. Telling people you are excited is a meta-emotion that adds nothing. Start with the announcement. "TAP to Phone is live in Guatemala" is better than "We are excited to announce that TAP to Phone is now available in Guatemala."
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">10</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use all-caps for headlines in marketing materials.</strong>
+      All-caps is visually aggressive and reduces readability by 13-18% (per multiple typography studies). Payphone's voice is confident, not loud. Sentence case for all headlines, always. The only acceptable all-caps usage is for micro-labels (section numbers, tags, metadata) at 12px or smaller with wide letter-spacing.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">11</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use the whale tail icon as a decorative pattern or wallpaper.</strong>
+      Repeating the logo as a tiled pattern cheapens it. The whale tail appears once per composition. It is a signature, not a texture. If you need a brand texture, use the gradient system or the ocean photography direction.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">12</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never promise specific financial outcomes in marketing copy.</strong>
+      "Earn more with Payphone" is a promise. "Accept payments you were missing" is a capability. Payphone describes what its tools do and lets the user draw the conclusion. This is both a brand principle and a regulatory requirement in financial services marketing.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">13</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never use serif fonts in any Payphone material.</strong>
+      Serifs signal tradition, heritage, and established institutions. Payphone is building the replacement for those institutions. Aeonik (or the system sans-serif stack) is used everywhere. No exceptions. No "just for the pitch deck." No "this one feels more premium."
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">14</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never publish content without a clear next action.</strong>
+      Every piece of Payphone content &mdash; every post, every email, every page &mdash; must answer the question: "What should the reader do after consuming this?" If the answer is "nothing," the content should not exist. Content without a CTA is a monologue. Payphone has conversations.
+    </div>
+  </div>
+
+  <div class="dont-item" style="border-color: rgba(255,255,255,0.1);">
+    <div class="dont-num">15</div>
+    <div class="dont-text" style="color: var(--white);">
+      <strong>Never translate English copy word-for-word into Spanish (or vice versa).</strong>
+      Payphone operates bilingually. The Spanish and English versions of any piece of copy should convey the same meaning with the same emotional impact, but they are written independently, not translated. "Your phone is your entire financial infrastructure" does not word-for-word translate well. The Spanish version should be crafted as its own sentence that lands with the same force for a native speaker. Translators adapt intent; they do not swap words.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 10 BRAND EVOLUTION RULES -->
+<!-- ============================================================ -->
+<section id="evolution">
+  <div class="section-num">10 &mdash; Brand Evolution Rules</div>
+  <h2>Brand Evolution Rules</h2>
+  <p class="lead">A brand that cannot evolve dies. A brand that evolves without rules dies faster. This section pre-decides what changes, what stays, and how to make the call.</p>
+
+  <h3>Evolution by Stage</h3>
+
+  <h4>Seed Stage (Current: 2M users, pre-Series A)</h4>
+  <p><strong>Brand focus:</strong> Establish category ("Financial Autonomy Platform"), build founder credibility, prove product-market fit through brand narrative.</p>
+  <p><strong>What changes at this stage:</strong></p>
+  <ul>
+    <li>Messaging emphasis shifts based on which product (Personal, Business, TAP, E-Commerce) shows strongest traction</li>
+    <li>Tone in social channels is experimental &mdash; test what resonates with early adopters</li>
+    <li>Visual identity may be applied with some flexibility as the team is small and moving fast</li>
+    <li>Investor positioning is refined with each pitch meeting based on what lands</li>
+  </ul>
+  <p><strong>What stays fixed:</strong> Logo, color palette, core voice principles, brand essence (Autonomy), category claim.</p>
+
+  <h4>Series A Stage (Target: 5-10M users)</h4>
+  <p><strong>Brand focus:</strong> Scale awareness, formalize brand operations, build brand equity that compounds.</p>
+  <p><strong>What changes at this stage:</strong></p>
+  <ul>
+    <li>Brand guidelines become mandatory (not suggested) for all external communications</li>
+    <li>Content cadence increases and requires a formal editorial calendar</li>
+    <li>Visual identity system expands: introduce motion design principles, video brand guidelines, event branding standards</li>
+    <li>Sub-brand language may be needed for product lines (Payphone Business, Payphone TAP) &mdash; but architecture remains monolithic</li>
+    <li>Paid media creative is developed and requires brand-specific ad templates</li>
+    <li>PR and earned media strategy formalizes &mdash; press kit, spokesperson training, media relationships</li>
+  </ul>
+  <p><strong>What stays fixed:</strong> Everything from Seed, plus: verbal identity system, imagery direction, brand don'ts, positioning statements (though proof points update with new metrics).</p>
+
+  <h4>Series B Stage (Target: 20M+ users, multi-country)</h4>
+  <p><strong>Brand focus:</strong> Category leadership, international expansion, brand as competitive moat.</p>
+  <p><strong>What changes at this stage:</strong></p>
+  <ul>
+    <li>Brand localization for new markets (visual and verbal adaptation, not translation)</li>
+    <li>Potential brand refresh (not rebrand): updated type scale, refined color weights, evolved illustration style &mdash; all within the existing system</li>
+    <li>Co-branding guidelines become critical as partnership volume increases</li>
+    <li>Brand architecture may evolve if Payphone launches products that serve meaningfully different audiences (e.g., Payphone Capital, Payphone Enterprise) &mdash; but the whale tail remains the master brand</li>
+    <li>Employer brand becomes a distinct workstream</li>
+  </ul>
+  <p><strong>What stays fixed:</strong> Logo mark (whale tail), Naranja Payphone (#FF6400), brand essence (Autonomy), founding tension, voice principles. These are the eternal elements.</p>
+
+  <h3>Sacred Elements (Never Change)</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Sacred 01</div>
+      <h4>The Whale Tail Icon</h4>
+      <p>This icon is the brand. It can be refined (subtle curve adjustments, optical corrections) but never redesigned, replaced, or rotated. The whale tail is to Payphone what the swoosh is to Nike: the single visual element that carries the entire brand even without the wordmark.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Sacred 02</div>
+      <h4>Naranja Payphone #FF6400</h4>
+      <p>This specific shade of orange is non-negotiable. Not a brighter orange. Not a darker orange. Not "coral" or "tangerine" or "burnt sienna." #FF6400 is the brand color. It was chosen deliberately and it has been associated with Payphone across millions of touchpoints. Changing it would be like Coca-Cola switching from red.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Sacred 03</div>
+      <h4>Brand Essence: Autonomy</h4>
+      <p>Payphone may change what products it offers, what markets it serves, and how it communicates. It will never change what it stands for. Autonomy &mdash; the belief that people already have the power and just need the infrastructure to use it &mdash; is the philosophical foundation. Every product must pass the autonomy test: does this make the user more self-sufficient, or more dependent on Payphone?</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Sacred 04</div>
+      <h4>Zero-Cost Positioning</h4>
+      <p>The promise that Payphone is zero-cost to the individual user is a brand promise, not just a pricing decision. If the business model evolves to include user fees, the brand narrative must be rebuilt from scratch &mdash; which is why the business model should be designed to never require it. This promise is load-bearing.</p>
+    </div>
+  </div>
+
+  <h3>Adaptive Elements (Will Change)</h3>
+  <table>
+    <thead>
+      <tr><th>Element</th><th>How It Adapts</th><th>Who Decides</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Proof Points</td>
+        <td>Update with every milestone: user count, volume, countries, partnerships. The positioning statements stay; the numbers inside them change.</td>
+        <td>Marketing Lead (Ana Julia) + CRO (Val)</td>
+      </tr>
+      <tr>
+        <td>Content Pillars</td>
+        <td>The editorial themes evolve as the product and market evolve. New features create new content angles. New markets create new stories.</td>
+        <td>Content Team + Marketing Lead</td>
+      </tr>
+      <tr>
+        <td>Social Tone</td>
+        <td>Social voice is the most adaptive element. Trends change. Platform cultures shift. The four voice principles (Simple, Confident, Brave, Human) stay; the specific way they manifest in a TikTok vs. a LinkedIn post will evolve quarterly.</td>
+        <td>Creative Lead (Pablo) + Content Team</td>
+      </tr>
+      <tr>
+        <td>Imagery Style</td>
+        <td>Photography direction will evolve as Payphone enters new markets. Quito street markets will be joined by Guatemala City, San Salvador, and beyond. The three-word filter (Authentic, Dynamic, Warm) stays; the subjects and locations expand.</td>
+        <td>Creative Lead (Pablo)</td>
+      </tr>
+      <tr>
+        <td>Competitive Positioning</td>
+        <td>As the competitive landscape shifts, the "only" statement must be re-validated and potentially re-written. If a competitor matches Payphone's claim, the brand must find the next true differentiator.</td>
+        <td>CRO (Val) + Strategy (Lucia)</td>
+      </tr>
+      <tr>
+        <td>Campaign Formats</td>
+        <td>New channels and formats will emerge. The brand system must accommodate them. Each new format gets a template added to the Brand in Action section.</td>
+        <td>Creative Lead (Pablo) + Growth Lead (Efrain)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>The Three-Question Brand Test</h3>
+  <p>Before any piece of communication ships &mdash; an ad, a post, a deck slide, an email, a product screen &mdash; it must pass this three-question test. If any answer is "no," the work goes back for revision.</p>
+
+  <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="card" style="border-top: 4px solid var(--naranja);">
+      <div class="card-label">Question 01</div>
+      <h4>Could this come from any other fintech?</h4>
+      <p>If you replaced "Payphone" with "Mercado Pago" or "Yape" or "Nu" and the piece still made sense, it is not specific enough. Payphone content must contain at least one element (claim, data point, visual, or tone) that is ownable only by Payphone.</p>
+      <p style="margin-top: 1rem;"><strong>If yes (could come from anyone):</strong> Find the specific. Add the data point. Name the product. Show the real screen. Make it impossible to swap the brand name.</p>
+    </div>
+    <div class="card" style="border-top: 4px solid var(--naranja);">
+      <div class="card-label">Question 02</div>
+      <h4>Does this increase autonomy?</h4>
+      <p>Does this piece of communication help the audience become more self-sufficient? Does it teach them something? Does it remove a barrier? Does it give them a tool? Content that only promotes Payphone without increasing the audience's autonomy violates the brand essence.</p>
+      <p style="margin-top: 1rem;"><strong>If no:</strong> Reframe from "what Payphone does" to "what you can now do." The subject of the sentence should be the audience, not the brand.</p>
+    </div>
+    <div class="card" style="border-top: 4px solid var(--naranja);">
+      <div class="card-label">Question 03</div>
+      <h4>Would a Tier 1 VC forward this?</h4>
+      <p>This is the quality bar. Not "is this good enough?" but "is this so good that a busy, skeptical, seen-everything investor would take 15 seconds to forward it to a partner?" If the answer is no, raise the standard. Shorten the copy. Sharpen the insight. Add the number. Remove the filler.</p>
+      <p style="margin-top: 1rem;"><strong>If no:</strong> The piece is not done. Ship nothing that would not survive the inbox of the most discerning reader in your audience.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div style="text-align: center; padding: 4rem 0;">
+    <div class="section-num" style="margin-bottom: 1rem;">End of Document</div>
+    <h2 style="font-size: 2rem;">This brand book is a living document.</h2>
+    <p class="lead" style="margin: 1rem auto; max-width: 520px;">It will be reviewed quarterly and updated as Payphone grows. The principles are permanent. The applications will evolve. When in doubt, return to the Brand Soul.</p>
+    <p style="color: var(--gray-400); font-size: 0.8rem; margin-top: 2rem;">
+      Payphone Brand Book v1.0 &mdash; March 2026<br>
+      Prepared for Unicore LLC<br>
+      Confidential
+    </p>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
